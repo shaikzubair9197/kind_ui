@@ -213,40 +213,95 @@ st.markdown(kpi_css, unsafe_allow_html=True)
 # --------------------------------------------------------
 # KPI CARDS
 # --------------------------------------------------------
+kpi_css = """
+<style>
+.kpi-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+    border: 1px solid #e5e5e5;
+    height: 150px; /* increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kpi-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.kpi-value {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0057b8;
+    margin-bottom: 6px;
+}
+</style>
+"""
+
+st.markdown(kpi_css, unsafe_allow_html=True)
+def kpi_card(title, value, tooltip, subtitle=""):
+    return f"""
+    <div class="kpi-card" title="{tooltip}">
+        <div class="kpi-title">{title}</div>
+        <div class="kpi-value">{value}</div>
+        <div style="font-size:13px;color:#777;margin-top:4px;">{subtitle}</div>
+    </div>
+    """
+
 st.markdown("### 📊 Marketplace Summary")
 
-c1, c2, c3, c4 = st.columns(4)
+c1, c2, c3, c4, c5, c6 = st.columns(6)
 
-c1.markdown(f"""
-<div class="kpi-card">
-    <div class="kpi-title">Total SKUs</div>
-    <div class="kpi-value">{len(flat_products)}</div>
-</div>
-""", unsafe_allow_html=True)
+c1.markdown(kpi_card(
+    "Marketplace Health Score",
+    meta.get("marketplace_health_score", "-"),
+    "A 0–100 score.\nFormula: 100 - (0.5 × gouging rate) - (0.4 × avg overprice %) - (0.1 × % bad sellers).\nLower score = riskier marketplace."
+), unsafe_allow_html=True)
 
-c2.markdown(f"""
-<div class="kpi-card">
-    <div class="kpi-title">Marketplace SKUs</div>
-    <div class="kpi-value">{marketplace_skus}</div>
-</div>
-""", unsafe_allow_html=True)
+c2.markdown(kpi_card(
+    "SKUs Impacted",
+    meta.get("skus_impacted", "-"),
+    "Number of KIND SKUs with at least one gouged seller.\nExample: If SKU has 1 gouged seller → counted."
+), unsafe_allow_html=True)
 
-c3.markdown(f"""
-<div class="kpi-card">
-    <div class="kpi-title">Gouged Listings</div>
-    <div class="kpi-value">{gouging_count}</div>
-</div>
-""", unsafe_allow_html=True)
+c3.markdown(kpi_card(
+    "Gouging Rate",
+    f"{meta.get('gouging_rate', 0):.1f}%",
+    f"Gouged Listings / Total Listings.\nExample: {meta.get('total_gouged_listings')} / {meta.get('total_listings')} = {meta.get('gouging_rate'):.1f}%.",
+    subtitle=f"{meta.get('total_gouged_listings')} / {meta.get('total_listings')} listings"
+), unsafe_allow_html=True)
 
-c4.markdown(f"""
-<div class="kpi-card">
-    <div class="kpi-title">Unique Marketplace Sellers</div>
-    <div class="kpi-value">{len(unique_sellers)}</div>
-</div>
-""", unsafe_allow_html=True)
+c4.markdown(kpi_card(
+    "Avg Overprice (%)",
+    f"+{meta.get('avg_overprice_pct', 0):.1f}%",
+    "Average % markup of gouged listings.\nExample: (+30% + +80%) / 2 = +55%."
+), unsafe_allow_html=True)
 
-st.markdown("")
+c5.markdown(kpi_card(
+    "Worst Overprice (%)",
+    f"+{meta.get('max_overprice_pct', 0):.0f}%",
+    "Highest single price increase in all listings.\nExample: Seller price $15.99 vs Amazon $4.97 → +222%."
+), unsafe_allow_html=True)
 
+top_v = meta.get("seller_gouging_summary", [])
+top_name = top_v[0]['seller_name'] if top_v else "-"
+top_count = top_v[0]['gouged_listings'] if top_v else 0
+
+c6.markdown(kpi_card(
+    "Top Violator",
+    top_name,
+    "Seller with the highest number of gouged listings.\nExample: BirkenStar = 10 gouged listings.",
+    subtitle=f"{top_count} listings"
+), unsafe_allow_html=True)
+
+
+st.markdown("<div style='height:35px;'></div>", unsafe_allow_html=True)
 
 # --------------------------------------------------------
 # Search + Sort

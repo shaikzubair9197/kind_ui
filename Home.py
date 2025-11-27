@@ -1,8 +1,10 @@
+# app.py
 import json
 from pathlib import Path
 import pandas as pd
 import streamlit as st
 import math
+from collections import defaultdict
 
 # ----------------------------------------------------
 # CONFIG
@@ -96,7 +98,7 @@ capacity = load_json_null(CAPACITY_FILE) or {}
 
 kind_total_products = capacity.get("total_products", 184)
 
-# Flatten products
+# Flatten products (ASIN level)
 flat_products = []
 for fam in data_families:
     product_name = fam.get("product_name")
@@ -111,6 +113,8 @@ for fam in data_families:
             "asin": asin,
             "product_name": product_name,
             "category": category,
+            "variant_title": v.get("title"),
+            "amazon_price": v.get("price"),   # Amazon unit price
             "seller_market": mp
         })
 
@@ -219,59 +223,158 @@ st.markdown("---")
 # ----------------------------------------------------
 st.header("Additional Insights")
 
-left2, right2 = st.columns(2)
+# ----------------------------------------------------
+# TOP 10 GOUGED SKUs — UPDATED FOR NEW METADATA FIELDS
+# ----------------------------------------------------
+st.subheader("🔥 Top 10 Most Gouged SKUs")
 
-# 👉 Top Gouged SKUs
-with left2:
-    st.subheader("🔥 Top 10 Most Gouged SKUs")
-    gouged = []
-    for s in flat_products:
-        asin = s["asin"]
-        max_pct = None
-        worst_seller = None
+top_g_meta = meta.get("top_gouged_skus") or []
+top_g_list = []
+
+for t in top_g_meta:
+    top_g_list.append({
+        "asin": t.get("asin"),
+        "product_name": t.get("product_name"),
+        "title": t.get("title") or t.get("product_name"),
+        "category": t.get("category"),
+
+        # UPDATED for new unit-price structure
+        "amazon_price": t.get("amazon_price_unit"),
+        "seller_price": t.get("seller_price_unit"),
+
+        "price_delta_abs": t.get("price_delta_abs"),
+        "price_delta_percent": t.get("price_delta_percent"),
+
+        "seller_name": t.get("seller_name"),
+        "detected_as_gouging": t.get("detected_as_gouging"),
+        "upstream_price_flag": t.get("upstream_price_flag")
+    })
+
+# Sort
+top_g_sorted = sorted(
+    [t for t in top_g_list if t.get("price_delta_percent") is not None],
+    key=lambda x: x["price_delta_percent"],
+    reverse=True
+)[:10]
+
+if top_g_sorted:
+    df_topg = pd.DataFrame(top_g_sorted)
+
+    df_topg["amazon_price"] = df_topg["amazon_price"].map(
+        lambda x: f"${x:.2f}" if isinstance(x,(int,float)) else "-"
+    )
+    df_topg["seller_price"] = df_topg["seller_price"].map(
+        lambda x: f"${x:.2f}" if isinstance(x,(int,float)) else "-"
+    )
+    df_topg["price_delta_abs"] = df_topg["price_delta_abs"].map(
+        lambda x: f"${x:.2f}" if isinstance(x,(int,float)) else "-"
+    )
+    df_topg["price_delta_percent"] = df_topg["price_delta_percent"].map(
+        lambda x: f"{x:.1f}%" if isinstance(x,(int,float)) else "-"
+    )
+
+    df_topg = df_topg[[
+        "asin", "product_name", "title", "category",
+        "amazon_price", "seller_price",
+        "price_delta_abs", "price_delta_percent",
+        "seller_name", "detected_as_gouging", "upstream_price_flag"
+    ]]
+
+    st.dataframe(df_topg, use_container_width=True)
+else:
+    st.info("No gouging detected.")
+
+st.markdown("---")
+
+# ----------------------------------------------------
+# SELLER INSIGHTS (No field-change required)
+# ----------------------------------------------------
+st.subheader("Additional Seller Insights")
+
+left_col, right_col = st.columns([2, 1])
+
+def compute_seller_tables(products):
+    seller_asins = defaultdict(set)
+    seller_price_deltas_abs = defaultdict(list)
+    seller_price_deltas_pct = defaultdict(list)
+    seller_overpriced_asins = defaultdict(set)
+
+    for s in products:
+        asin = s.get("asin")
         for mk in s.get("seller_market") or []:
+            name = mk.get("seller_name")
+            if not name:
+                continue
+
+            seller_asins[name].add(asin)
+
             pct = mk.get("price_delta_percent")
-            if pct is not None and (max_pct is None or pct > max_pct):
-                max_pct = pct
-                worst_seller = mk.get("seller_name")
-        if max_pct is not None:
-            gouged.append({
-                "asin": asin,
-                "product_name": s["product_name"],
-                "category": s["category"],
-                "max_pct": max_pct,
-                "seller": worst_seller
-            })
+            absd = mk.get("price_delta_abs")
 
-    df_g = pd.DataFrame(sorted(gouged, key=lambda x: x["max_pct"], reverse=True)[:10])
-    if not df_g.empty:
-        df_g["max_pct"] = df_g["max_pct"].map(lambda x: f"{x:.1f}%")
-        st.dataframe(df_g, use_container_width=True)
+            if pct is not None and pct > 0:
+                seller_price_deltas_abs[name].append(absd or 0.0)
+                seller_price_deltas_pct[name].append(pct)
+                seller_overpriced_asins[name].add(asin)
+
+    analysis_rows = []
+    for seller, asins in seller_asins.items():
+        total_skus = len(asins)
+        overpriced_skus = len(seller_overpriced_asins.get(seller, set()))
+        rate_high = (overpriced_skus / total_skus * 100) if total_skus else 0.0
+
+        abs_list = seller_price_deltas_abs.get(seller, [])
+        pct_list = seller_price_deltas_pct.get(seller, [])
+
+        avg_delta_abs = sum(abs_list) / len(abs_list) if abs_list else 0.0
+        avg_delta_pct = sum(pct_list) / len(pct_list) if pct_list else 0.0
+
+        analysis_rows.append({
+            "seller_name": seller,
+            "total_skus": total_skus,
+            "overpriced_skus": overpriced_skus,
+            "rate_high": rate_high,
+            "avg_delta_abs": avg_delta_abs,
+            "avg_delta_percent": avg_delta_pct
+        })
+
+    analysis_sorted = sorted(
+        analysis_rows,
+        key=lambda r: (r["rate_high"], r["avg_delta_percent"]),
+        reverse=True
+    )
+
+    impact = [{"seller": s, "sku_count": len(asins)} for s, asins in seller_asins.items()]
+    impact_sorted = sorted(impact, key=lambda r: r["sku_count"], reverse=True)
+
+    return analysis_sorted, impact_sorted
+
+analysis_rows_sorted, impact_rows_sorted = compute_seller_tables(flat_products)
+
+with left_col:
+    st.markdown("### 📊 High Price Seller Analysis")
+
+    if analysis_rows_sorted:
+        df_hp = pd.DataFrame(analysis_rows_sorted)
+        df_hp_display = pd.DataFrame({
+            "seller_name": df_hp["seller_name"],
+            "total_skus": df_hp["total_skus"].astype(int),
+            "overpriced_skus": df_hp["overpriced_skus"].astype(int),
+            "rate_high": df_hp["rate_high"].map(lambda x: f"{x:.0f}%"),
+            "avg_delta_abs": df_hp["avg_delta_abs"].map(lambda x: f"${x:.2f}"),
+            "avg_delta_percent": df_hp["avg_delta_percent"].map(lambda x: f"{x:.0f}%")
+        })
+        st.dataframe(df_hp_display.fillna("-"), use_container_width=True)
     else:
-        st.info("No gouging detected.")
+        st.info("No seller overpricing data available.")
 
-# 👉 Seller Impact
-with right2:
-    st.subheader("🏬 Seller SKU Impact")
-
-    impact = {}
-    for s in flat_products:
-        seen = set()
-        for mk in s.get("seller_market") or []:
-            nm = mk.get("seller_name")
-            if nm:
-                seen.add(nm)
-        for nm in seen:
-            impact[nm] = impact.get(nm, 0) + 1
-
-    df_i = pd.DataFrame(
-        [{"seller": k, "sku_count": v} for k, v in impact.items()]
-    ).sort_values("sku_count", ascending=False).reset_index(drop=True)
-
-    if not df_i.empty:
-        st.dataframe(df_i, use_container_width=True)
+with right_col:
+    st.markdown("### 🏬 Seller SKU Impact")
+    if impact_rows_sorted:
+        df_impact = pd.DataFrame(impact_rows_sorted)
+        df_impact = df_impact.rename(columns={"seller": "seller_name"})
+        st.dataframe(df_impact.fillna("-"), use_container_width=True)
     else:
         st.info("No seller impact data.")
 
 st.markdown("---")
-st.caption("Dashboard view — Additional insights included. Product list available in Products page.")
+st.caption("Dashboard view — Top gouged full-width, followed by High Price Seller Analysis and Seller SKU Impact.")
