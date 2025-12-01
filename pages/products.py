@@ -1,9 +1,13 @@
-# app.py (redesigned layout: Option C - Mixed) - PART 1 of 3
+# app.py (redesigned layout: Option C - Mixed) - FULL (grouping integrated)
 import json
 from pathlib import Path
 import pandas as pd
 import streamlit as st
 import math
+
+# --------------------------------------------------------
+# Original sidebar CSS
+# --------------------------------------------------------
 sidebar_css = """
 <style>
 [data-testid="stSidebar"] { background-color: #f4f6fa !important; padding-top: 22px !important; }
@@ -70,6 +74,129 @@ def seller_count_badge(count):
     if 1 <= count <= 3: return (f"{count} sellers", "#ffd400")
     if 4 <= count <= 10: return (f"{count} sellers", "#ff8c00")
     return (f"{count} sellers", "#ff4d4d")
+
+
+# --------------------------------------------------------
+# Fuzzy Grouping for Same Product (Different Pack Sizes)
+# (Inserted here as requested; does not change other logic)
+# --------------------------------------------------------
+import re
+from difflib import SequenceMatcher
+
+def normalize_title_for_grouping(title: str) -> str:
+    """
+    Normalize title to remove pack size, counts, weights, numbers,
+    so different sizes of the same product group together.
+    """
+    if not title:
+        return ""
+
+    t = title.lower()
+
+    # Remove specific pack phrases
+    t = re.sub(r"pack\s*of\s*\d+", "", t)
+
+    # Remove count indicators (ct, pcs, count, pieces, pack)
+    t = re.sub(r"\b\d+\s*(ct|count|pcs|pieces|pack)\b", "", t)
+
+    # Remove weights (oz, g, lb)
+    t = re.sub(r"\b\d+\.?\d*\s*(oz|ounce|g|gram|lb|lbs)\b", "", t)
+
+    # Remove any remaining isolated number (e.g., 12, 24)
+    t = re.sub(r"\b\d+\b", "", t)
+
+    # Remove any leftover non-alpha characters
+    t = re.sub(r"[^a-z]+", " ", t)
+
+    # Final cleanup
+    t = " ".join(t.split())
+
+    return t.strip()
+
+
+def fuzzy_ratio(a: str, b: str) -> float:
+    """Compute fuzzy similarity between two normalized titles."""
+    return SequenceMatcher(None, a, b).ratio()
+def extract_identity(title: str) -> str:
+    """
+    Extracts a dynamic identity for a product based on the first few meaningful words.
+    No hardcoded brand rules. Pure text-based identity.
+    """
+    if not title:
+        return ""
+
+    t = title.lower()
+
+    # Remove pack size, weights, numbers
+    t = re.sub(r"pack\s*of\s*\d+", "", t)
+    t = re.sub(r"\b\d+\s*(ct|count|pcs|pieces|pack)\b", "", t)
+    t = re.sub(r"\b\d+\.?\d*\s*(oz|ounce|g|gram|lb|lbs)\b", "", t)
+    t = re.sub(r"\b\d+\b", "", t)
+
+    # Split into words
+    words = re.findall(r"[a-z]+", t)
+
+    # Identity = first 3 meaningful words
+    # Example:
+    #   KIND ZERO Added Sugar Bars → ["kind", "zero", "added"]
+    #   KIND Nut Bars → ["kind", "nut", "bars"]
+    identity = " ".join(words[:3])
+
+    return identity
+
+
+
+def group_same_products(product_list, threshold=0.80):
+    groups = []
+    used = set()
+
+    for p in product_list:
+        asin_p = p.get("asin")
+        if asin_p in used:
+            continue
+
+        title_p = p.get("title") or ""
+        flavor_p = (p.get("flavor") or "").lower().strip()
+        id_p = extract_identity(title_p)
+
+        norm_p = normalize_title_for_grouping(title_p)
+
+        group = {
+            "identity": id_p,
+            "normalized_title": norm_p,
+            "group_title": p.get("product_name"),
+            "items": [p]
+        }
+        used.add(asin_p)
+
+        for q in product_list:
+            asin_q = q.get("asin")
+            if asin_q in used:
+                continue
+
+            title_q = q.get("title") or ""
+            flavor_q = (q.get("flavor") or "").lower().strip()
+            id_q = extract_identity(title_q)
+
+            # 1️⃣ Same product identity (self-learned, no hardcoding)
+            if id_p != id_q:
+                continue
+
+            # 2️⃣ Same flavor
+            if flavor_p != flavor_q:
+                continue
+
+            # 3️⃣ Fuzzy title similarity
+            norm_q = normalize_title_for_grouping(title_q)
+            score = fuzzy_ratio(norm_p, norm_q)
+
+            if score >= threshold:
+                group["items"].append(q)
+                used.add(asin_q)
+
+        groups.append(group)
+
+    return groups
 
 # --------------------------------------------------------
 # Flatten SKUs
@@ -637,14 +764,22 @@ elif sort_choice == "Rating Count (Low → High)":
         except:
             return 9999999
     filtered = sorted(filtered, key=min_rating_count)
+
+# --------------------------------------------------------
+# GROUP PRODUCTS BY TITLE (same product, different pack sizes)
+# --------------------------------------------------------
+grouped_products = group_same_products(filtered)
+
 # --------------------------------------------------------
 # Summary Display & Pagination
 # --------------------------------------------------------
 st.markdown(f"### Showing {len(filtered)} SKUs (after filters)")
 st.markdown("")
 
+# NOTE: pagination now applies to groups
 page_size = st.selectbox("Items per page", [10, 20, 50, 100], index=0)
-total_pages = max(1, (len(filtered) + page_size - 1) // page_size)
+total_groups = max(1, len(grouped_products))
+total_pages = max(1, (total_groups + page_size - 1) // page_size)
 
 if "page" not in st.session_state:
     st.session_state.page = 1
@@ -654,29 +789,42 @@ if st.session_state.page > total_pages:
 
 start = (st.session_state.page - 1) * page_size
 end = start + page_size
-page_items = filtered[start:end]
+page_groups = grouped_products[start:end]
 
 st.markdown(f"**Page {st.session_state.page} of {total_pages}**")
 st.markdown("---")
 
 # --------------------------------------------------------
-# Product Accordions
+# Product Accordions (rendering grouped products)
+# Each group becomes one accordion; pack-size SKUs shown inside
 # --------------------------------------------------------
-for p in page_items:
-    mp_list = p.get("seller_market") or []
-    mp_count = len(mp_list)
+for group in page_groups:
+    items = group.get("items", [])
+    # derive combined header info from first item
+    first = items[0] if items else {}
+    mp_list_all = []
+    for it in items:
+        mp_list_all.extend(it.get("seller_market") or [])
+    mp_count = len(mp_list_all)
     seller_badge_text, seller_badge_color = seller_count_badge(mp_count)
 
-    flags = [s.get("price_flag") for s in mp_list if s.get("price_flag")]
-    flag_priority = {"Price Gouging":4, "High Price":3, "Slightly High":2, "Fair Price":1}
+    # compute worst flag across all items
+    flags = []
+    for it in items:
+        flags.extend([s.get("price_flag") for s in (it.get("seller_market") or []) if s.get("price_flag")])
+    flag_priority = {"Price Gouging": 4, "High Price": 3, "Slightly High": 2, "Fair Price": 1}
     worst_flag = sorted(flags, key=lambda f: flag_priority.get(f, 0), reverse=True)[0] if flags else None
     pf_label, pf_color = price_flag_label(worst_flag)
 
-    exp_title = f"{p.get('product_name')} — {p.get('flavor') or ''} (ASIN: {p.get('asin')})"
+    # header shows product_name and number of pack-size options
+    header_title = f"{group.get('group_title') or first.get('product_name')} — {len(items)} pack(s)"
+    # also show list of ASINs in small text
+    asin_list = ", ".join([it.get("asin") for it in items if it.get("asin")])
+    exp_title = f"{header_title} (ASINs: {asin_list})"
 
     header_html = f"""
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-      <div style="font-weight:700;color:{PRIMARY};">{exp_title}</div>
+      <div style="font-weight:700;color:{PRIMARY};">{header_title}</div>
       <div>
         <span class='badge' style='background:{seller_badge_color};margin-right:6px'>{seller_badge_text}</span>
         <span class='badge' style='background:{pf_color};'>{pf_label}</span>
@@ -687,65 +835,113 @@ for p in page_items:
     with st.expander(exp_title, expanded=False):
         st.markdown(header_html, unsafe_allow_html=True)
 
-        st.markdown("### Product Details")
-        pd_details = pd.DataFrame([{
-            "asin": p.get("asin"),
-            "title": p.get("title"),
-            "price": format_price(p.get("price")),
-            "unit_price": format_price(p.get("unit_price")),
-            "prime": "Yes" if p.get("prime") else "No",
-            "flavor": p.get("flavor"),
-            "amazon_url": p.get("final_url") or "-"
+        # show grouped product-level summary (first item's fields used as representative)
+        st.markdown("### Product Summary")
+        pd_summary = pd.DataFrame([{
+            "product_name": group.get("group_title") or first.get("product_name"),
+            "category": first.get("category"),
+            "representative_asin": first.get("asin"),
+            "pack_options": len(items),
+            "amazon_url": first.get("final_url") or "-"
         }])
-        st.dataframe(pd_details, use_container_width=True)
+        st.dataframe(pd_summary, use_container_width=True)
 
-        if p.get("main_seller"):
-            st.markdown("### Main Seller")
-            ms = p.get("main_seller")
-            st.dataframe(pd.DataFrame([{
-                "seller_name": ms.get("seller_name"),
-                "ships_from": ms.get("ships_from"),
-                "authorized": "Yes" if ms.get("is_authorized") else "No",
-                "price": format_price(ms.get("price")),
-                "unit_price": format_price(ms.get("unit_price")),
-                "prime": "Yes" if ms.get("prime") else "No"
-            }]), use_container_width=True)
-        else:
-            st.info("No main seller found.")
+        # --------------------------------------------------------
+        # NEW LOGIC: Split group into matching + missing items
+        # --------------------------------------------------------
+        matching_items = []
+        missing_items = []
 
-        if mp_list:
-            st.markdown("### Marketplace Sellers")
-            sellers_table = [
-                {
-                    "seller_name": s.get("seller_name"),
-                    "ships_from": s.get("ships_from"),
-                    "authorized": "Yes" if s.get("is_authorized") else "No",
-                    "price": format_price(s.get("price")),
-                    "unit_price": format_price(s.get("unit_price")),
-                    "price_delta": f"${float(s['price_delta_abs']):.2f}" if s.get("price_delta_abs") is not None else "-",
-                    "price_flag": s.get("price_flag"),
-                    "rating_stars": s.get("rating_stars") or "-",
-                    "rating_count": s.get("rating_count") or "-",
-                    "positive_rating_percent": s.get("positive_rating_percent") or "-"
-                }
-                for s in mp_list
-            ]
-            st.dataframe(pd.DataFrame(sellers_table), use_container_width=True)
+        for it in items:
+            if sku_matches(it):
+                matching_items.append(it)
+            else:
+                missing_items.append(it)
 
-            st.markdown("**Seller ratings (visual)**")
-            for s in mp_list:
-                stars_html = rating_to_stars(s.get("rating_stars"))
+        # --------------------------------------------------------
+        # Show ONLY matching SKUs (normal behavior)
+        # --------------------------------------------------------
+        for p in matching_items:
+            st.markdown(f"#### Pack Option — ASIN: {p.get('asin')}")
+            pd_details = pd.DataFrame([{
+                "asin": p.get("asin"),
+                "title": p.get("title"),
+                "price": format_price(p.get("price")),
+                "unit_price": format_price(p.get("unit_price")),
+                "prime": "Yes" if p.get("prime") else "No",
+                "flavor": p.get("flavor"),
+                "amazon_url": p.get("final_url") or "-"
+            }])
+            st.dataframe(pd_details, use_container_width=True)
+
+            # ---------- Main Seller ----------
+            if p.get("main_seller"):
+                st.markdown("**Main Seller**")
+                ms = p.get("main_seller")
+                st.dataframe(pd.DataFrame([{
+                    "seller_name": ms.get("seller_name"),
+                    "ships_from": ms.get("ships_from"),
+                    "authorized": "Yes" if ms.get("is_authorized") else "No",
+                    "price": format_price(ms.get("price")),
+                    "unit_price": format_price(ms.get("unit_price")),
+                    "prime": "Yes" if ms.get("prime") else "No"
+                }]), use_container_width=True)
+            else:
+                st.info("No main seller found for this pack option.")
+
+            # ---------- Marketplace Sellers ----------
+            mp_list = p.get("seller_market") or []
+            if mp_list:
+                st.markdown("**Marketplace Sellers**")
+                sellers_table = [
+                    {
+                        "seller_name": s.get("seller_name"),
+                        "ships_from": s.get("ships_from"),
+                        "authorized": "Yes" if s.get("is_authorized") else "No",
+                        "price": format_price(s.get("price")),
+                        "unit_price": format_price(s.get("unit_price")),
+                        "price_delta": f"${float(s['price_delta_abs']):.2f}" if s.get("price_delta_abs") is not None else "-",
+                        "price_flag": s.get("price_flag"),
+                        "rating_stars": s.get("rating_stars") or "-",
+                        "rating_count": s.get("rating_count") or "-",
+                        "positive_rating_percent": s.get("positive_rating_percent") or "-"
+                    }
+                    for s in mp_list
+                ]
+                st.dataframe(pd.DataFrame(sellers_table), use_container_width=True)
+
+                st.markdown("**Seller ratings (visual)**")
+                for s in mp_list:
+                    stars_html = rating_to_stars(s.get("rating_stars"))
+                    st.markdown(
+                        f"<div><b>{s.get('seller_name')}</b> — {stars_html} "
+                        f"<span class='small-muted'>({s.get('rating_count') or '-'} ratings, "
+                        f"{s.get('positive_rating_percent') or '-'}% positive)</span></div>",
+                        unsafe_allow_html=True
+                    )
+            else:
+                st.info("No marketplace sellers found for this pack option.")
+
+            st.markdown("---")
+
+        # --------------------------------------------------------
+        # SHOW MISSING VARIANTS (Option A1)
+        # --------------------------------------------------------
+        if missing_items:
+            missing_asins = ", ".join([m.get("asin") for m in missing_items if m.get("asin")])
+
+            if mp_filter == "Only with marketplace sellers":
                 st.markdown(
-                    f"<div><b>{s.get('seller_name')}</b> — {stars_html} "
-                    f"<span class='small-muted'>({s.get('rating_count') or '-'} ratings, "
-                    f"{s.get('positive_rating_percent') or '-'}% positive)</span></div>",
-                    unsafe_allow_html=True
+                    f"🔸 This product has **{len(missing_items)} variants WITHOUT marketplace sellers**: {missing_asins}"
                 )
-        else:
-            st.info("No marketplace sellers found.")
+
+            elif mp_filter == "Only without marketplace sellers":
+                st.markdown(
+                    f"🔸 This product has **{len(missing_items)} variants SOLD BY marketplace sellers**: {missing_asins}"
+                )
 
 # --------------------------------------------------------
-# Bottom pagination buttons
+# Bottom pagination buttons (works with group pagination)
 # --------------------------------------------------------
 st.markdown("---")
 col_prev, col_mid, col_next = st.columns([1, 8, 1])

@@ -418,5 +418,6 @@ def generate_summary():
         print("Error writing output:", e)
 
 
+
 if __name__ == "__main__":
     generate_summary()
