@@ -11,7 +11,7 @@ from collections import defaultdict
 st.set_page_config(
     page_title="KIND Marketplace Dashboard",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
 
 PRIMARY = "#0057b8"
@@ -50,11 +50,13 @@ NORMALIZED_FILE = BASE / "normalized_all_products.json"
 META_FILE = BASE / "normalized_metadata_summary.json"
 CAPACITY_FILE = BASE / "capacity_bins.json"
 
+
 def load_json(path: Path):
     if not path.exists():
         return {}
     with open(path, "r", encoding="utf-8") as fh:
         return json.load(fh)
+
 
 data_families = load_json(NORMALIZED_FILE) or []
 meta = load_json(META_FILE) or {}
@@ -71,11 +73,13 @@ for fam in data_families:
         if asin:
             asin_title_map[asin] = title
 
+
 def safe_num(v):
     try:
         return float(v) if v is not None else None
     except:
         return None
+
 
 # ----------------------------------------------------
 # KPI VALUES
@@ -103,33 +107,42 @@ st.markdown(
     f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">
     KIND Marketplace Dashboard
     </h1>""",
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
 st.markdown("---")
 
 # KPI ROW
 c1, c2, c3 = st.columns(3)
 
-c1.markdown(f"""
+c1.markdown(
+    f"""
 <div class="kpi-card">
   <div class="kpi-title">Total Products (KIND)</div>
   <div class="kpi-value">{kind_total_products}</div>
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
-c2.markdown(f"""
+c2.markdown(
+    f"""
 <div class="kpi-card">
   <div class="kpi-title">Total SKUs</div>
   <div class="kpi-value">{total_skus}</div>
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
-c3.markdown(f"""
+c3.markdown(
+    f"""
 <div class="kpi-card">
   <div class="kpi-title">Unique Sellers (Excl Amazon & KIND)</div>
   <div class="kpi-value">{unique_sellers_count}</div>
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 st.markdown("---")
 
@@ -139,11 +152,10 @@ st.markdown("---")
 left, right = st.columns([2, 1])
 
 with left:
-    st.subheader("📦 SKUs Per Category (ascending)")
+    st.subheader("SKUs Per Category (ascending)")
 
     df_cat = pd.DataFrame(
-        list(sku_per_category.items()),
-        columns=["category", "sku_count"]
+        list(sku_per_category.items()), columns=["category", "sku_count"]
     )
 
     # Sort ascending
@@ -157,8 +169,10 @@ with left:
 
 
 with right:
-    st.subheader("🛒 Sellers (Excl Amazon/KIND)")
-    st.dataframe(pd.DataFrame({"seller_name": unique_sellers_list}), use_container_width=True)
+    st.subheader("Sellers (Excl Amazon/KIND)")
+    st.dataframe(
+        pd.DataFrame({"seller_name": unique_sellers_list}), use_container_width=True
+    )
 
 st.markdown("---")
 
@@ -166,33 +180,45 @@ st.markdown("---")
 # TOP GOUGED SKUS
 # ----------------------------------------------------
 st.header("Additional Insights")
-st.subheader("🔥 Top 10 Most Gouged SKUs")
+st.subheader("Top 10 Most Gouged SKUs")
 
 meta_top = meta.get("top_gouged_skus", [])
 rows = []
 
 for t in meta_top:
     asin = t.get("asin")
-    rows.append({
-        "asin": asin,
-        "title": asin_title_map.get(asin, t.get("product_name")),
-        "category": t.get("category"),
-        "amazon_price": safe_num(t.get("amazon_unit")),
-        "seller_price": safe_num(t.get("seller_unit")),
-        "price_delta_abs": safe_num(t.get("price_delta_abs")),
-        "price_delta_percent": safe_num(t.get("price_delta_pct")),
-        "seller_name": t.get("seller_name"),
-        "upstream_price_flag": t.get("upstream_price_flag")
-    })
+    rows.append(
+        {
+            "asin": asin,
+            "title": asin_title_map.get(asin, t.get("product_name")),
+            "category": t.get("category"),
+            "amazon_price": safe_num(t.get("amazon_unit")),
+            "seller_price": safe_num(t.get("seller_unit")),
+            "price_delta_abs": safe_num(t.get("price_delta_abs")),
+            "price_delta_percent": safe_num(t.get("price_delta_pct")),
+            "seller_name": t.get("seller_name"),
+            "upstream_price_flag": t.get("upstream_price_flag"),
+        }
+    )
 
 # Sort descending by % or abs
-rows_sorted = sorted(rows, key=lambda x: (x["price_delta_percent"] or 0), reverse=True)[:10]
+rows_sorted = sorted(rows, key=lambda x: (x["price_delta_percent"] or 0), reverse=True)[
+    :10
+]
 df_top = pd.DataFrame(rows_sorted)
 
-df_top["amazon_price"] = df_top["amazon_price"].apply(lambda x: f"${x:.2f}" if x else "-")
-df_top["seller_price"] = df_top["seller_price"].apply(lambda x: f"${x:.2f}" if x else "-")
-df_top["price_delta_abs"] = df_top["price_delta_abs"].apply(lambda x: f"${x:.2f}" if x else "-")
-df_top["price_delta_percent"] = df_top["price_delta_percent"].apply(lambda x: f"{x:.1f}%" if x else "-")
+df_top["amazon_price"] = df_top["amazon_price"].apply(
+    lambda x: f"${x:.2f}" if x else "-"
+)
+df_top["seller_price"] = df_top["seller_price"].apply(
+    lambda x: f"${x:.2f}" if x else "-"
+)
+df_top["price_delta_abs"] = df_top["price_delta_abs"].apply(
+    lambda x: f"${x:.2f}" if x else "-"
+)
+df_top["price_delta_percent"] = df_top["price_delta_percent"].apply(
+    lambda x: f"{x:.1f}%" if x else "-"
+)
 
 st.dataframe(df_top, use_container_width=True)
 
@@ -218,7 +244,7 @@ for fam in data_families:
             seller_total_skus[seller] += 1
 
 with left_col:
-    st.markdown("### 📊 High Price Seller Analysis")
+    st.markdown("### High Price Seller Analysis")
 
     df_hp = pd.DataFrame(meta_seller_summary)
 
@@ -226,25 +252,27 @@ with left_col:
     df_hp["total_skus"] = df_hp["seller_name"].str.lower().map(seller_total_skus)
 
     # Build final display
-    df_hp_display = pd.DataFrame({
-        "seller_name": df_hp["seller_name"],
-        "total_skus": df_hp["total_skus"],
-        "overpriced_skus": df_hp["gouged_listings"],
-        "avg_delta_percent": df_hp["avg_overprice_pct"].map(lambda x: f"{x:.0f}%"),
-    })
+    df_hp_display = pd.DataFrame(
+        {
+            "seller_name": df_hp["seller_name"],
+            "total_skus": df_hp["total_skus"],
+            "overpriced_skus": df_hp["gouged_listings"],
+            "avg_delta_percent": df_hp["avg_overprice_pct"].map(lambda x: f"{x:.0f}%"),
+        }
+    )
 
     st.dataframe(df_hp_display, use_container_width=True)
 
 
 # ---- RIGHT: Seller SKU Impact (Ranked, Amazon Removed) ----
 with right_col:
-    st.markdown("### 🏬 Seller SKU Impact")
+    st.markdown("### Seller SKU Impact")
 
     meta_sku_impact = meta.get("seller_sku_impact", {})
 
     df_imp = pd.DataFrame(
         [(seller, count) for seller, count in meta_sku_impact.items()],
-        columns=["seller_name", "sku_count"]
+        columns=["seller_name", "sku_count"],
     )
 
     # Remove Amazon.com (case-insensitive)
@@ -255,5 +283,7 @@ with right_col:
 
     st.dataframe(df_imp, use_container_width=True)
 
-st.markdown("---")
-st.caption("Dashboard view — All insights sourced from normalized_metadata_summary.json (meta) with titles from normalized_all_products.json.")
+# st.markdown("---")
+# st.caption(
+#     "Dashboard view — All insights sourced from normalized_metadata_summary.json (meta) with titles from normalized_all_products.json."
+# )
