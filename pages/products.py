@@ -254,7 +254,7 @@ for fam in data_families:
 # --------------------------------------------------------
 PRIMARY = "#0057b8"
 
-st.set_page_config(page_title="Product Explorer — Redesigned", layout="wide")
+st.set_page_config(page_title="Reseller Analysis", layout="wide")
 st.markdown(
     """
 <style>
@@ -287,8 +287,22 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("Product Explorer — Redesigned")
-st.markdown("Use filters, search, and sorting to refine results.")
+col1, col2 = st.columns([0.1, 1])
+with col1:
+    try:
+        st.image("kind.png", width="content")
+    except Exception:
+        pass  # Silently fail if logo not found
+with col2:
+    pass
+
+st.markdown(
+    f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">
+    Product Resellers Analysis
+    </h1>""",
+    unsafe_allow_html=True,
+)
+# st.markdown("Use filters, search, and sorting to refine results.")
 st.markdown("")
 
 
@@ -488,646 +502,655 @@ def kpi_card(title, value, tooltip, subtitle=""):
 
 # part2
 # --------------------------------------------------------
-# TOP: Operational KPIs (6 cards)
+# Tabs: KPI dashboards vs detailed product explorer
 # --------------------------------------------------------
-st.markdown("### Top: Operational KPIs")
+tab_insights, tab_listing = st.tabs(["Marketplace Insights", "Product Explorer"])
 
-c1, c2, c3, c4, c5, c6 = st.columns(6)
+with tab_insights:
+    # --------------------------------------------------------
+    # TOP: Operational KPIs (6 cards)
+    # --------------------------------------------------------
+    st.markdown("### Operational KPIs")
 
-c1.markdown(
-    kpi_card(
-        "Marketplace Health Score",
-        marketplace_health_score if marketplace_health_score is not None else "-",
-        "Composite 0–100 risk score.",
-    ),
-    unsafe_allow_html=True,
-)
+    c1, c2, c3, c4, c5, c6 = st.columns(6)
 
-c2.markdown(
-    kpi_card(
-        "Gouging Rate",
-        f"{gouging_rate:.1f}%",
-        "Gouged listings ÷ total listings × 100.",
-        subtitle=f"{total_gouged_listings} / {total_listings}",
-    ),
-    unsafe_allow_html=True,
-)
-
-c3.markdown(
-    kpi_card(
-        "Avg Overprice (%)",
-        f"+{avg_overprice_pct:.1f}%",
-        "Average % markup across all marketplace listings.",
-    ),
-    unsafe_allow_html=True,
-)
-
-c4.markdown(
-    kpi_card(
-        "SKUs Impacted",
-        skus_impacted,
-        "SKUs with ≥1 detected gouged seller.",
-        subtitle=f"{total_skus} total SKUs",
-    ),
-    unsafe_allow_html=True,
-)
-
-c5.markdown(
-    kpi_card(
-        "Total Listings",
-        total_listings,
-        "Total seller-ASIN offers scanned.",
-        subtitle=f"{unique_marketplace_sellers} unique sellers",
-    ),
-    unsafe_allow_html=True,
-)
-
-# 🔥 NEW KPI CARD ADDED TO TOP ROW
-c6.markdown(
-    kpi_card(
-        "Top Violator",
-        top_violator.get("seller_name", "-"),
-        "Seller with the highest gouged-listing count.",
-        subtitle=f"{top_violator.get('gouged_listings', 0)} listings",
-    ),
-    unsafe_allow_html=True,
-)
-
-st.markdown("---")
-
-# --------------------------------------------------------
-# MIDDLE: Seller / Category Analytics (Side-By-Side)
-# --------------------------------------------------------
-st.markdown("### Middle: Seller & Category Analytics")
-
-left, right = st.columns([1.2, 2])
-
-# ---------------- LEFT: Top Violators Table ----------------
-with left:
-    st.markdown("#### Top Violators (table)")
-
-    top_df = (
-        pd.DataFrame(seller_summary[:15])
-        if seller_summary
-        else pd.DataFrame(
-            columns=["seller_name", "gouged_listings", "avg_overprice_pct"]
-        )
-    )
-
-    if not top_df.empty:
-        top_df = top_df.sort_values("gouged_listings", ascending=False)
-        st.dataframe(top_df, use_container_width=True)
-    else:
-        st.info("No violators detected in dataset.")
-
-# ---------------- RIGHT: Category Gouging Table ----------------
-with right:
-    st.markdown("#### Category Gouging Rates")
-
-    cat_df = pd.DataFrame(category_rows)
-
-    if not cat_df.empty:
-        cat_df = cat_df.sort_values("gouging_rate", ascending=False)
-        st.dataframe(
-            cat_df[
-                [
-                    "category",
-                    "total_listings",
-                    "gouged_listings",
-                    "gouging_rate",
-                    "avg_overprice_pct",
-                ]
-            ],
-            use_container_width=True,
-        )
-    else:
-        st.info("No category data available.")
-
-st.markdown("---")
-# --------------------------------------------------------
-# BOTTOM: Outlier Risk (extremes & single-worst cases)
-# --------------------------------------------------------
-st.markdown("### Bottom: Outlier Risk (extremes & single-worst cases)")
-o1, o2, o3 = st.columns(3)
-
-o1.markdown(
-    kpi_card(
-        "Worst Overprice (%)",
-        f"+{max_overprice_pct:.1f}%",
-        "Maximum single listing % overprice across dataset.",
-    ),
-    unsafe_allow_html=True,
-)
-
-o2.markdown(
-    kpi_card(
-        "Max Absolute Markup ($)",
-        (
-            f"${max_abs_markup:.2f}"
-            if isinstance(max_abs_markup, (int, float))
-            else max_abs_markup
+    c1.markdown(
+        kpi_card(
+            "Marketplace Health Score",
+            marketplace_health_score if marketplace_health_score is not None else "-",
+            "Composite 0–100 risk score.",
         ),
-        "Max absolute markup (dataset or fallback).",
-    ),
-    unsafe_allow_html=True,
-)
+        unsafe_allow_html=True,
+    )
 
+    c2.markdown(
+        kpi_card(
+            "Gouging Rate",
+            f"{gouging_rate:.1f}%",
+            "Gouged listings ÷ total listings × 100.",
+            subtitle=f"{total_gouged_listings} / {total_listings}",
+        ),
+        unsafe_allow_html=True,
+    )
 
-# function to find single worst listing by percent delta
-def find_worst_listing(flat_products):
-    worst = None
-    for p in flat_products:
-        for s in p.get("seller_market", []):
-            pct = s.get("price_delta_percent")
-            try:
-                pctv = float(pct) if pct is not None else None
-            except:
-                pctv = None
-            if pctv is not None:
-                if worst is None or pctv > worst["pct"]:
-                    worst = {
-                        "pct": pctv,
-                        "seller_name": s.get("seller_name"),
-                        "asin": p.get("asin"),
-                        "product_name": p.get("product_name"),
-                        "seller_price": s.get("price"),
-                        "amazon_price": (
-                            s.get("amazon_price_listing")
-                            if s.get("amazon_price_listing")
-                            else None
-                        ),
-                    }
-    return worst
+    c3.markdown(
+        kpi_card(
+            "Avg Overprice (%)",
+            f"+{avg_overprice_pct:.1f}%",
+            "Average % markup across all marketplace listings.",
+        ),
+        unsafe_allow_html=True,
+    )
 
+    c4.markdown(
+        kpi_card(
+            "SKUs Impacted",
+            skus_impacted,
+            "SKUs with ≥1 detected gouged seller.",
+            subtitle=f"{total_skus} total SKUs",
+        ),
+        unsafe_allow_html=True,
+    )
 
-worst_listing = find_worst_listing(flat_products)
-if worst_listing:
-    worst_sub = f"{worst_listing['seller_name']} — ASIN {worst_listing['asin']} (+{worst_listing['pct']:.1f}%)"
-else:
-    worst_sub = "No per-listing pct found in dataset."
+    c5.markdown(
+        kpi_card(
+            "Total Listings",
+            total_listings,
+            "Total seller-ASIN offers scanned.",
+            subtitle=f"{unique_marketplace_sellers} unique sellers",
+        ),
+        unsafe_allow_html=True,
+    )
 
-o3.markdown(
-    kpi_card(
-        "Worst Seller Outlier",
-        worst_listing["seller_name"] if worst_listing else "-",
-        "Seller with the single highest percent overprice listing (if present).",
-        subtitle=worst_sub,
-    ),
-    unsafe_allow_html=True,
-)
+    c6.markdown(
+        kpi_card(
+            "Top Violator",
+            top_violator.get("seller_name", "-"),
+            "Seller with the highest gouged-listing count.",
+            subtitle=f"{top_violator.get('gouged_listings', 0)} listings",
+        ),
+        unsafe_allow_html=True,
+    )
 
-st.markdown("---")
+    st.markdown("---")
 
-# --------------------------------------------------------
-# KEEP the rest of your original UI (search/sort/pagination/product accordions)
-# --------------------------------------------------------
-# --------------------------------------------------------
-# Search + Sort
-# --------------------------------------------------------
-col_search, col_sort = st.columns([3, 1])
+    # --------------------------------------------------------
+    # MIDDLE: Seller / Category Analytics (Side-By-Side)
+    # --------------------------------------------------------
+    st.markdown("### Seller & Category Analytics")
 
-with col_search:
-    search_query = (
-        st.text_input(
-            "Search products by name / flavor / ASIN",
-            placeholder="Type to search...",
+    left, right = st.columns([1.2, 2])
+
+    with left:
+        st.markdown("#### Top Violators (table)")
+        top_df = (
+            pd.DataFrame(seller_summary[:15])
+            if seller_summary
+            else pd.DataFrame(
+                columns=["seller_name", "gouged_listings", "avg_overprice_pct"]
+            )
         )
-        .lower()
-        .strip()
-    )
-with col_sort:
-    sort_choice = st.selectbox(
-        "Sort By",
-        [
-            "Default",
-            "Price (Low → High)",
-            "Price (High → Low)",
-            "Marketplace Sellers (High → Low)",
-            "Marketplace Sellers (Low → High)",
-            "Gouging (High → Low)",
-            "Rating Count (High → Low)",
-            "Rating Count (Low → High)",
-            "Name (A → Z)",
-            "Name (Z → A)",
-        ],
-    )
 
+        if not top_df.empty:
+            top_df = top_df.sort_values("gouged_listings", ascending=False)
 
-st.markdown("")
+            st.dataframe(
+                top_df,
+                width="stretch",
+            )
+        else:
+            st.info("No violators detected in dataset.")
 
-# --------------------------------------------------------
-# Sidebar Filters
-# --------------------------------------------------------
-st.sidebar.header("Filters & Controls")
+    with right:
+        st.markdown("#### Category Gouging Rates")
+        cat_df = pd.DataFrame(category_rows)
 
-all_categories = sorted({p.get("category") or "Unknown" for p in flat_products})
-category_choice = st.sidebar.selectbox(
-    "Filter by Category", ["All Categories"] + all_categories
-)
+        if not cat_df.empty:
+            cat_df = cat_df.sort_values("gouging_rate", ascending=False)
+            st.dataframe(
+                cat_df[
+                    [
+                        "category",
+                        "total_listings",
+                        "gouged_listings",
+                        "gouging_rate",
+                        "avg_overprice_pct",
+                    ]
+                ],
+                width="stretch",
+            )
+        else:
+            st.info("No category data available.")
 
-mp_filter = st.sidebar.radio(
-    "Marketplace filter",
-    ("All SKUs", "Only with marketplace sellers", "Only without marketplace sellers"),
-)
+    st.markdown("---")
 
-max_seller_count = max(
-    (len(s.get("seller_market") or []) for s in flat_products), default=0
-)
-seller_min, seller_max = st.sidebar.slider(
-    "Marketplace seller count",
-    0,
-    max(20, max_seller_count),
-    (0, max(20, max_seller_count)),
-)
+    # --------------------------------------------------------
+    # BOTTOM: Outlier Risk (extremes & single-worst cases)
+    # --------------------------------------------------------
+    st.markdown("### Outlier Risk (extremes & single-worst cases)")
+    o1, o2, o3 = st.columns(3)
 
-all_price_flags = sorted(
-    {
-        s.get("price_flag")
-        for fam in data_families
-        for s in (fam.get("seller_market") or [])
-        if s.get("price_flag")
-    }
-)
-pf_choice = st.sidebar.multiselect("Price flags", all_price_flags)
-
-uniq_sellers = sorted(meta.get("unique_sellers_excluding_amazon_and_kind") or [])
-seller_filter = st.sidebar.selectbox("Filter by seller", ["All Sellers"] + uniq_sellers)
-
-rating_filter = st.sidebar.selectbox(
-    "Filter by rating",
-    ("All", "Excellent (>=90%)", "Good (75-89%)", "Mixed (50-74%)", "Poor (<50%)"),
-)
-
-
-# --------------------------------------------------------
-# Filtering Logic
-# --------------------------------------------------------
-def get_tier(pct):
-    if pct is None:
-        return None
-    try:
-        pct = float(pct)
-    except:
-        return None
-    if pct >= 90:
-        return "Excellent (>=90%)"
-    if pct >= 75:
-        return "Good (75-89%)"
-    if pct >= 50:
-        return "Mixed (50-74%)"
-    return "Poor (<50%)"
-
-
-def sku_matches(sku):
-    if category_choice != "All Categories" and sku.get("category") != category_choice:
-        return False
-
-    sku_has_mp = bool(sku.get("seller_market"))
-    if mp_filter == "Only with marketplace sellers" and not sku_has_mp:
-        return False
-    if mp_filter == "Only without marketplace sellers" and sku_has_mp:
-        return False
-
-    if not (seller_min <= len(sku.get("seller_market") or []) <= seller_max):
-        return False
-
-    if pf_choice:
-        flags = [s.get("price_flag") for s in (sku.get("seller_market") or [])]
-        if not any(f in pf_choice for f in flags if f):
-            return False
-
-    if seller_filter != "All Sellers":
-        sf = seller_filter.strip().lower()
-
-        ms = sku.get("main_seller")
-        main_name = (ms.get("seller_name") or "").strip().lower() if ms else ""
-
-        mp_names = [
-            (s.get("seller_name") or "").strip().lower()
-            for s in (sku.get("seller_market") or [])
-        ]
-
-        if sf != main_name and sf not in mp_names:
-            return False
-
-    if rating_filter != "All":
-        match = False
-        for s in sku.get("seller_market") or []:
-            if get_tier(s.get("positive_rating_percent")) == rating_filter:
-                match = True
-                break
-        ms = sku.get("main_seller")
-        if ms and get_tier(ms.get("positive_rating_percent")) == rating_filter:
-            match = True
-        if not match:
-            return False
-
-    return True
-
-
-# --------------------------------------------------------
-# Apply Filters + Search + Sorting
-# --------------------------------------------------------
-filtered = [s for s in flat_products if sku_matches(s)]
-
-if search_query:
-    filtered = [
-        s
-        for s in filtered
-        if search_query in (s.get("product_name") or "").lower()
-        or search_query in (s.get("flavor") or "").lower()
-        or search_query in (s.get("asin") or "").lower()
-    ]
-
-# Sorting choices remain same
-if sort_choice == "Price (Low → High)":
-    filtered = sorted(filtered, key=lambda x: x.get("price") or 9999)
-
-elif sort_choice == "Price (High → Low)":
-    filtered = sorted(filtered, key=lambda x: -(x.get("price") or 0))
-
-elif sort_choice == "Marketplace Sellers (High → Low)":
-    filtered = sorted(
-        filtered, key=lambda x: len(x.get("seller_market") or []), reverse=True
+    o1.markdown(
+        kpi_card(
+            "Worst Overprice (%)",
+            f"+{max_overprice_pct:.1f}%",
+            "Maximum single listing % overprice across dataset.",
+        ),
+        unsafe_allow_html=True,
     )
 
-elif sort_choice == "Marketplace Sellers (Low → High)":
-    filtered = sorted(filtered, key=lambda x: len(x.get("seller_market") or []))
-
-elif sort_choice == "Gouging (High → Low)":
-
-    def worst_pct(p):
-        vals = [
-            s.get("price_delta_percent")
-            for s in (p.get("seller_market") or [])
-            if s.get("price_delta_percent") is not None
-        ]
-        try:
-            return max([float(v) for v in vals]) if vals else -999
-        except:
-            return -999
-
-    filtered = sorted(filtered, key=worst_pct, reverse=True)
-
-elif sort_choice == "Name (A → Z)":
-    filtered = sorted(filtered, key=lambda x: x.get("product_name") or "")
-
-elif sort_choice == "Name (Z → A)":
-    filtered = sorted(filtered, key=lambda x: x.get("product_name") or "", reverse=True)
-elif sort_choice == "Rating Count (High → Low)":
-
-    def max_rating_count(p):
-        vals = [
-            s.get("rating_count")
-            for s in (p.get("seller_market") or [])
-            if s.get("rating_count") is not None
-        ]
-        try:
-            return max([int(v) for v in vals]) if vals else -1
-        except:
-            return -1
-
-    filtered = sorted(filtered, key=max_rating_count, reverse=True)
-elif sort_choice == "Rating Count (Low → High)":
-
-    def min_rating_count(p):
-        vals = [
-            s.get("rating_count")
-            for s in (p.get("seller_market") or [])
-            if s.get("rating_count") is not None
-        ]
-        try:
-            return min([int(v) for v in vals]) if vals else 9999999
-        except:
-            return 9999999
-
-    filtered = sorted(filtered, key=min_rating_count)
-
-# --------------------------------------------------------
-# GROUP PRODUCTS BY TITLE (same product, different pack sizes)
-# --------------------------------------------------------
-grouped_products = group_same_products(filtered)
-
-# --------------------------------------------------------
-# Summary Display & Pagination
-# --------------------------------------------------------
-st.markdown(f"### Showing {len(filtered)} SKUs (after filters)")
-st.markdown("")
-
-# NOTE: pagination now applies to groups
-page_size = st.selectbox("Items per page", [10, 20, 50, 100], index=0)
-total_groups = max(1, len(grouped_products))
-total_pages = max(1, (total_groups + page_size - 1) // page_size)
-
-if "page" not in st.session_state:
-    st.session_state.page = 1
-
-if st.session_state.page > total_pages:
-    st.session_state.page = total_pages
-
-start = (st.session_state.page - 1) * page_size
-end = start + page_size
-page_groups = grouped_products[start:end]
-
-st.markdown(f"**Page {st.session_state.page} of {total_pages}**")
-st.markdown("---")
-
-# --------------------------------------------------------
-# Product Accordions (rendering grouped products)
-# Each group becomes one accordion; pack-size SKUs shown inside
-# --------------------------------------------------------
-for group in page_groups:
-    items = group.get("items", [])
-    # derive combined header info from first item
-    first = items[0] if items else {}
-    mp_list_all = []
-    for it in items:
-        mp_list_all.extend(it.get("seller_market") or [])
-    mp_count = len(mp_list_all)
-    seller_badge_text, seller_badge_color = seller_count_badge(mp_count)
-
-    # compute worst flag across all items
-    flags = []
-    for it in items:
-        flags.extend(
-            [
-                s.get("price_flag")
-                for s in (it.get("seller_market") or [])
-                if s.get("price_flag")
-            ]
-        )
-    flag_priority = {
-        "Price Gouging": 4,
-        "High Price": 3,
-        "Slightly High": 2,
-        "Fair Price": 1,
-    }
-    worst_flag = (
-        sorted(flags, key=lambda f: flag_priority.get(f, 0), reverse=True)[0]
-        if flags
-        else None
+    o2.markdown(
+        kpi_card(
+            "Max Absolute Markup ($)",
+            (
+                f"${max_abs_markup:.2f}"
+                if isinstance(max_abs_markup, (int, float))
+                else max_abs_markup
+            ),
+            "Max absolute markup (dataset or fallback).",
+        ),
+        unsafe_allow_html=True,
     )
-    pf_label, pf_color = price_flag_label(worst_flag)
 
-    # header shows product_name and number of pack-size options
-    header_title = f"{group.get('group_title') or first.get('product_name')} — {len(items)} pack(s)"
-    # also show list of ASINs in small text
-    asin_list = ", ".join([it.get("asin") for it in items if it.get("asin")])
-    exp_title = f"{header_title} (ASINs: {asin_list})"
+    def find_worst_listing(flat_products):
+        worst = None
+        for p in flat_products:
+            for s in p.get("seller_market", []):
+                pct = s.get("price_delta_percent")
+                try:
+                    pctv = float(pct) if pct is not None else None
+                except:
+                    pctv = None
+                if pctv is not None:
+                    if worst is None or pctv > worst["pct"]:
+                        worst = {
+                            "pct": pctv,
+                            "seller_name": s.get("seller_name"),
+                            "asin": p.get("asin"),
+                            "product_name": p.get("product_name"),
+                            "seller_price": s.get("price"),
+                            "amazon_price": (
+                                s.get("amazon_price_listing")
+                                if s.get("amazon_price_listing")
+                                else None
+                            ),
+                        }
+        return worst
 
-    header_html = f"""
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-      <div style="font-weight:700;color:{PRIMARY};">{header_title}</div>
-      <div>
-        <span class='badge' style='background:{seller_badge_color};margin-right:6px'>{seller_badge_text}</span>
-        <span class='badge' style='background:{pf_color};'>{pf_label}</span>
-      </div>
-    </div>
-    """
+    worst_listing = find_worst_listing(flat_products)
+    if worst_listing:
+        worst_sub = f"{worst_listing['seller_name']} — ASIN {worst_listing['asin']} (+{worst_listing['pct']:.1f}%)"
+    else:
+        worst_sub = "No per-listing pct found in dataset."
 
-    with st.expander(exp_title, expanded=False):
-        st.markdown(header_html, unsafe_allow_html=True)
+    o3.markdown(
+        kpi_card(
+            "Worst Seller Outlier",
+            worst_listing["seller_name"] if worst_listing else "-",
+            "Seller with the single highest percent overprice listing (if present).",
+            subtitle=worst_sub,
+        ),
+        unsafe_allow_html=True,
+    )
 
-        # show grouped product-level summary (first item's fields used as representative)
-        st.markdown("### Product Summary")
-        pd_summary = pd.DataFrame(
-            [
+    st.markdown("---")
+
+with tab_listing:
+    # --------------------------------------------------------
+    # Search + Sort
+    # --------------------------------------------------------
+    st.markdown("### Product Listing Explorer")
+
+    # --------------------------------------------------------
+    # Filters in a compact container (3 per row)
+    # --------------------------------------------------------
+    st.markdown("#### Filters")
+
+    with st.container():
+
+        # 1st row: Category, Marketplace Filter, Seller Filter
+        c1, c2, c3 = st.columns(3)
+
+        with c1:
+            all_categories = sorted(
+                {p.get("category") or "Unknown" for p in flat_products}
+            )
+            category_choice = st.selectbox(
+                "Category", ["All Categories"] + all_categories
+            )
+
+        with c2:
+            all_price_flags = sorted(
                 {
-                    "product_name": group.get("group_title")
-                    or first.get("product_name"),
-                    "category": first.get("category"),
-                    "representative_asin": first.get("asin"),
-                    "pack_options": len(items),
-                    "amazon_url": first.get("final_url") or "-",
+                    s.get("price_flag")
+                    for fam in data_families
+                    for s in (fam.get("seller_market") or [])
+                    if s.get("price_flag")
                 }
+            )
+            pf_choice = st.multiselect("Price Flags", all_price_flags)
+
+        with c3:
+            uniq_sellers = sorted(
+                meta.get("unique_sellers_excluding_amazon_and_kind") or []
+            )
+            seller_filter = st.selectbox(
+                "Seller",
+                ["All Sellers"] + uniq_sellers,
+            )
+
+        # # 2nd row: Price Flags (+ room for more filters later)
+        # c4, c5, c6 = st.columns(3)
+
+        # with c4:
+        #     pass
+
+        # with c5:
+        #     # 4. Optional filters
+        #     # rating_filter = st.selectbox(...)
+
+        #     # rating_filter = st.selectbox(
+        #     #     "Filter by rating",
+        #     #     (
+        #     #         "All",
+        #     #         "Excellent (>=90%)",
+        #     #         "Good (75-89%)",
+        #     #         "Mixed (50-74%)",
+        #     #         "Poor (<50%)",
+        #     #     ),
+        #     # )
+        #     pass  # reserved for future filters such as rating, min price, etc.
+
+        # with c6:
+        #     pass  # reserved for seller count slider or advanced options
+
+    with st.container():
+        col_search, col_sort, col_marketplace_filter = st.columns([1, 1, 1])
+
+        with col_search:
+            search_query = (
+                st.text_input(
+                    "Search products by name / flavor / ASIN",
+                    placeholder="Type to search...",
+                )
+                .lower()
+                .strip()
+            )
+
+        with col_marketplace_filter:
+            mp_filter = st.selectbox(
+                "Marketplace filter",
+                (
+                    "All SKUs",
+                    "Only with marketplace sellers",
+                    "Only without marketplace sellers",
+                ),
+            )
+
+        with col_sort:
+            sort_choice = st.selectbox(
+                "Sort By",
+                [
+                    "Default",
+                    "Price (Low → High)",
+                    "Price (High → Low)",
+                    "Marketplace Sellers (High → Low)",
+                    "Marketplace Sellers (Low → High)",
+                    "Gouging (High → Low)",
+                    "Rating Count (High → Low)",
+                    "Rating Count (Low → High)",
+                    "Name (A → Z)",
+                    "Name (Z → A)",
+                ],
+            )
+
+    st.markdown("---")
+
+    # --------------------------------------------------------
+    # Filtering Logic
+    # --------------------------------------------------------
+    def get_tier(pct):
+        if pct is None:
+            return None
+        try:
+            pct = float(pct)
+        except:
+            return None
+        if pct >= 90:
+            return "Excellent (>=90%)"
+        if pct >= 75:
+            return "Good (75-89%)"
+        if pct >= 50:
+            return "Mixed (50-74%)"
+        return "Poor (<50%)"
+
+    def sku_matches(sku):
+        if (
+            category_choice != "All Categories"
+            and sku.get("category") != category_choice
+        ):
+            return False
+
+        sku_has_mp = bool(sku.get("seller_market"))
+        if mp_filter == "Only with marketplace sellers" and not sku_has_mp:
+            return False
+        if mp_filter == "Only without marketplace sellers" and sku_has_mp:
+            return False
+
+        # if not (seller_min <= len(sku.get("seller_market") or []) <= seller_max):
+        #     return False
+
+        if pf_choice:
+            flags = [s.get("price_flag") for s in (sku.get("seller_market") or [])]
+            if not any(f in pf_choice for f in flags if f):
+                return False
+
+        if seller_filter != "All Sellers":
+            sf = seller_filter.strip().lower()
+
+            ms = sku.get("main_seller")
+            main_name = (ms.get("seller_name") or "").strip().lower() if ms else ""
+
+            mp_names = [
+                (s.get("seller_name") or "").strip().lower()
+                for s in (sku.get("seller_market") or [])
             ]
+
+            if sf != main_name and sf not in mp_names:
+                return False
+
+        # if rating_filter != "All":
+        #     match = False
+        #     for s in sku.get("seller_market") or []:
+        #         if get_tier(s.get("positive_rating_percent")) == rating_filter:
+        #             match = True
+        #             break
+        #     ms = sku.get("main_seller")
+        #     if ms and get_tier(ms.get("positive_rating_percent")) == rating_filter:
+        #         match = True
+        #     if not match:
+        #         return False
+
+        return True
+
+    # --------------------------------------------------------
+    # Apply Filters + Search + Sorting
+    # --------------------------------------------------------
+    filtered = [s for s in flat_products if sku_matches(s)]
+
+    if search_query:
+        filtered = [
+            s
+            for s in filtered
+            if search_query in (s.get("product_name") or "").lower()
+            or search_query in (s.get("flavor") or "").lower()
+            or search_query in (s.get("asin") or "").lower()
+        ]
+
+    if sort_choice == "Price (Low → High)":
+        filtered = sorted(filtered, key=lambda x: x.get("price") or 9999)
+
+    elif sort_choice == "Price (High → Low)":
+        filtered = sorted(filtered, key=lambda x: -(x.get("price") or 0))
+
+    elif sort_choice == "Marketplace Sellers (High → Low)":
+        filtered = sorted(
+            filtered, key=lambda x: len(x.get("seller_market") or []), reverse=True
         )
-        st.dataframe(pd_summary, use_container_width=True)
 
-        # --------------------------------------------------------
-        # NEW LOGIC: Split group into matching + missing items
-        # --------------------------------------------------------
-        matching_items = []
-        missing_items = []
+    elif sort_choice == "Marketplace Sellers (Low → High)":
+        filtered = sorted(filtered, key=lambda x: len(x.get("seller_market") or []))
 
+    elif sort_choice == "Gouging (High → Low)":
+
+        def worst_pct(p):
+            vals = [
+                s.get("price_delta_percent")
+                for s in (p.get("seller_market") or [])
+                if s.get("price_delta_percent") is not None
+            ]
+            try:
+                return max([float(v) for v in vals]) if vals else -999
+            except:
+                return -999
+
+        filtered = sorted(filtered, key=worst_pct, reverse=True)
+
+    elif sort_choice == "Name (A → Z)":
+        filtered = sorted(filtered, key=lambda x: x.get("product_name") or "")
+
+    elif sort_choice == "Name (Z → A)":
+        filtered = sorted(
+            filtered, key=lambda x: x.get("product_name") or "", reverse=True
+        )
+    elif sort_choice == "Rating Count (High → Low)":
+
+        def max_rating_count(p):
+            vals = [
+                s.get("rating_count")
+                for s in (p.get("seller_market") or [])
+                if s.get("rating_count") is not None
+            ]
+            try:
+                return max([int(v) for v in vals]) if vals else -1
+            except:
+                return -1
+
+        filtered = sorted(filtered, key=max_rating_count, reverse=True)
+    elif sort_choice == "Rating Count (Low → High)":
+
+        def min_rating_count(p):
+            vals = [
+                s.get("rating_count")
+                for s in (p.get("seller_market") or [])
+                if s.get("rating_count") is not None
+            ]
+            try:
+                return min([int(v) for v in vals]) if vals else 9999999
+            except:
+                return 9999999
+
+        filtered = sorted(filtered, key=min_rating_count)
+
+    # --------------------------------------------------------
+    # GROUP PRODUCTS BY TITLE (same product, different pack sizes)
+    # --------------------------------------------------------
+    grouped_products = group_same_products(filtered)
+
+    # --------------------------------------------------------
+    # Summary Display & Pagination
+    # --------------------------------------------------------
+    st.markdown(f"### Showing {len(filtered)} SKUs (after filters)")
+    st.markdown("")
+
+    page_size = st.selectbox("Items per page", [10, 20, 50, 100], index=0)
+    total_groups = max(1, len(grouped_products))
+    total_pages = max(1, (total_groups + page_size - 1) // page_size)
+
+    if "page" not in st.session_state:
+        st.session_state.page = 1
+
+    if st.session_state.page > total_pages:
+        st.session_state.page = total_pages
+
+    start = (st.session_state.page - 1) * page_size
+    end = start + page_size
+    page_groups = grouped_products[start:end]
+
+    st.markdown(f"**Page {st.session_state.page} of {total_pages}**")
+    st.markdown("---")
+
+    for group in page_groups:
+        items = group.get("items", [])
+        first = items[0] if items else {}
+        mp_list_all = []
         for it in items:
-            if sku_matches(it):
-                matching_items.append(it)
-            else:
-                missing_items.append(it)
+            mp_list_all.extend(it.get("seller_market") or [])
+        mp_count = len(mp_list_all)
+        seller_badge_text, seller_badge_color = seller_count_badge(mp_count)
 
-        # --------------------------------------------------------
-        # Show ONLY matching SKUs (normal behavior)
-        # --------------------------------------------------------
-        for p in matching_items:
-            st.markdown(f"#### Pack Option — ASIN: {p.get('asin')}")
-            pd_details = pd.DataFrame(
+        flags = []
+        for it in items:
+            flags.extend(
+                [
+                    s.get("price_flag")
+                    for s in (it.get("seller_market") or [])
+                    if s.get("price_flag")
+                ]
+            )
+        flag_priority = {
+            "Price Gouging": 4,
+            "High Price": 3,
+            "Slightly High": 2,
+            "Fair Price": 1,
+        }
+        worst_flag = (
+            sorted(flags, key=lambda f: flag_priority.get(f, 0), reverse=True)[0]
+            if flags
+            else None
+        )
+        pf_label, pf_color = price_flag_label(worst_flag)
+
+        header_title = f"{group.get('group_title') or first.get('product_name')} — {len(items)} pack(s)"
+        asin_list = ", ".join([it.get("asin") for it in items if it.get("asin")])
+        exp_title = f"{header_title} (ASINs: {asin_list})"
+
+        header_html = f"""
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <div style="font-weight:700;color:{PRIMARY};">{header_title}</div>
+          <div>
+            <span class='badge' style='background:{seller_badge_color};margin-right:6px'>{seller_badge_text}</span>
+            <span class='badge' style='background:{pf_color};'>{pf_label}</span>
+          </div>
+        </div>
+        """
+
+        with st.expander(exp_title, expanded=False):
+            st.markdown(header_html, unsafe_allow_html=True)
+
+            st.markdown("### Product Summary")
+            pd_summary = pd.DataFrame(
                 [
                     {
-                        "asin": p.get("asin"),
-                        "title": p.get("title"),
-                        "price": format_price(p.get("price")),
-                        "unit_price": format_price(p.get("unit_price")),
-                        "prime": "Yes" if p.get("prime") else "No",
-                        "flavor": p.get("flavor"),
-                        "amazon_url": p.get("final_url") or "-",
+                        "product_name": group.get("group_title")
+                        or first.get("product_name"),
+                        "category": first.get("category"),
+                        "representative_asin": first.get("asin"),
+                        "pack_options": len(items),
+                        "amazon_url": first.get("final_url") or "-",
                     }
                 ]
             )
-            st.dataframe(pd_details, use_container_width=True)
+            st.dataframe(pd_summary, width="stretch")
+            matching_items = []
+            missing_items = []
 
-            # ---------- Main Seller ----------
-            if p.get("main_seller"):
-                st.markdown("**Main Seller**")
-                ms = p.get("main_seller")
-                st.dataframe(
-                    pd.DataFrame(
-                        [
-                            {
-                                "seller_name": ms.get("seller_name"),
-                                "ships_from": ms.get("ships_from"),
-                                "authorized": (
-                                    "Yes" if ms.get("is_authorized") else "No"
-                                ),
-                                "price": format_price(ms.get("price")),
-                                "unit_price": format_price(ms.get("unit_price")),
-                                "prime": "Yes" if ms.get("prime") else "No",
-                            }
-                        ]
-                    ),
-                    use_container_width=True,
+            for it in items:
+                if sku_matches(it):
+                    matching_items.append(it)
+                else:
+                    missing_items.append(it)
+
+            for p in matching_items:
+                st.markdown(f"#### Pack Option — ASIN: {p.get('asin')}")
+                pd_details = pd.DataFrame(
+                    [
+                        {
+                            "asin": p.get("asin"),
+                            "title": p.get("title"),
+                            "price": format_price(p.get("price")),
+                            "unit_price": format_price(p.get("unit_price")),
+                            "prime": "Yes" if p.get("prime") else "No",
+                            "flavor": p.get("flavor"),
+                            "amazon_url": p.get("final_url") or "-",
+                        }
+                    ]
                 )
-            else:
-                st.info("No main seller found for this pack option.")
+                st.dataframe(pd_details, width="stretch")
 
-            # ---------- Marketplace Sellers ----------
-            mp_list = p.get("seller_market") or []
-            if mp_list:
-                st.markdown("**Marketplace Sellers**")
-                sellers_table = [
-                    {
-                        "seller_name": s.get("seller_name"),
-                        "ships_from": s.get("ships_from"),
-                        "authorized": "Yes" if s.get("is_authorized") else "No",
-                        "price": format_price(s.get("price")),
-                        "unit_price": format_price(s.get("unit_price")),
-                        "price_delta": (
-                            f"${float(s['price_delta_abs']):.2f}"
-                            if s.get("price_delta_abs") is not None
-                            else "-"
+                if p.get("main_seller"):
+                    st.markdown("**Main Seller**")
+                    ms = p.get("main_seller")
+                    st.dataframe(
+                        pd.DataFrame(
+                            [
+                                {
+                                    "seller_name": ms.get("seller_name"),
+                                    "ships_from": ms.get("ships_from"),
+                                    "authorized": (
+                                        "Yes" if ms.get("is_authorized") else "No"
+                                    ),
+                                    "price": format_price(ms.get("price")),
+                                    "unit_price": format_price(ms.get("unit_price")),
+                                    "prime": "Yes" if ms.get("prime") else "No",
+                                }
+                            ]
                         ),
-                        "price_flag": s.get("price_flag"),
-                        "rating_stars": s.get("rating_stars") or "-",
-                        "rating_count": s.get("rating_count") or "-",
-                        "positive_rating_percent": s.get("positive_rating_percent")
-                        or "-",
-                    }
-                    for s in mp_list
-                ]
-                st.dataframe(pd.DataFrame(sellers_table), use_container_width=True)
-
-                st.markdown("**Seller ratings (visual)**")
-                for s in mp_list:
-                    stars_html = rating_to_stars(s.get("rating_stars"))
-                    st.markdown(
-                        f"<div><b>{s.get('seller_name')}</b> — {stars_html} "
-                        f"<span class='small-muted'>({s.get('rating_count') or '-'} ratings, "
-                        f"{s.get('positive_rating_percent') or '-'}% positive)</span></div>",
-                        unsafe_allow_html=True,
+                        width="stretch",
                     )
-            else:
-                st.info("No marketplace sellers found for this pack option.")
+                else:
+                    st.info("No main seller found for this pack option.")
 
-            st.markdown("---")
+                mp_list = p.get("seller_market") or []
+                if mp_list:
+                    st.markdown("**Marketplace Sellers**")
+                    sellers_table = [
+                        {
+                            "seller_name": s.get("seller_name"),
+                            "ships_from": s.get("ships_from"),
+                            "authorized": "Yes" if s.get("is_authorized") else "No",
+                            "price": format_price(s.get("price")),
+                            "unit_price": format_price(s.get("unit_price")),
+                            "price_delta": (
+                                f"${float(s['price_delta_abs']):.2f}"
+                                if s.get("price_delta_abs") is not None
+                                else "-"
+                            ),
+                            "price_flag": s.get("price_flag"),
+                            "rating_stars": s.get("rating_stars") or "-",
+                            "rating_count": s.get("rating_count") or "-",
+                            "positive_rating_percent": s.get("positive_rating_percent")
+                            or "-",
+                        }
+                        for s in mp_list
+                    ]
+                    st.dataframe(pd.DataFrame(sellers_table), width="stretch")
+                    st.markdown("**Seller ratings (visual)**")
+                    for s in mp_list:
+                        stars_html = rating_to_stars(s.get("rating_stars"))
+                        st.markdown(
+                            f"<div><b>{s.get('seller_name')}</b> — {stars_html} "
+                            f"<span class='small-muted'>({s.get('rating_count') or '-'} ratings, "
+                            f"{s.get('positive_rating_percent') or '-'}% positive)</span></div>",
+                            unsafe_allow_html=True,
+                        )
+                else:
+                    st.info("No marketplace sellers found for this pack option.")
 
-        # --------------------------------------------------------
-        # SHOW MISSING VARIANTS (Option A1)
-        # --------------------------------------------------------
-        if missing_items:
-            missing_asins = ", ".join(
-                [m.get("asin") for m in missing_items if m.get("asin")]
-            )
+                st.markdown("---")
 
-            if mp_filter == "Only with marketplace sellers":
-                st.markdown(
-                    f"🔸 This product has **{len(missing_items)} variants WITHOUT marketplace sellers**: {missing_asins}"
+            if missing_items:
+                missing_asins = ", ".join(
+                    [m.get("asin") for m in missing_items if m.get("asin")]
                 )
 
-            elif mp_filter == "Only without marketplace sellers":
-                st.markdown(
-                    f"🔸 This product has **{len(missing_items)} variants SOLD BY marketplace sellers**: {missing_asins}"
-                )
+                if mp_filter == "Only with marketplace sellers":
+                    st.markdown(
+                        f"🔸 This product has **{len(missing_items)} variants WITHOUT marketplace sellers**: {missing_asins}"
+                    )
 
-# --------------------------------------------------------
-# Bottom pagination buttons (works with group pagination)
-# --------------------------------------------------------
-st.markdown("---")
-col_prev, col_mid, col_next = st.columns([1, 8, 1])
+                elif mp_filter == "Only without marketplace sellers":
+                    st.markdown(
+                        f"🔸 This product has **{len(missing_items)} variants SOLD BY marketplace sellers**: {missing_asins}"
+                    )
 
-with col_prev:
-    if st.button("⬅️ Previous") and st.session_state.page > 1:
-        st.session_state.page -= 1
+    st.markdown("---")
+    col_prev, col_mid, col_next = st.columns([1, 8, 1])
 
-with col_next:
-    if st.button("Next ➡️") and st.session_state.page < total_pages:
-        st.session_state.page += 1
+    with col_prev:
+        if st.button("Previous", icon="⬅") and st.session_state.page > 1:
+            st.session_state.page -= 1
+
+    with col_next:
+        if st.button("Next", icon="➡") and st.session_state.page < total_pages:
+            st.session_state.page += 1
