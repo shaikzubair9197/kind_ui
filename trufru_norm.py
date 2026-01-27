@@ -2,16 +2,12 @@ import json
 import re
 from urllib.parse import urlparse
 
-
-INPUT_FILE = "trufru_norm.json"
-OUTPUT_FILE = "trufru_norm_out.json"
-
-
+INPUT_FILE = "unique_trufru.json"        # Tru Fru merged scrape
+OUTPUT_FILE = "normalized_trufru.json"
 
 # =========================
-# HELPERS
+# HELPERS (REUSED)
 # =========================
-
 
 def parse_money(m):
     if not m:
@@ -19,7 +15,6 @@ def parse_money(m):
     m = m.replace(",", "")
     m = re.search(r"\$([0-9]+(?:\.[0-9]+)?)", m)
     return float(m.group(1)) if m else None
-
 
 
 def parse_unit_price(text):
@@ -30,7 +25,6 @@ def parse_unit_price(text):
     return float(m.group(1)) if m else parse_money(text)
 
 
-
 def parse_rating_stars(t):
     if not t:
         return None
@@ -38,102 +32,79 @@ def parse_rating_stars(t):
     return float(m.group(1)) if m else None
 
 
-
 def parse_rating_meta(t):
     if not t:
         return None, None
-    # count
     c = re.search(r"\(([\d,]+)\s+ratings?\)", t)
     count = int(c.group(1).replace(",", "")) if c else None
-    # positive %
     p = re.search(r"(\d+)%\s+positive", t)
     positive = float(p.group(1)) if p else None
     return count, positive
 
 
-
-def extract_slug(url):
-    if not url:
-        return None
-    part = urlparse(url).path.rstrip("/").split("/")[-1]
-    return part.replace("-", " ").title()
-
-
-
-def extract_product_family(url):
-    try:
-        parts = urlparse(url).path.split("/")
-        idx = parts.index("products") + 1
-        return parts[idx].replace("-", " ").title()
-    except:
-        return None
-
-
-
 def classify_price_flag(pct):
-    """
-    Returns a business-friendly price classification based on
-    how much higher the seller's price is compared to Amazon.
-    Uses UNIT PRICE percentage for consistency.
-    """
     if pct is None:
         return None
-
-    # 0% or cheaper → fair
     if pct <= 0:
         return "Fair Price"
-
-    # Up to +20% → slightly high
     if pct <= 20:
         return "Slightly High"
-
-    # +20% to +50% → high price
     if pct <= 50:
         return "High Price"
-
-    # Above +50% → price gouging
     return "Price Gouging"
 
+
+# =========================
+# TRU FRU–SPECIFIC CONFIG
+# =========================
+
+AUTHORIZED_TRUFRU_SELLERS = {
+    "Amazon.com",
+    "AmazonFresh",
+    "Whole Foods Market"
+}
 
 
 # =========================
 # NORMALIZER
 # =========================
 
-
-def normalize():
+def normalize_trufru():
     with open(INPUT_FILE, "r") as f:
         items = json.load(f)
 
     groups = {}
 
     for p in items:
+        family_id = p.get("variant_family_id")
         asin = p.get("asin")
-        src = p.get("source_product_url")
-        if not asin or not src:
+
+        if not family_id or not asin:
             continue
 
-        # Group Key
-        if src not in groups:
-            groups[src] = {
-                "category": p.get("category"),
-                "category_display": p.get("category_display"),
-                "source_product_url": src,
-                "product_name": extract_product_family(src) or extract_slug(src),
+        # -------------------------------
+        # GROUPING (Tru Fru canonical)
+        # -------------------------------
+        if family_id not in groups:
+            groups[family_id] = {
+                "product_family_id": family_id,
+                "product_name": p.get("variant_group_name") or p.get("title"),
                 "variants": [],
+                "main_seller": [],
+                "seller_market": [],
             }
 
-        # ---------------------------------------
-        # VARIANT PROCESSING
-        # ---------------------------------------
-        variant_name = (
-            p.get("flavor")
-            or (p.get("variant_dimensions") or {}).get("flavor_name")
-            or extract_slug(src)
-        )
-
+        # -------------------------------
+        # VARIANT
+        # -------------------------------
         base_price = parse_money(p.get("price"))
         unit_price = parse_unit_price(p.get("price_per_unit"))
+
+        variant_name = (
+            p.get("title")
+            or (p.get("variant_dimensions") or {}).get("flavor_name")
+            or asin
+        )
 
         variant_obj = {
             "asin": asin,
@@ -142,50 +113,39 @@ def normalize():
             "price": base_price,
             "unit_price": unit_price,
             "prime": p.get("prime"),
-            "flavor": variant_name,
-            "size": p.get("size"),
             "variant_dimensions": p.get("variant_dimensions") or {},
             "final_url": p.get("final_url"),
-            "original_amazon_link": p.get("original_amazon_link"),
         }
 
-        groups[src]["variants"].append(variant_obj)
+        groups[family_id]["variants"].append(variant_obj)
 
-        # ---------------------------------------
-        # MAIN SELLER (per variant)
-        # ---------------------------------------
+        # -------------------------------
+        # MAIN SELLER (Amazon baseline)
+        # -------------------------------
+        seller_name = p.get("sold_by")
+
         main_seller = {
             "asin": asin,
-            "seller_name": p.get("sold_by"),
+            "seller_name": seller_name,
             "ships_from": p.get("ships_from"),
-            "is_authorized": True if p.get("sold_by") == "Amazon.com" else False,
+            "is_authorized": seller_name in AUTHORIZED_TRUFRU_SELLERS,
             "price": base_price,
             "unit_price": unit_price,
             "price_currency": "USD",
             "prime": p.get("prime"),
         }
 
-        # Store as list (one per variant)
-        if "main_seller" not in groups[src]:
-            groups[src]["main_seller"] = []
+        groups[family_id]["main_seller"].append(main_seller)
 
-        groups[src]["main_seller"].append(main_seller)
-
-        # ---------------------------------------
-        # OTHER SELLERS (✅ FIXED: UNIT PRICE NORMALIZATION)
-        # ---------------------------------------
-        if "seller_market" not in groups[src]:
-            groups[src]["seller_market"] = []
-
+        # -------------------------------
+        # OTHER SELLERS (Marketplace)
+        # -------------------------------
         for osel in p.get("other_sellers", []):
-            osp = parse_money(osel.get("price"))
+            seller_price = parse_money(osel.get("price"))
             seller_unit = parse_unit_price(osel.get("price_per_unit"))
-            amazon_unit = unit_price
-            
-            stars = parse_rating_stars(osel.get("seller_rating"))
-            rcount, pos = parse_rating_meta(osel.get("seller_rating_count"))
 
-            # ✅ CORRECT: Calculate deltas using UNIT PRICE
+            amazon_unit = unit_price
+
             if seller_unit is not None and amazon_unit is not None:
                 delta = seller_unit - amazon_unit
                 pct = (delta / amazon_unit) * 100
@@ -193,28 +153,29 @@ def normalize():
                 delta = None
                 pct = None
 
-            groups[src]["seller_market"].append({
+            stars = parse_rating_stars(osel.get("seller_rating"))
+            rcount, pos = parse_rating_meta(osel.get("seller_rating_count"))
+
+            groups[family_id]["seller_market"].append({
                 "asin": asin,
                 "seller_name": osel.get("sold_by"),
                 "ships_from": osel.get("ships_from"),
-                "is_authorized": False,
-                
+                "is_authorized": osel.get("sold_by") in AUTHORIZED_TRUFRU_SELLERS,
+
                 # Prices
-                "price": osp,
+                "price": seller_price,
                 "unit_price": seller_unit,
                 "price_currency": "USD",
-                
-                # ✅ CANONICAL: Unit price deltas (used everywhere)
+
+                # Canonical deltas (UNIT PRICE)
                 "price_delta_abs": delta,
                 "price_delta_percent": pct,
-                
-                # Price classification based on unit price
                 "price_flag": classify_price_flag(pct),
-                
-                # Amazon reference for comparison
+
+                # Amazon reference
                 "amazon_price_listing": base_price,
                 "amazon_unit_price": amazon_unit,
-                
+
                 # Ratings
                 "rating_stars": stars,
                 "rating_count": rcount,
@@ -227,18 +188,15 @@ def normalize():
                 )
             })
 
-    # convert dict → list
     result = list(groups.values())
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(result, f, indent=2)
 
-    print("✔ FINAL Normalization Complete (UNIT PRICE NORMALIZED)")
+    print("✔ Tru Fru normalization complete")
     print("✔ Output:", OUTPUT_FILE)
-    print("✔ Product Families:", len(result))
-    print("✔ All price deltas now use unit price for consistency")
-
+    print("✔ Product families:", len(result))
 
 
 if __name__ == "__main__":
-    normalize()
+    normalize_trufru()

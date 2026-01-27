@@ -1,0 +1,1857 @@
+[
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_strawberries_hyper_chilled_in_white_milk_chocolate_8_ounce_bag",
+    "product_name": "Tru Fru Nature's Strawberries Hyper-Chilled in White & Milk Chocolate, 8 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B08L967D1M",
+        "variant_name": "Tru Fru Nature's Strawberries Hyper-Chilled in White & Milk Chocolate, 8 Ounce Bag",
+        "title": "Tru Fru Nature's Strawberries Hyper-Chilled in White & Milk Chocolate, 8 Ounce Bag",
+        "price": 6.48,
+        "unit_price": 0.81,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Natures-Strawberries-Frozen-Fresh-Chocolate/dp/B08L967D1M/ref=sr_1_1_us_f3_0o_fs?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B08L967D1M",
+        "seller_name": "AmazonFresh",
+        "ships_from": "AmazonFresh",
+        "is_authorized": true,
+        "price": 6.48,
+        "unit_price": 0.81,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B08L967D1M",
+        "seller_name": "Whole Foods Market",
+        "ships_from": "Whole Foods Market",
+        "is_authorized": true,
+        "price": 7.99,
+        "unit_price": 1.0,
+        "price_currency": "USD",
+        "price_delta_abs": 0.18999999999999995,
+        "price_delta_percent": 23.456790123456784,
+        "price_flag": "High Price",
+        "amazon_price_listing": 6.48,
+        "amazon_unit_price": 0.81,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "product_family_id": "trufru_tru_fru_bananas_frozen_peanut_butter_dark_chocolate_8_ounce",
+    "product_name": "Tru Fru, Bananas Frozen Peanut Butter Dark Chocolate, 8 Ounce",
+    "variants": [
+      {
+        "asin": "B08X99TN76",
+        "variant_name": "Tru Fru, Bananas Frozen Peanut Butter Dark Chocolate, 8 Ounce",
+        "title": "Tru Fru, Bananas Frozen Peanut Butter Dark Chocolate, 8 Ounce",
+        "price": 7.27,
+        "unit_price": 0.91,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Bananas-Chocolate/dp/B08X99TN76/ref=sr_1_2_us_f3_0o_fs?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-2"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B08X99TN76",
+        "seller_name": "AmazonFresh",
+        "ships_from": "AmazonFresh",
+        "is_authorized": true,
+        "price": 7.27,
+        "unit_price": 0.91,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_blueberries_hyper_chilled_in_white_dark_chocolate_8_ounce_bag",
+    "product_name": "Tru Fru Nature's Blueberries Hyper-Chilled in White & Dark Chocolate, 8 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B08939WHH8",
+        "variant_name": "Tru Fru Nature's Blueberries Hyper-Chilled in White & Dark Chocolate, 8 Ounce Bag",
+        "title": "Tru Fru Nature's Blueberries Hyper-Chilled in White & Dark Chocolate, 8 Ounce Bag",
+        "price": 7.79,
+        "unit_price": 0.97,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Blueberries in white and dark chocolate"
+        },
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Blueberries-Chocolate/dp/B08939WHH8/ref=sr_1_3_us_f3_0o_fs?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-3&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B08939WHH8",
+        "seller_name": "AmazonFresh",
+        "ships_from": "AmazonFresh",
+        "is_authorized": true,
+        "price": 7.79,
+        "unit_price": 0.97,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_raspberries_hyper_chilled_in_white_dark_chocolate_5_ounce_cup",
+    "product_name": "Tru Fru Nature's Raspberries Hyper-Chilled in White & Dark Chocolate, 5 Ounce Cup",
+    "variants": [
+      {
+        "asin": "B0896WN3ZY",
+        "variant_name": "Tru Fru Nature's Raspberries Hyper-Chilled in White & Dark Chocolate, 5 Ounce Cup",
+        "title": "Tru Fru Nature's Raspberries Hyper-Chilled in White & Dark Chocolate, 5 Ounce Cup",
+        "price": 7.9,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Raspberries in white and dark chocolate"
+        },
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Blueberries-Chocolate/dp/B0896WN3ZY/ref=sr_1_3_us_f3_0o_fs?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-3&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0896WN3ZY",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 7.9,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_raspberries_hyper_dried_fresh_in_dark_chocolate_4_2_ounce_bag",
+    "product_name": "Tru Fru Nature's Raspberries Hyper-Dried Fresh in Dark Chocolate, 4.2 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B084WTJ72M",
+        "variant_name": "Tru Fru Nature's Raspberries Hyper-Dried Fresh in Dark Chocolate, 4.2 Ounce Bag",
+        "title": "Tru Fru Nature's Raspberries Hyper-Dried Fresh in Dark Chocolate, 4.2 Ounce Bag",
+        "price": 11.69,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Raspberry Dark Chocolate"
+        },
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Blueberries-Chocolate/dp/B084WTJ72M/ref=sr_1_3_us_f3_0o_fs?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-3&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B084WTJ72M",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 11.69,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_real_coconut_melts_hyper_dried_fresh_in_milk_chocolate_premium_gourmet_freeze_dried_fruit_snack_4_2_oz",
+    "product_name": "Tru Fru Real Coconut Melts Hyper-Dried Fresh in Milk Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+    "variants": [
+      {
+        "asin": "B08X9H95N3",
+        "variant_name": "Tru Fru Real Coconut Melts Hyper-Dried Fresh in Milk Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+        "title": "Tru Fru Real Coconut Melts Hyper-Dried Fresh in Milk Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+        "price": 9.99,
+        "unit_price": 2.38,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Real Coconut Milk Chocolate"
+        },
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Blueberries-Chocolate/dp/B08X9H95N3/ref=sr_1_3_us_f3_0o_fs?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-3&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B08X9H95N3",
+        "seller_name": "A Better Pair",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 9.99,
+        "unit_price": 2.38,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B08X9H95N3",
+        "seller_name": "MaKin",
+        "ships_from": "MaKin",
+        "is_authorized": false,
+        "price": 10.4,
+        "unit_price": 2.48,
+        "price_currency": "USD",
+        "price_delta_abs": 0.10000000000000009,
+        "price_delta_percent": 4.201680672268911,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 9.99,
+        "amazon_unit_price": 2.38,
+        "rating_stars": 2.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B08X9H95N3",
+        "seller_name": "AllForYou Merchandise",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 14.99,
+        "unit_price": 3.57,
+        "price_currency": "USD",
+        "price_delta_abs": 1.19,
+        "price_delta_percent": 50.0,
+        "price_flag": "High Price",
+        "amazon_price_listing": 9.99,
+        "amazon_unit_price": 2.38,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_raspberries_frozen_fresh_in_white_dark_chocolate_8_ounce_bag",
+    "product_name": "Tru Fru Nature's Raspberries Frozen Fresh In White & Dark Chocolate, 8 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B0893DGC28",
+        "variant_name": "Tru Fru Nature's Raspberries Frozen Fresh In White & Dark Chocolate, 8 Ounce Bag",
+        "title": "Tru Fru Nature's Raspberries Frozen Fresh In White & Dark Chocolate, 8 Ounce Bag",
+        "price": 7.99,
+        "unit_price": 1.0,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Raspberries-Chocolate/dp/B0893DGC28/ref=sr_1_4_us_f3_0o_wf?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-4"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0893DGC28",
+        "seller_name": "Whole Foods Market",
+        "ships_from": "Whole Foods Market",
+        "is_authorized": true,
+        "price": 7.99,
+        "unit_price": 1.0,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_frozen_fresh_strawberries_in_dark_white_chocolate_8_ounce_bag",
+    "product_name": "Tru Fru Frozen Fresh Strawberries in Dark & White Chocolate, 8 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B0DKQ424CL",
+        "variant_name": "Tru Fru Frozen Fresh Strawberries in Dark & White Chocolate, 8 Ounce Bag",
+        "title": "Tru Fru Frozen Fresh Strawberries in Dark & White Chocolate, 8 Ounce Bag",
+        "price": 1.0,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-White-Chocolate-Strawberries/dp/B0DKQ424CL/ref=sr_1_5_us_f3_0o_wf?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-5"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0DKQ424CL",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 1.0,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_cherries_frozen_fresh_in_white_dark_chocolate_8_ounce_bag",
+    "product_name": "Tru Fru Nature's Cherries Frozen Fresh In White & Dark Chocolate, 8 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B08939KTFZ",
+        "variant_name": "Tru Fru Nature's Cherries Frozen Fresh In White & Dark Chocolate, 8 Ounce Bag",
+        "title": "Tru Fru Nature's Cherries Frozen Fresh In White & Dark Chocolate, 8 Ounce Bag",
+        "price": 1.0,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Cherries-Chocolate/dp/B08939KTFZ/ref=sr_1_6_us_f3_0o_wf?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-6"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B08939KTFZ",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 1.0,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_real_coconut_melts_hyper_dried_fresh_in_white_dark_chocolate_premium_gourmet_freeze_dried_fruit_snack_4_2_oz",
+    "product_name": "Tru Fru Real Coconut Melts Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+    "variants": [
+      {
+        "asin": "B084X4PDFQ",
+        "variant_name": "Tru Fru Real Coconut Melts Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+        "title": "Tru Fru Real Coconut Melts Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+        "price": 7.9,
+        "unit_price": 1.88,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Chocolate-Immersed-Coconut/dp/B084X4PDFQ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-7"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "Habtam Express LLC",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 7.9,
+        "unit_price": 1.88,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "akma_",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 7.89,
+        "unit_price": 1.88,
+        "price_currency": "USD",
+        "price_delta_abs": 0.0,
+        "price_delta_percent": 0.0,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 2.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "JKBJESS LLC",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 7.9,
+        "unit_price": 1.88,
+        "price_currency": "USD",
+        "price_delta_abs": 0.0,
+        "price_delta_percent": 0.0,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "A Better Pair",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 8.49,
+        "unit_price": 2.02,
+        "price_currency": "USD",
+        "price_delta_abs": 0.14000000000000012,
+        "price_delta_percent": 7.446808510638305,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "ExclusiveDealsUS",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 8.75,
+        "unit_price": 2.08,
+        "price_currency": "USD",
+        "price_delta_abs": 0.20000000000000018,
+        "price_delta_percent": 10.638297872340436,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "Kenovah Shop",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 9.09,
+        "unit_price": 2.16,
+        "price_currency": "USD",
+        "price_delta_abs": 0.28000000000000025,
+        "price_delta_percent": 14.89361702127661,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "Winning Brands",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 9.19,
+        "unit_price": 2.19,
+        "price_currency": "USD",
+        "price_delta_abs": 0.31000000000000005,
+        "price_delta_percent": 16.489361702127663,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "95 Arcades",
+        "ships_from": "95 Arcades",
+        "is_authorized": false,
+        "price": 9.25,
+        "unit_price": 2.2,
+        "price_currency": "USD",
+        "price_delta_abs": 0.3200000000000003,
+        "price_delta_percent": 17.0212765957447,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "OTCRx4u",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 9.27,
+        "unit_price": 2.21,
+        "price_currency": "USD",
+        "price_delta_abs": 0.33000000000000007,
+        "price_delta_percent": 17.55319148936171,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "Empowered Aloha",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 9.99,
+        "unit_price": 2.38,
+        "price_currency": "USD",
+        "price_delta_abs": 0.5,
+        "price_delta_percent": 26.595744680851062,
+        "price_flag": "High Price",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B084X4PDFQ",
+        "seller_name": "MoBi Deals",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 9.99,
+        "unit_price": 2.38,
+        "price_currency": "USD",
+        "price_delta_abs": 0.5,
+        "price_delta_percent": 26.595744680851062,
+        "price_flag": "High Price",
+        "amazon_price_listing": 7.9,
+        "amazon_unit_price": 1.88,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "product_family_id": "trufru_tru_fru_bananas_hyper_chilled_in_peanut_butter_milk_chocolate_8oz",
+    "product_name": "Tru Fru Bananas Hyper-Chilled in Peanut Butter & Milk Chocolate, 8oz",
+    "variants": [
+      {
+        "asin": "B0D98XW5N7",
+        "variant_name": "Tru Fru Bananas Hyper-Chilled in Peanut Butter & Milk Chocolate, 8oz",
+        "title": "Tru Fru Bananas Hyper-Chilled in Peanut Butter & Milk Chocolate, 8oz",
+        "price": 7.99,
+        "unit_price": 1.0,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Bananas-Hyper-Chilled-Chocolate/dp/B0D98XW5N7/ref=sr_1_8_us_f3_0o_wf?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-8"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0D98XW5N7",
+        "seller_name": "Whole Foods Market",
+        "ships_from": "Whole Foods Market",
+        "is_authorized": true,
+        "price": 7.99,
+        "unit_price": 1.0,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_raspberries_hyper_chilled_in_white_milk_chocolate_8_ounce_bag",
+    "product_name": "Tru Fru Nature's Raspberries Hyper-Chilled in White & Milk Chocolate, 8 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B0893CRGTJ",
+        "variant_name": "Tru Fru Nature's Raspberries Hyper-Chilled in White & Milk Chocolate, 8 Ounce Bag",
+        "title": "Tru Fru Nature's Raspberries Hyper-Chilled in White & Milk Chocolate, 8 Ounce Bag",
+        "price": 1.0,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Raspberries-Chocolate/dp/B0893CRGTJ/ref=sr_1_9_us_f3_0o_wf?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-9"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0893CRGTJ",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 1.0,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_bananas_in_dark_chocolate_chocolate_covered_fruit_freeze_dried_fruit_and_gluten_free_candy_non_gmo_kosher_sweet_treat_perfect_for_travel_on_the_go_3_4oz_6_pack",
+    "product_name": "Tru Fru Freeze Dried Bananas in Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+    "variants": [
+      {
+        "asin": "B0FDBJNGJG",
+        "variant_name": "Tru Fru Freeze Dried Bananas in Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "title": "Tru Fru Freeze Dried Bananas in Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "price": 34.99,
+        "unit_price": 1.72,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Bananas in Dark Chocolate"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0FDBJNGJG/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FDBJNGJG",
+        "seller_name": "WishingUWell",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 34.99,
+        "unit_price": 1.72,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_fruit_variety_pack_strawberries_cr_me_raspberries_strawberries_in_dark_white_chocolate_real_fruit_chocolate_covered_snacks_gluten_free_candy_3_pack_3_4oz",
+    "product_name": "Tru Fru Freeze Dried Fruit Variety Pack, Strawberries & Cr\u00e8me, Raspberries & Strawberries in Dark & White Chocolate, Real Fruit, Chocolate Covered Snacks, Gluten Free Candy, 3 Pack (3.4oz)",
+    "variants": [
+      {
+        "asin": "B0FMLDP9LM",
+        "variant_name": "Tru Fru Freeze Dried Fruit Variety Pack, Strawberries & Cr\u00e8me, Raspberries & Strawberries in Dark & White Chocolate, Real Fruit, Chocolate Covered Snacks, Gluten Free Candy, 3 Pack (3.4oz)",
+        "title": "Tru Fru Freeze Dried Fruit Variety Pack, Strawberries & Cr\u00e8me, Raspberries & Strawberries in Dark & White Chocolate, Real Fruit, Chocolate Covered Snacks, Gluten Free Candy, 3 Pack (3.4oz)",
+        "price": 19.99,
+        "unit_price": 1.96,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Best Sellers Variety"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0FMLDP9LM/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FMLDP9LM",
+        "seller_name": "WishingUWell",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 19.99,
+        "unit_price": 1.96,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_variety_pack_of_creme_srawberry_creme_blueberry_creme_raspberry_creme",
+    "product_name": "Variety Pack of Creme (Srawberry & Creme, Blueberry & Creme, Raspberry & Creme)",
+    "variants": [
+      {
+        "asin": "B0FMLCWHWS",
+        "variant_name": "Variety Pack of Creme (Srawberry & Creme, Blueberry & Creme, Raspberry & Creme)",
+        "title": "Variety Pack of Creme (Srawberry & Creme, Blueberry & Creme, Raspberry & Creme)",
+        "price": 34.99,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Creme Variety"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0FMLCWHWS/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FMLCWHWS",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 34.99,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_variety_pack_full_line_all_flavors_one_of_each_6_pack",
+    "product_name": "Variety Pack Full Line (all flavors, one of each) 6 pack",
+    "variants": [
+      {
+        "asin": "B0FML6GPQ7",
+        "variant_name": "Variety Pack Full Line (all flavors, one of each) 6 pack",
+        "title": "Variety Pack Full Line (all flavors, one of each) 6 pack",
+        "price": 7.9,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Full Assortment Variety"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0FML6GPQ7/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FML6GPQ7",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 7.9,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_raspberries_creme_chocolate_covered_fruit_freeze_dried_fruit_and_gluten_free_candy_non_gmo_kosher_sweet_treat_perfect_for_travel_on_the_go_3_4oz_6_pack",
+    "product_name": "Tru Fru Freeze Dried Raspberries & Creme, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+    "variants": [
+      {
+        "asin": "B0FMLK5RNX",
+        "variant_name": "Tru Fru Freeze Dried Raspberries & Creme, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "title": "Tru Fru Freeze Dried Raspberries & Creme, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "price": 34.99,
+        "unit_price": 1.72,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Raspberries & Creme"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0FMLK5RNX/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FMLK5RNX",
+        "seller_name": "WishingUWell",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 34.99,
+        "unit_price": 1.72,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_raspberries_in_white_dark_chocolate_chocolate_covered_fruit_freeze_dried_fruit_and_gluten_free_candy_non_gmo_kosher_sweet_perfect_for_travel_on_the_go_3_4oz_6_pack",
+    "product_name": "Tru Fru Freeze Dried Raspberries in White & Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+    "variants": [
+      {
+        "asin": "B0F7ZXLD7P",
+        "variant_name": "Tru Fru Freeze Dried Raspberries in White & Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "title": "Tru Fru Freeze Dried Raspberries in White & Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "price": 34.99,
+        "unit_price": 1.72,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Raspberries in White & Dark Chocolate"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0F7ZXLD7P/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0F7ZXLD7P",
+        "seller_name": "WishingUWell",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 34.99,
+        "unit_price": 1.72,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_strawberries_creme_chocolate_covered_fruit_freeze_dried_fruit_and_gluten_free_candy_non_gmo_kosher_sweet_treat_perfect_for_travel_on_the_go_3_4oz_6_pack",
+    "product_name": "Tru Fru Freeze Dried Strawberries & Creme, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+    "variants": [
+      {
+        "asin": "B0FMLMK42C",
+        "variant_name": "Tru Fru Freeze Dried Strawberries & Creme, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "title": "Tru Fru Freeze Dried Strawberries & Creme, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "price": 34.99,
+        "unit_price": 1.72,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Strawberries & Creme"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0FMLMK42C/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FMLMK42C",
+        "seller_name": "WishingUWell",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 34.99,
+        "unit_price": 1.72,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_strawberries_in_white_dark_chocolate_chocolate_covered_fruit_freeze_dried_fruit_and_gluten_free_candy_non_gmo_kosher_sweet_perfect_for_travel_on_the_go_3_4oz_6_pack",
+    "product_name": "Tru Fru Freeze Dried Strawberries in White & Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+    "variants": [
+      {
+        "asin": "B0F7ZY2V9K",
+        "variant_name": "Tru Fru Freeze Dried Strawberries in White & Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "title": "Tru Fru Freeze Dried Strawberries in White & Dark Chocolate, Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet, Perfect for Travel & On the Go (3.4oz) 6 Pack",
+        "price": 23.5,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Strawberries in White & Dark Chocolate"
+        },
+        "final_url": "https://www.amazon.com/Natures-Raspberries-Freeze-Dried-Chocolate/dp/B0F7ZY2V9K/ref=sr_1_10?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-10&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0F7ZY2V9K",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 23.5,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_blueberries_creme_chocolate_covered_fruit_freeze_dried_fruit_and_gluten_free_candy_non_gmo_kosher_sweet_treat_perfect_for_travel_on_the_go_3_4oz_3_pack",
+    "product_name": "Tru Fru Freeze Dried Blueberries & Creme,Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 3 Pack",
+    "variants": [
+      {
+        "asin": "B0FMLD63WF",
+        "variant_name": "Tru Fru Freeze Dried Blueberries & Creme,Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 3 Pack",
+        "title": "Tru Fru Freeze Dried Blueberries & Creme,Chocolate Covered Fruit, Freeze Dried Fruit and Gluten Free Candy, Non-GMO & Kosher Sweet Treat, Perfect for Travel & On the Go (3.4oz) 3 Pack",
+        "price": 19.99,
+        "unit_price": 1.96,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Blueberries & Creme"
+        },
+        "final_url": "https://www.amazon.com/Tru-Fru-Raspberries-Chocolate-Covered/dp/B0FMLD63WF/ref=sr_1_11?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-11&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FMLD63WF",
+        "seller_name": "WishingUWell",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 19.99,
+        "unit_price": 1.96,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_raspberries_in_dark_white_chocolate_1_7_ounce_bag",
+    "product_name": "Tru Fru Freeze-Dried Raspberries in Dark & White Chocolate, 1.7 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B0FMT76XL6",
+        "variant_name": "Tru Fru Freeze-Dried Raspberries in Dark & White Chocolate, 1.7 Ounce Bag",
+        "title": "Tru Fru Freeze-Dried Raspberries in Dark & White Chocolate, 1.7 Ounce Bag",
+        "price": 11.59,
+        "unit_price": 6.82,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Freeze-Dried-Raspberries-Chocolate/dp/B0FMT76XL6/ref=sr_1_13?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-13"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Moni&Toni Global",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 11.59,
+        "unit_price": 6.82,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Everline Pirme",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 11.39,
+        "unit_price": 6.7,
+        "price_currency": "USD",
+        "price_delta_abs": -0.1200000000000001,
+        "price_delta_percent": -1.7595307917888579,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "ECOM-CENTRAL",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 11.69,
+        "unit_price": 6.88,
+        "price_currency": "USD",
+        "price_delta_abs": 0.05999999999999961,
+        "price_delta_percent": 0.8797653958944224,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Pace Unlimited LLC",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 11.69,
+        "unit_price": 6.88,
+        "price_currency": "USD",
+        "price_delta_abs": 0.05999999999999961,
+        "price_delta_percent": 0.8797653958944224,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Kelly Sales LLC",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 11.99,
+        "unit_price": 7.05,
+        "price_currency": "USD",
+        "price_delta_abs": 0.22999999999999954,
+        "price_delta_percent": 3.372434017595301,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "PDQ Ecom",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 12.27,
+        "unit_price": 7.22,
+        "price_currency": "USD",
+        "price_delta_abs": 0.39999999999999947,
+        "price_delta_percent": 5.86510263929618,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Love 4 One LLC",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 13.11,
+        "unit_price": 7.71,
+        "price_currency": "USD",
+        "price_delta_abs": 0.8899999999999997,
+        "price_delta_percent": 13.049853372434011,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "P31 Merchant",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 13.78,
+        "unit_price": 8.11,
+        "price_currency": "USD",
+        "price_delta_abs": 1.2899999999999991,
+        "price_delta_percent": 18.91495601173019,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Ocean Distro",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 13.91,
+        "unit_price": 8.18,
+        "price_currency": "USD",
+        "price_delta_abs": 1.3599999999999994,
+        "price_delta_percent": 19.941348973607028,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Seizee",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 14.54,
+        "unit_price": 8.55,
+        "price_currency": "USD",
+        "price_delta_abs": 1.7300000000000004,
+        "price_delta_percent": 25.366568914956016,
+        "price_flag": "High Price",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FMT76XL6",
+        "seller_name": "Mow Merch",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 14.99,
+        "unit_price": 8.82,
+        "price_currency": "USD",
+        "price_delta_abs": 2.0,
+        "price_delta_percent": 29.325513196480934,
+        "price_flag": "High Price",
+        "amazon_price_listing": 11.59,
+        "amazon_unit_price": 6.82,
+        "rating_stars": 4.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_blueberries_hyper_dried_in_cr_me_premium_gourmet_freeze_dried_snack_4_2_oz",
+    "product_name": "Tru Fru Nature's Blueberries Hyper-Dried in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz",
+    "variants": [
+      {
+        "asin": "B0CLFDF6ST",
+        "variant_name": "Tru Fru Nature's Blueberries Hyper-Dried in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz",
+        "title": "Tru Fru Nature's Blueberries Hyper-Dried in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz",
+        "price": 13.0,
+        "unit_price": 13.0,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Blueberries-Hyper-Dried/dp/B0CLFDF6ST/ref=sr_1_14?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-14"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "Highest height",
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 13.0,
+        "unit_price": 13.0,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "BLOOMDAY GLOBAL LLC",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 13.3,
+        "unit_price": 13.3,
+        "price_currency": "USD",
+        "price_delta_abs": 0.3000000000000007,
+        "price_delta_percent": 2.307692307692313,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 13.0,
+        "amazon_unit_price": 13.0,
+        "rating_stars": 2.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "Ritualive",
+        "ships_from": "Ritualive",
+        "is_authorized": false,
+        "price": 14.25,
+        "unit_price": 14.25,
+        "price_currency": "USD",
+        "price_delta_abs": 1.25,
+        "price_delta_percent": 9.615384615384617,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 13.0,
+        "amazon_unit_price": 13.0,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "Thrive Commerce USA",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 15.25,
+        "price_currency": "USD",
+        "price_delta_abs": 2.25,
+        "price_delta_percent": 17.307692307692307,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 13.0,
+        "amazon_unit_price": 13.0,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "TheSupplyHub",
+        "ships_from": "TheSupplyHub",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 15.25,
+        "price_currency": "USD",
+        "price_delta_abs": 2.25,
+        "price_delta_percent": 17.307692307692307,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 13.0,
+        "amazon_unit_price": 13.0,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "Marlie Merch LLC",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 16.25,
+        "unit_price": 16.25,
+        "price_currency": "USD",
+        "price_delta_abs": 3.25,
+        "price_delta_percent": 25.0,
+        "price_flag": "High Price",
+        "amazon_price_listing": 13.0,
+        "amazon_unit_price": 13.0,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "TheSupplyHub",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 16.25,
+        "unit_price": 16.25,
+        "price_currency": "USD",
+        "price_delta_abs": 3.25,
+        "price_delta_percent": 25.0,
+        "price_flag": "High Price",
+        "amazon_price_listing": 13.0,
+        "amazon_unit_price": 13.0,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0CLFDF6ST",
+        "seller_name": "StoneFly",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 17.59,
+        "unit_price": 17.59,
+        "price_currency": "USD",
+        "price_delta_abs": 4.59,
+        "price_delta_percent": 35.30769230769231,
+        "price_flag": "High Price",
+        "amazon_price_listing": 13.0,
+        "amazon_unit_price": 13.0,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "product_family_id": "trufru_tru_fru_dark_chocolate_dipped_freeze_dried_coconut_melts_4_2_oz_6_pack_case",
+    "product_name": "Tru Fru Dark Chocolate Dipped Freeze-Dried Coconut Melts (4.2 oz), 6-Pack Case",
+    "variants": [
+      {
+        "asin": "B078TM327Q",
+        "variant_name": "Tru Fru Dark Chocolate Dipped Freeze-Dried Coconut Melts (4.2 oz), 6-Pack Case",
+        "title": "Tru Fru Dark Chocolate Dipped Freeze-Dried Coconut Melts (4.2 oz), 6-Pack Case",
+        "price": 17.99,
+        "unit_price": 0.71,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Chocolate-Freeze-Dried-Coconut/dp/B078TM327Q/ref=sr_1_16?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-16"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B078TM327Q",
+        "seller_name": "ALOOSA LLC",
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 17.99,
+        "unit_price": 0.71,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B078TM327Q",
+        "seller_name": "KOUNABELLE",
+        "ships_from": "KOUNABELLE",
+        "is_authorized": false,
+        "price": 19.95,
+        "unit_price": 0.79,
+        "price_currency": "USD",
+        "price_delta_abs": 0.08000000000000007,
+        "price_delta_percent": 11.267605633802827,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 17.99,
+        "amazon_unit_price": 0.71,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B078TM327Q",
+        "seller_name": "Mushroom Dog LLC",
+        "ships_from": "Mushroom Dog LLC",
+        "is_authorized": false,
+        "price": 21.99,
+        "unit_price": 0.87,
+        "price_currency": "USD",
+        "price_delta_abs": 0.16000000000000003,
+        "price_delta_percent": 22.53521126760564,
+        "price_flag": "High Price",
+        "amazon_price_listing": 17.99,
+        "amazon_unit_price": 0.71,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B078TM327Q",
+        "seller_name": "Shopzzle",
+        "ships_from": "Shopzzle",
+        "is_authorized": false,
+        "price": 21.99,
+        "unit_price": 0.87,
+        "price_currency": "USD",
+        "price_delta_abs": 0.16000000000000003,
+        "price_delta_percent": 22.53521126760564,
+        "price_flag": "High Price",
+        "amazon_price_listing": 17.99,
+        "amazon_unit_price": 0.71,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B078TM327Q",
+        "seller_name": "E shoppe market",
+        "ships_from": "E shoppe market",
+        "is_authorized": false,
+        "price": 29.0,
+        "unit_price": 1.15,
+        "price_currency": "USD",
+        "price_delta_abs": 0.43999999999999995,
+        "price_delta_percent": 61.97183098591549,
+        "price_flag": "Price Gouging",
+        "amazon_price_listing": 17.99,
+        "amazon_unit_price": 0.71,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B078TM327Q",
+        "seller_name": "Ngbmarket",
+        "ships_from": "Ngbmarket",
+        "is_authorized": false,
+        "price": 34.81,
+        "unit_price": 1.38,
+        "price_currency": "USD",
+        "price_delta_abs": 0.6699999999999999,
+        "price_delta_percent": 94.36619718309859,
+        "price_flag": "Price Gouging",
+        "amazon_price_listing": 17.99,
+        "amazon_unit_price": 0.71,
+        "rating_stars": 2.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B078TM327Q",
+        "seller_name": "Squishy Sprout",
+        "ships_from": "Squishy Sprout",
+        "is_authorized": false,
+        "price": 35.99,
+        "unit_price": 1.43,
+        "price_currency": "USD",
+        "price_delta_abs": 0.72,
+        "price_delta_percent": 101.40845070422534,
+        "price_flag": "Price Gouging",
+        "amazon_price_listing": 17.99,
+        "amazon_unit_price": 0.71,
+        "rating_stars": 3.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "product_family_id": "trufru_tru_fru_freeze_dried_bananas_in_dark_chocolate_1_7_ounce_bag",
+    "product_name": "Tru Fru Freeze-Dried Bananas in Dark Chocolate, 1.7 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B0FN6MZNFY",
+        "variant_name": "Tru Fru Freeze-Dried Bananas in Dark Chocolate, 1.7 Ounce Bag",
+        "title": "Tru Fru Freeze-Dried Bananas in Dark Chocolate, 1.7 Ounce Bag",
+        "price": 15.25,
+        "unit_price": 8.97,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Freeze-Dried-Bananas-Chocolate/dp/B0FN6MZNFY/ref=sr_1_17?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-17"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "Kelly Sales LLC",
+        "ships_from": "Amazon",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 8.97,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "getessentialshub",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 14.99,
+        "unit_price": 8.82,
+        "price_currency": "USD",
+        "price_delta_abs": -0.15000000000000036,
+        "price_delta_percent": -1.672240802675589,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 15.25,
+        "amazon_unit_price": 8.97,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "PM Goods and Essentials",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 8.97,
+        "price_currency": "USD",
+        "price_delta_abs": 0.0,
+        "price_delta_percent": 0.0,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 15.25,
+        "amazon_unit_price": 8.97,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "Lumo Supply",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 8.97,
+        "price_currency": "USD",
+        "price_delta_abs": 0.0,
+        "price_delta_percent": 0.0,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 15.25,
+        "amazon_unit_price": 8.97,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "Seizee",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 8.97,
+        "price_currency": "USD",
+        "price_delta_abs": 0.0,
+        "price_delta_percent": 0.0,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 15.25,
+        "amazon_unit_price": 8.97,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "Kelly Sales LLC",
+        "ships_from": "Kelly Sales LLC",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 8.97,
+        "price_currency": "USD",
+        "price_delta_abs": 0.0,
+        "price_delta_percent": 0.0,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 15.25,
+        "amazon_unit_price": 8.97,
+        "rating_stars": null,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "CityGems",
+        "ships_from": "CityGems",
+        "is_authorized": false,
+        "price": 15.25,
+        "unit_price": 8.97,
+        "price_currency": "USD",
+        "price_delta_abs": 0.0,
+        "price_delta_percent": 0.0,
+        "price_flag": "Fair Price",
+        "amazon_price_listing": 15.25,
+        "amazon_unit_price": 8.97,
+        "rating_stars": 5.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0FN6MZNFY",
+        "seller_name": "Mow Merch",
+        "ships_from": "Amazon.com",
+        "is_authorized": false,
+        "price": 15.28,
+        "unit_price": 8.99,
+        "price_currency": "USD",
+        "price_delta_abs": 0.019999999999999574,
+        "price_delta_percent": 0.22296544035673993,
+        "price_flag": "Slightly High",
+        "amazon_price_listing": 15.25,
+        "amazon_unit_price": 8.97,
+        "rating_stars": 4.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_mangoes_hyper_dried_fresh_in_white_dark_chocolate_premium_gourmet_freeze_dried_fruit_snack_4_5_oz_pack_of_6",
+    "product_name": "Tru Fru Nature's Mangoes Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.5 oz (Pack of 6)",
+    "variants": [
+      {
+        "asin": "B0DX2T6G32",
+        "variant_name": "Tru Fru Nature's Mangoes Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.5 oz (Pack of 6)",
+        "title": "Tru Fru Nature's Mangoes Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.5 oz (Pack of 6)",
+        "price": 37.77,
+        "unit_price": 1.4,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Hyper-Dried-Chocolate/dp/B0DX2T6G32/ref=sr_1_18?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-18"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0DX2T6G32",
+        "seller_name": "egeSea group",
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 37.77,
+        "unit_price": 1.4,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_blueberries_hyper_dried_in_cr_me_premium_gourmet_freeze_dried_snack_4_2_oz_pack_of_6",
+    "product_name": "Tru Fru Nature's Blueberries Hyper-Dried in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz (Pack of 6)",
+    "variants": [
+      {
+        "asin": "B0DL4YYPLZ",
+        "variant_name": "Tru Fru Nature's Blueberries Hyper-Dried in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz (Pack of 6)",
+        "title": "Tru Fru Nature's Blueberries Hyper-Dried in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz (Pack of 6)",
+        "price": 45.7,
+        "unit_price": 1.81,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Blueberries-Hyper-Dried/dp/B0DL4YYPLZ/ref=sr_1_19?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-19"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0DL4YYPLZ",
+        "seller_name": "KT On The Line",
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 45.7,
+        "unit_price": 1.81,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_hyper_dried_grab_go_coconut_in_dark_chocolate_2_1_ounce_12_per_case",
+    "product_name": "Tru Fru Hyper-Dried Grab & Go Coconut In Dark Chocolate, 2.1 Ounce, 12 Per Case",
+    "variants": [
+      {
+        "asin": "B0FTNH5MDJ",
+        "variant_name": "Tru Fru Hyper-Dried Grab & Go Coconut In Dark Chocolate, 2.1 Ounce, 12 Per Case",
+        "title": "Tru Fru Hyper-Dried Grab & Go Coconut In Dark Chocolate, 2.1 Ounce, 12 Per Case",
+        "price": 45.82,
+        "unit_price": 1.85,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Hyper-Dried-Coconut-Chocolate/dp/B0FTNH5MDJ/ref=sr_1_20?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-20"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0FTNH5MDJ",
+        "seller_name": "L.A. Unlimited",
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 45.82,
+        "unit_price": 1.85,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_mangoes_hyper_dried_fresh_in_dark_chocolate_4_5_ounce_bag",
+    "product_name": "Tru Fru Nature's Mangoes Hyper-Dried Fresh in Dark Chocolate, 4.5 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B08X97CVNB",
+        "variant_name": "Tru Fru Nature's Mangoes Hyper-Dried Fresh in Dark Chocolate, 4.5 Ounce Bag",
+        "title": "Tru Fru Nature's Mangoes Hyper-Dried Fresh in Dark Chocolate, 4.5 Ounce Bag",
+        "price": 11.69,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Natures-Hyper-Dried-Chocolate/dp/B08X97CVNB/ref=sr_1_21?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-21"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B08X97CVNB",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 11.69,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_peaches_hyper_dried_fresh_in_cr_me_premium_gourmet_freeze_dried_snack_4_2_oz",
+    "product_name": "Tru Fru Nature's Peaches Hyper-Dried Fresh in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz",
+    "variants": [
+      {
+        "asin": "B0CHV3TL66",
+        "variant_name": "Tru Fru Nature's Peaches Hyper-Dried Fresh in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz",
+        "title": "Tru Fru Nature's Peaches Hyper-Dried Fresh in Cr\u00e8me, Premium Gourmet Freeze Dried Snack, 4.2 oz",
+        "price": 9.99,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Natures-Hyper-Dried-Peaches-Cr%C3%A8me/dp/B0CHV3TL66/ref=sr_1_22?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-22"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0CHV3TL66",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 9.99,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_trufru_choco_cover_raspberries",
+    "product_name": "TRUFRU Choco Cover Raspberries",
+    "variants": [
+      {
+        "asin": "B07GH91SK5",
+        "variant_name": "TRUFRU Choco Cover Raspberries",
+        "title": "TRUFRU Choco Cover Raspberries",
+        "price": 13.3,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/TRUFRU-201350-Choco-Cover-Raspberries/dp/B07GH91SK5/ref=sr_1_23?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-23"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B07GH91SK5",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 13.3,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_hyper_dried_strawberries_cr_me_4_2oz",
+    "product_name": "Tru Fru Hyper-Dried Strawberries & Cr\u00e8me, 4.2oz",
+    "variants": [
+      {
+        "asin": "B0CLF9TB39",
+        "variant_name": "Tru Fru Hyper-Dried Strawberries & Cr\u00e8me, 4.2oz",
+        "title": "Tru Fru Hyper-Dried Strawberries & Cr\u00e8me, 4.2oz",
+        "price": 13.3,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Strawberry Cream"
+        },
+        "final_url": "https://www.amazon.com/Tru-Fru-FreezeDried-Strawberries-Chocolate/dp/B0CLF9TB39/ref=sr_1_24?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-24&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0CLF9TB39",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 13.3,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_strawberries_hyper_dried_fresh_in_white_dark_chocolate_premium_gourmet_freeze_dried_fruit_snack_4_2_oz",
+    "product_name": "Tru Fru Nature's Strawberries Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+    "variants": [
+      {
+        "asin": "B07GH9YCMM",
+        "variant_name": "Tru Fru Nature's Strawberries Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+        "title": "Tru Fru Nature's Strawberries Hyper-Dried Fresh in White & Dark Chocolate, Premium Gourmet Freeze Dried Fruit Snack, 4.2 oz",
+        "price": 43.99,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {
+          "flavor_name": "Strawberry White & Dark Chocolate"
+        },
+        "final_url": "https://www.amazon.com/Tru-Fru-FreezeDried-Strawberries-Chocolate/dp/B07GH9YCMM/ref=sr_1_24?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-24&th=1"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B07GH9YCMM",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 43.99,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_nature_s_bananas_hyper_dried_fresh_in_dark_chocolate_4_5_ounce_bag",
+    "product_name": "Tru Fru Nature's Bananas Hyper-Dried Fresh in Dark Chocolate 4.5 Ounce Bag",
+    "variants": [
+      {
+        "asin": "B07GHB6XPG",
+        "variant_name": "Tru Fru Nature's Bananas Hyper-Dried Fresh in Dark Chocolate 4.5 Ounce Bag",
+        "title": "Tru Fru Nature's Bananas Hyper-Dried Fresh in Dark Chocolate 4.5 Ounce Bag",
+        "price": 22.49,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-FreezeDried-Chocolate-105N/dp/B07GHB6XPG/ref=sr_1_26?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-26"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B07GHB6XPG",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 22.49,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_hyper_dried_strawberries_creme_kosher_gluten_free_non_gmo_4_2_ounce_pack_of_6",
+    "product_name": "Tru Fru Hyper-Dried Strawberries & Creme, Kosher, Gluten Free & Non-GMO, 4.2 Ounce (Pack of 6)",
+    "variants": [
+      {
+        "asin": "B0DL4YXHNM",
+        "variant_name": "Tru Fru Hyper-Dried Strawberries & Creme, Kosher, Gluten Free & Non-GMO, 4.2 Ounce (Pack of 6)",
+        "title": "Tru Fru Hyper-Dried Strawberries & Creme, Kosher, Gluten Free & Non-GMO, 4.2 Ounce (Pack of 6)",
+        "price": 13.3,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Hyper-Dried-Strawberries-Non-GMO/dp/B0DL4YXHNM/ref=sr_1_27?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-27"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0DL4YXHNM",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 13.3,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "product_family_id": "trufru_tru_fru_hyper_dried_peaches_cr_me_4_2oz_pack_of_6",
+    "product_name": "Tru Fru Hyper-Dried Peaches & Cr\u00e8me - 4.2oz (Pack of 6)",
+    "variants": [
+      {
+        "asin": "B0CVNLGLPQ",
+        "variant_name": "Tru Fru Hyper-Dried Peaches & Cr\u00e8me - 4.2oz (Pack of 6)",
+        "title": "Tru Fru Hyper-Dried Peaches & Cr\u00e8me - 4.2oz (Pack of 6)",
+        "price": 13.3,
+        "unit_price": null,
+        "prime": true,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/Tru-Fru-Hyper-Dried-Peaches-Cr%C3%A8me/dp/B0CVNLGLPQ/ref=sr_1_28?dib=eyJ2IjoiMSJ9.RU6r9Avh41FF7AsK0WL86pK0hHRiXEcXqI4gjk_pis8MXDEYlYwJvxcWFiIm3r371nIWhTkMixz01D4TXaip7g1AaOwJcwyBBzskrAtBHdOTcxCCf_Q92cQX16BL3ya9iGyBlrl34HgnO_SPus6LsIn_8Bir0fV6JYqK76rMkuepjj7j8eLpJvHekBJGMuzoEGQGOsY-IhuZHuH055ssTuO4336huyXjCk_4fgVqi2Fg9wfU3eros7faXzgXawZJvtz6wVuRjmfk2j3a0AvdvESjwjWJN1idUnJHdRkb-BQ._-fDjiE-uqZwEs2EkNJ6HugUgChcDOYcm17OGka3z04&dib_tag=se&keywords=trufru&qid=1767937452&refinements=p_123%3A686917&sr=8-28"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0CVNLGLPQ",
+        "seller_name": null,
+        "ships_from": null,
+        "is_authorized": false,
+        "price": 13.3,
+        "unit_price": null,
+        "price_currency": "USD",
+        "prime": true
+      }
+    ],
+    "seller_market": []
+  }
+]
