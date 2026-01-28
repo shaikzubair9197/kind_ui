@@ -1,7 +1,7 @@
 import os
 import json
 
-BASE_DIR = "all_products_3"
+BASE_DIR = "kind_results"
 OUTPUT_FILE = "all_products_merged.json"
 
 
