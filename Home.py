@@ -5,6 +5,7 @@ import pandas as pd
 import streamlit as st
 from collections import defaultdict
 import sys
+from PIL import Image
 
 # ----------------------------------------------------
 # CONFIG / PAGE
@@ -104,6 +105,21 @@ skus_impacted = meta.get("skus_impacted")
 # ----------------------------------------------------
 # HEADER (UI)
 # ----------------------------------------------------
+# ----------------------------------------------------
+# HEADER (UI)
+# ----------------------------------------------------
+# ----------------------------------------------------
+# HEADER (UI)
+# ----------------------------------------------------
+
+img = Image.open("kind.png")
+
+# Resize to slim banner (adjust height here)
+banner = img.resize((img.width, 130))
+
+st.image(banner, use_container_width=True)
+
+
 
 st.markdown(
     f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">

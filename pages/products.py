@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 import math
-
+from PIL import Image
 # --------------------------------------------------------
 # Original sidebar CSS
 # --------------------------------------------------------
@@ -286,6 +286,14 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+
+img = Image.open("kind.png")
+
+# Resize to slim banner (adjust height here)
+banner = img.resize((img.width, 130))
+
+st.image(banner, use_container_width=True)
+
 
 
 st.markdown(
