@@ -1,0 +1,247 @@
+{
+  "summary": {
+    "kind_products_with_amazon": 0,
+    "scraped_asins": 59,
+    "missed_products": 0,
+    "extra_scraped_asins": 59
+  },
+  "missed_products": [],
+  "extra_scraped_products": [
+    {
+      "asin": "B001D0DMME",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0034EDLS2",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0034EDMCW",
+      "source_product_url": null
+    },
+    {
+      "asin": "B003TMZQC8",
+      "source_product_url": null
+    },
+    {
+      "asin": "B003TN8JGC",
+      "source_product_url": null
+    },
+    {
+      "asin": "B006H2JY9S",
+      "source_product_url": null
+    },
+    {
+      "asin": "B00EW6V06Q",
+      "source_product_url": null
+    },
+    {
+      "asin": "B00IZF0LCE",
+      "source_product_url": null
+    },
+    {
+      "asin": "B00IZF0P98",
+      "source_product_url": null
+    },
+    {
+      "asin": "B00QT7VPUW",
+      "source_product_url": null
+    },
+    {
+      "asin": "B019EGM8G4",
+      "source_product_url": null
+    },
+    {
+      "asin": "B019EGM8UA",
+      "source_product_url": null
+    },
+    {
+      "asin": "B019EGM90O",
+      "source_product_url": null
+    },
+    {
+      "asin": "B071912K7K",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0777WX969",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0798GWR7F",
+      "source_product_url": null
+    },
+    {
+      "asin": "B07DVYH58C",
+      "source_product_url": null
+    },
+    {
+      "asin": "B07HV8R4TN",
+      "source_product_url": null
+    },
+    {
+      "asin": "B07HYXPWJ9",
+      "source_product_url": null
+    },
+    {
+      "asin": "B085WT6D2F",
+      "source_product_url": null
+    },
+    {
+      "asin": "B085WT8W9L",
+      "source_product_url": null
+    },
+    {
+      "asin": "B085WTJFFG",
+      "source_product_url": null
+    },
+    {
+      "asin": "B085WTQM3V",
+      "source_product_url": null
+    },
+    {
+      "asin": "B08ZK2TJ2B",
+      "source_product_url": null
+    },
+    {
+      "asin": "B09GSZL4VR",
+      "source_product_url": null
+    },
+    {
+      "asin": "B09R6Z23SL",
+      "source_product_url": null
+    },
+    {
+      "asin": "B09YSSWBXW",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BCH3P3VY",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BCH3Y3JS",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BCH4QXYW",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BCH545ZW",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BCH583WK",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BCHM9DVL",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BMW3XK4F",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0BMW6PBR1",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C1TJ2Y3M",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C1TJ4W3J",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C1TK724H",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C31KRLD8",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C4CW3H7K",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C7J5BCDM",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C7JCSV6X",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C86P5W3K",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C86RQ9SC",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0C8794B4K",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CGMM6K91",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CH1RTWRN",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CHLD9ZKL",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CHLKJ7JM",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CM77RXJN",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CM788GNJ",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CV5WTC71",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0CV5Y8R9Z",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0DH9D5Q66",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0DR9TZ9J3",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0F1GVSTMR",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0F1GVXNKJ",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0F1H1XQW9",
+      "source_product_url": null
+    },
+    {
+      "asin": "B0F1HR4L4S",
+      "source_product_url": null
+    }
+  ]
+}

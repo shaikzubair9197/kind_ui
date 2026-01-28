@@ -1,0 +1,137 @@
+{
+    "total_categories": 16,
+    "total_products": 101,
+    "products_available_on_amazon": 61,
+    "products_missing_on_amazon": 40,
+    "availability_percent_overall": 60.4,
+    "category_breakdown": [
+        {
+            "category": "ZEROg_Added_Sugar_Granola",
+            "category_display": "Zerog Added Sugar Granola",
+            "total_products": 2,
+            "available_on_amazon": 1,
+            "missing_on_amazon": 1,
+            "availability_percent": 50.0
+        },
+        {
+            "category": "Frozen_Bars",
+            "category_display": "Frozen Bars",
+            "total_products": 4,
+            "available_on_amazon": 0,
+            "missing_on_amazon": 4,
+            "availability_percent": 0.0
+        },
+        {
+            "category": "Healthy_Grains_Bars",
+            "category_display": "Healthy Grains Bars",
+            "total_products": 0,
+            "available_on_amazon": 0,
+            "missing_on_amazon": 0,
+            "availability_percent": 0
+        },
+        {
+            "category": "Soft_Baked_Squares_Bars",
+            "category_display": "Soft Baked Squares Bars",
+            "total_products": 3,
+            "available_on_amazon": 3,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "Protein_from_Real_Food",
+            "category_display": "Protein From Real Food",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "Dipped_Clusters",
+            "category_display": "Dipped Clusters",
+            "total_products": 3,
+            "available_on_amazon": 1,
+            "missing_on_amazon": 2,
+            "availability_percent": 33.33
+        },
+        {
+            "category": "Minis_Bars",
+            "category_display": "Minis Bars",
+            "total_products": 5,
+            "available_on_amazon": 4,
+            "missing_on_amazon": 1,
+            "availability_percent": 80.0
+        },
+        {
+            "category": "ZEROg_Added_Sugar_Bars",
+            "category_display": "Zerog Added Sugar Bars",
+            "total_products": 3,
+            "available_on_amazon": 3,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "Breakfast_Bars",
+            "category_display": "Breakfast Bars",
+            "total_products": 8,
+            "available_on_amazon": 8,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "Protein_Max",
+            "category_display": "Protein Max",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "Healthy_Grains_Granola",
+            "category_display": "Healthy Grains Granola",
+            "total_products": 9,
+            "available_on_amazon": 5,
+            "missing_on_amazon": 4,
+            "availability_percent": 55.56
+        },
+        {
+            "category": "Nut_Bars",
+            "category_display": "Nut Bars",
+            "total_products": 22,
+            "available_on_amazon": 16,
+            "missing_on_amazon": 6,
+            "availability_percent": 72.73
+        },
+        {
+            "category": "Soft_Baked_Granola",
+            "category_display": "Soft Baked Granola",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "Thins_Bars",
+            "category_display": "Thins Bars",
+            "total_products": 6,
+            "available_on_amazon": 6,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "Kids_Bars",
+            "category_display": "Kids Bars",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "missing_on_amazon": 0,
+            "availability_percent": 100.0
+        },
+        {
+            "category": "All_Snacks",
+            "category_display": "All Snacks",
+            "total_products": 101,
+            "available_on_amazon": 60,
+            "missing_on_amazon": 41,
+            "availability_percent": 59.41
+        }
+    ]
+}

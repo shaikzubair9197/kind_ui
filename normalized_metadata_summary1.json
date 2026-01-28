@@ -1,0 +1,1907 @@
+{
+    "total_products": 55,
+    "total_categories": 14,
+    "total_skus": 59,
+    "products_per_category": {
+        "Thins_Bars": 6,
+        "Protein_Max": 2,
+        "ZEROg_Added_Sugar_Bars": 3,
+        "Nut_Bars": 12,
+        "Healthy_Grains_Granola": 4,
+        "Breakfast_Bars": 8,
+        "Minis_Bars": 3,
+        "Soft_Baked_Granola": 2,
+        "ZEROg_Added_Sugar_Granola": 1,
+        "Kids_Bars": 2,
+        "Protein_from_Real_Food": 2,
+        "Dipped_Clusters": 1,
+        "Soft_Baked_Squares_Bars": 3,
+        "All_Snacks": 6
+    },
+    "skus_per_category": {
+        "Thins_Bars": 6,
+        "Protein_Max": 2,
+        "ZEROg_Added_Sugar_Bars": 3,
+        "Nut_Bars": 15,
+        "Healthy_Grains_Granola": 4,
+        "Breakfast_Bars": 8,
+        "Minis_Bars": 4,
+        "Soft_Baked_Granola": 2,
+        "ZEROg_Added_Sugar_Granola": 1,
+        "Kids_Bars": 2,
+        "Protein_from_Real_Food": 2,
+        "Dipped_Clusters": 1,
+        "Soft_Baked_Squares_Bars": 3,
+        "All_Snacks": 6
+    },
+    "marketplace_skus_per_category": {
+        "Thins_Bars": 6,
+        "Protein_Max": 2,
+        "ZEROg_Added_Sugar_Bars": 3,
+        "Nut_Bars": 13,
+        "Healthy_Grains_Granola": 3,
+        "Breakfast_Bars": 7,
+        "Minis_Bars": 4,
+        "Soft_Baked_Granola": 2,
+        "Kids_Bars": 2,
+        "Protein_from_Real_Food": 2,
+        "Soft_Baked_Squares_Bars": 3,
+        "All_Snacks": 2
+    },
+    "total_unique_sellers": 79,
+    "unique_sellers": [
+        "3m marketing llc",
+        "a & n bros",
+        "a&b compney 1",
+        "aaa_appliance",
+        "akloos",
+        "amazon.com",
+        "amazonfresh",
+        "ameristyle",
+        "ari finds",
+        "belowpricedeals",
+        "bestsource officesupplies",
+        "big desk drawer",
+        "birkenstar",
+        "bloom skins llc",
+        "boston mart llc",
+        "buck island trading",
+        "corebuy",
+        "costumeboom",
+        "epic safari",
+        "essex distribution",
+        "everyday supply co.",
+        "fast and precise by staples",
+        "fastme",
+        "fenvy",
+        "forthright traders",
+        "go shop inc",
+        "goodearthproducts",
+        "gourmet foods & grocery",
+        "hillside view holdings",
+        "hugo's online",
+        "hurd\u2019s creations",
+        "iherb",
+        "ihostore",
+        "ilovetech deals",
+        "insight trade llc",
+        "makin",
+        "mega mercato",
+        "my two crowns",
+        "mydogsocks",
+        "nxtgenn",
+        "office chase corp.",
+        "officecrave",
+        "officeworld store",
+        "on--point",
+        "online grocery outlet",
+        "plexsupply.",
+        "pnwb office products",
+        "quick ship ny",
+        "restockit",
+        "rocketdsd",
+        "sally grocers",
+        "sermersheim holdings llc",
+        "sevensky usa inc",
+        "sezestore",
+        "shipco-mart",
+        "shop the king us",
+        "shoplet",
+        "sim supply, inc.",
+        "simba threads",
+        "skyline market solutions",
+        "soa grocery",
+        "spacebound",
+        "supreme grocer",
+        "tectrove",
+        "the factory depot",
+        "the monster zone",
+        "thenewmall",
+        "triplenet pricing inc",
+        "ustradeent",
+        "valuable savings",
+        "vitozon",
+        "weboxed",
+        "weboxedit",
+        "whole foods market",
+        "whole premium store",
+        "world zone dealz",
+        "xcairi",
+        "yes cart inc",
+        "zaki's collection llc"
+    ],
+    "unique_sellers_excluding_amazon_and_kind": [
+        "3m marketing llc",
+        "a & n bros",
+        "a&b compney 1",
+        "aaa_appliance",
+        "akloos",
+        "amazonfresh",
+        "ameristyle",
+        "ari finds",
+        "belowpricedeals",
+        "bestsource officesupplies",
+        "big desk drawer",
+        "birkenstar",
+        "bloom skins llc",
+        "boston mart llc",
+        "buck island trading",
+        "corebuy",
+        "costumeboom",
+        "epic safari",
+        "essex distribution",
+        "everyday supply co.",
+        "fast and precise by staples",
+        "fastme",
+        "fenvy",
+        "forthright traders",
+        "go shop inc",
+        "goodearthproducts",
+        "gourmet foods & grocery",
+        "hillside view holdings",
+        "hugo's online",
+        "hurd\u2019s creations",
+        "iherb",
+        "ihostore",
+        "ilovetech deals",
+        "insight trade llc",
+        "makin",
+        "mega mercato",
+        "my two crowns",
+        "mydogsocks",
+        "nxtgenn",
+        "office chase corp.",
+        "officecrave",
+        "officeworld store",
+        "on--point",
+        "online grocery outlet",
+        "plexsupply.",
+        "pnwb office products",
+        "quick ship ny",
+        "restockit",
+        "rocketdsd",
+        "sally grocers",
+        "sermersheim holdings llc",
+        "sevensky usa inc",
+        "sezestore",
+        "shipco-mart",
+        "shop the king us",
+        "shoplet",
+        "sim supply, inc.",
+        "simba threads",
+        "skyline market solutions",
+        "soa grocery",
+        "spacebound",
+        "supreme grocer",
+        "tectrove",
+        "the factory depot",
+        "the monster zone",
+        "thenewmall",
+        "triplenet pricing inc",
+        "ustradeent",
+        "valuable savings",
+        "vitozon",
+        "weboxed",
+        "weboxedit",
+        "whole foods market",
+        "whole premium store",
+        "world zone dealz",
+        "xcairi",
+        "yes cart inc",
+        "zaki's collection llc"
+    ],
+    "total_unique_sellers_excluding_amazon_and_kind": 78,
+    "seller_sku_impact": {
+        "amazon.com": 57,
+        "skyline market solutions": 3,
+        "sally grocers": 31,
+        "amazonfresh": 16,
+        "insight trade llc": 1,
+        "soa grocery": 4,
+        "whole foods market": 12,
+        "akloos": 3,
+        "simba threads": 6,
+        "birkenstar": 12,
+        "tectrove": 1,
+        "supreme grocer": 1,
+        "fast and precise by staples": 9,
+        "a & n bros": 3,
+        "shop the king us": 3,
+        "everyday supply co.": 5,
+        "boston mart llc": 9,
+        "sim supply, inc.": 3,
+        "the factory depot": 6,
+        "triplenet pricing inc": 6,
+        "buck island trading": 1,
+        "plexsupply.": 4,
+        "ihostore": 1,
+        "ustradeent": 4,
+        "valuable savings": 1,
+        "xcairi": 1,
+        "thenewmall": 1,
+        "3m marketing llc": 4,
+        "shoplet": 9,
+        "epic safari": 5,
+        "sevensky usa inc": 1,
+        "hurd\u2019s creations": 2,
+        "whole premium store": 1,
+        "big desk drawer": 10,
+        "weboxed": 3,
+        "world zone dealz": 4,
+        "hugo's online": 12,
+        "forthright traders": 1,
+        "mega mercato": 1,
+        "bloom skins llc": 1,
+        "pnwb office products": 3,
+        "shipco-mart": 3,
+        "corebuy": 2,
+        "officeworld store": 2,
+        "rocketdsd": 1,
+        "nxtgenn": 2,
+        "office chase corp.": 4,
+        "officecrave": 3,
+        "belowpricedeals": 3,
+        "makin": 7,
+        "my two crowns": 6,
+        "on--point": 4,
+        "sermersheim holdings llc": 4,
+        "ilovetech deals": 2,
+        "sezestore": 1,
+        "ari finds": 1,
+        "iherb": 2,
+        "fenvy": 1,
+        "costumeboom": 1,
+        "restockit": 1,
+        "spacebound": 1,
+        "goodearthproducts": 1,
+        "the monster zone": 1,
+        "quick ship ny": 1,
+        "aaa_appliance": 1,
+        "weboxedit": 2,
+        "online grocery outlet": 2,
+        "gourmet foods & grocery": 2,
+        "mydogsocks": 4,
+        "vitozon": 1,
+        "essex distribution": 1,
+        "zaki's collection llc": 3,
+        "bestsource officesupplies": 3,
+        "a&b compney 1": 1,
+        "ameristyle": 1,
+        "fastme": 1,
+        "hillside view holdings": 1,
+        "go shop inc": 1,
+        "yes cart inc": 1
+    },
+    "price_flag_summary": {
+        "price gouging": 183,
+        "high price": 33,
+        "fair price": 39,
+        "slightly high": 27
+    },
+    "rating_tiers_summary": {},
+    "top_gouged_skus": [
+        {
+            "asin": "B085WTJFFG",
+            "product_name": "Minis",
+            "seller_name": "ameristyle",
+            "category": "Minis_Bars",
+            "amazon_unit": 1.2,
+            "seller_unit": 3.53,
+            "price_delta_abs": 2.33,
+            "price_delta_pct": 194.16666666666666,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 24.73,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B085WTJFFG",
+            "product_name": "Minis",
+            "seller_name": "pnwb office products",
+            "category": "Minis_Bars",
+            "amazon_unit": 1.2,
+            "seller_unit": 3.43,
+            "price_delta_abs": 2.23,
+            "price_delta_pct": 185.83333333333334,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 23.98,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B0BCH4QXYW",
+            "product_name": "Breakfast Bars",
+            "seller_name": "hugo's online",
+            "category": "Breakfast_Bars",
+            "amazon_unit": 0.47,
+            "seller_unit": 1.25,
+            "price_delta_abs": 0.78,
+            "price_delta_pct": 165.95744680851064,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 13.18,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B006H2JY9S",
+            "product_name": "Healthy Grains Clusters",
+            "seller_name": "soa grocery",
+            "category": "Healthy_Grains_Granola",
+            "amazon_unit": 5.28,
+            "seller_unit": 13.92,
+            "price_delta_abs": 8.64,
+            "price_delta_pct": 163.63636363636363,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 13.92,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B003TN8JGC",
+            "product_name": "Nut Bar",
+            "seller_name": "rocketdsd",
+            "category": "Nut_Bars",
+            "amazon_unit": 1.0,
+            "seller_unit": 2.59,
+            "price_delta_abs": 1.59,
+            "price_delta_pct": 159.0,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 43.82,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B07HYXPWJ9",
+            "product_name": "Nut Bar",
+            "seller_name": "the factory depot",
+            "category": "Nut_Bars",
+            "amazon_unit": 0.78,
+            "seller_unit": 2.02,
+            "price_delta_abs": 1.24,
+            "price_delta_pct": 158.97435897435898,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 33.99,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B003TN8JGC",
+            "product_name": "Nut Bar",
+            "seller_name": "triplenet pricing inc",
+            "category": "Nut_Bars",
+            "amazon_unit": 1.0,
+            "seller_unit": 2.58,
+            "price_delta_abs": 1.58,
+            "price_delta_pct": 158.0,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 43.68,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B0CM77RXJN",
+            "product_name": "Protein Max",
+            "seller_name": "triplenet pricing inc",
+            "category": "Protein_Max",
+            "amazon_unit": 1.68,
+            "seller_unit": 4.29,
+            "price_delta_abs": 2.61,
+            "price_delta_pct": 155.35714285714286,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 51.47,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B07HYXPWJ9",
+            "product_name": "Nut Bar",
+            "seller_name": "sim supply, inc.",
+            "category": "Nut_Bars",
+            "amazon_unit": 0.78,
+            "seller_unit": 1.95,
+            "price_delta_abs": 1.17,
+            "price_delta_pct": 150.0,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 32.8,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B07HYXPWJ9",
+            "product_name": "Nut Bar",
+            "seller_name": "belowpricedeals",
+            "category": "Nut_Bars",
+            "amazon_unit": 0.78,
+            "seller_unit": 1.94,
+            "price_delta_abs": 1.16,
+            "price_delta_pct": 148.71794871794873,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 32.57,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B07HYXPWJ9",
+            "product_name": "Nut Bar",
+            "seller_name": "birkenstar",
+            "category": "Nut_Bars",
+            "amazon_unit": 0.78,
+            "seller_unit": 1.93,
+            "price_delta_abs": 1.15,
+            "price_delta_pct": 147.43589743589743,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 32.5,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B07HYXPWJ9",
+            "product_name": "Nut Bar",
+            "seller_name": "hugo's online",
+            "category": "Nut_Bars",
+            "amazon_unit": 0.78,
+            "seller_unit": 1.92,
+            "price_delta_abs": 1.14,
+            "price_delta_pct": 146.15384615384616,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 32.2,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B0CV5Y8R9Z",
+            "product_name": "Kids School Friendly",
+            "seller_name": "skyline market solutions",
+            "category": "Kids_Bars",
+            "amazon_unit": 1.3,
+            "seller_unit": 3.2,
+            "price_delta_abs": 1.9,
+            "price_delta_pct": 146.15384615384616,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 15.99,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B09YSSWBXW",
+            "product_name": "Thins",
+            "seller_name": "tectrove",
+            "category": "Thins_Bars",
+            "amazon_unit": 1.19,
+            "seller_unit": 2.92,
+            "price_delta_abs": 1.73,
+            "price_delta_pct": 145.3781512605042,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 21.59,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B09YSSWBXW",
+            "product_name": "Thins",
+            "seller_name": "birkenstar",
+            "category": "Thins_Bars",
+            "amazon_unit": 1.19,
+            "seller_unit": 2.91,
+            "price_delta_abs": 1.72,
+            "price_delta_pct": 144.53781512605042,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 21.55,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B07HYXPWJ9",
+            "product_name": "Nut Bar",
+            "seller_name": "office chase corp.",
+            "category": "Nut_Bars",
+            "amazon_unit": 0.78,
+            "seller_unit": 1.9,
+            "price_delta_abs": 1.12,
+            "price_delta_pct": 143.5897435897436,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 31.89,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B07HYXPWJ9",
+            "product_name": "Nut Bar",
+            "seller_name": "officecrave",
+            "category": "Nut_Bars",
+            "amazon_unit": 0.78,
+            "seller_unit": 1.9,
+            "price_delta_abs": 1.12,
+            "price_delta_pct": 143.5897435897436,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 31.98,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B0BCH545ZW",
+            "product_name": "Breakfast Bars",
+            "seller_name": "zaki's collection llc",
+            "category": "Breakfast_Bars",
+            "amazon_unit": 0.24,
+            "seller_unit": 0.58,
+            "price_delta_abs": 0.34,
+            "price_delta_pct": 141.66666666666666,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 12.27,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B0BCH545ZW",
+            "product_name": "Breakfast Bars",
+            "seller_name": "mydogsocks",
+            "category": "Breakfast_Bars",
+            "amazon_unit": 0.24,
+            "seller_unit": 0.58,
+            "price_delta_abs": 0.34,
+            "price_delta_pct": 141.66666666666666,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 12.3,
+            "upstream_price_flag": "Price Gouging"
+        },
+        {
+            "asin": "B0BCH545ZW",
+            "product_name": "Breakfast Bars",
+            "seller_name": "makin",
+            "category": "Breakfast_Bars",
+            "amazon_unit": 0.24,
+            "seller_unit": 0.58,
+            "price_delta_abs": 0.34,
+            "price_delta_pct": 141.66666666666666,
+            "amazon_price_source": "main_seller_amazon",
+            "seller_price_listing": 12.31,
+            "upstream_price_flag": "Price Gouging"
+        }
+    ],
+    "product_variant_summary": [
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "sally grocers",
+                "skyline market solutions"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "insight trade llc",
+                "sally grocers",
+                "soa grocery",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "akloos",
+                "amazonfresh",
+                "birkenstar",
+                "sally grocers",
+                "simba threads",
+                "skyline market solutions",
+                "soa grocery"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "birkenstar",
+                "supreme grocer",
+                "tectrove"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Thins",
+            "category": "Thins_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Protein Max",
+            "category": "Protein_Max",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "a & n bros",
+                "boston mart llc",
+                "everyday supply co.",
+                "fast and precise by staples",
+                "sally grocers",
+                "shop the king us",
+                "sim supply, inc.",
+                "the factory depot",
+                "triplenet pricing inc"
+            ]
+        },
+        {
+            "product_name": "Protein Max",
+            "category": "Protein_Max",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "a & n bros",
+                "boston mart llc",
+                "buck island trading",
+                "everyday supply co.",
+                "fast and precise by staples",
+                "ihostore",
+                "plexsupply.",
+                "shop the king us",
+                "the factory depot"
+            ]
+        },
+        {
+            "product_name": "Zerog Added Sugar Bar",
+            "category": "ZEROg_Added_Sugar_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "sally grocers",
+                "ustradeent"
+            ]
+        },
+        {
+            "product_name": "Zerog Added Sugar Bar",
+            "category": "ZEROg_Added_Sugar_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Zerog Added Sugar Bar",
+            "category": "ZEROg_Added_Sugar_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "3m marketing llc",
+                "boston mart llc",
+                "epic safari",
+                "fast and precise by staples",
+                "sally grocers",
+                "shoplet",
+                "thenewmall",
+                "valuable savings",
+                "xcairi"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "3m marketing llc",
+                "sally grocers",
+                "sevensky usa inc"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "big desk drawer",
+                "boston mart llc",
+                "fast and precise by staples",
+                "hurd\u2019s creations",
+                "sally grocers",
+                "shoplet",
+                "weboxed",
+                "whole premium store"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "birkenstar",
+                "bloom skins llc",
+                "corebuy",
+                "forthright traders",
+                "hugo's online",
+                "mega mercato",
+                "officeworld store",
+                "plexsupply.",
+                "pnwb office products",
+                "rocketdsd",
+                "sally grocers",
+                "shipco-mart",
+                "shoplet",
+                "sim supply, inc.",
+                "triplenet pricing inc",
+                "world zone dealz"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 4,
+            "unique_sellers_in_product": [
+                "ari finds",
+                "belowpricedeals",
+                "big desk drawer",
+                "birkenstar",
+                "boston mart llc",
+                "corebuy",
+                "costumeboom",
+                "epic safari",
+                "everyday supply co.",
+                "fast and precise by staples",
+                "fenvy",
+                "goodearthproducts",
+                "hugo's online",
+                "iherb",
+                "ilovetech deals",
+                "makin",
+                "my two crowns",
+                "nxtgenn",
+                "office chase corp.",
+                "officecrave",
+                "officeworld store",
+                "on--point",
+                "plexsupply.",
+                "pnwb office products",
+                "restockit",
+                "sally grocers",
+                "sermersheim holdings llc",
+                "sezestore",
+                "shop the king us",
+                "shoplet",
+                "sim supply, inc.",
+                "simba threads",
+                "spacebound",
+                "the factory depot",
+                "triplenet pricing inc",
+                "weboxed"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "epic safari",
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "birkenstar",
+                "epic safari",
+                "makin",
+                "my two crowns",
+                "sermersheim holdings llc",
+                "shipco-mart",
+                "shoplet",
+                "the factory depot",
+                "the monster zone",
+                "world zone dealz"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "3m marketing llc",
+                "a & n bros",
+                "big desk drawer",
+                "birkenstar",
+                "boston mart llc",
+                "fast and precise by staples",
+                "hugo's online",
+                "on--point",
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "belowpricedeals",
+                "big desk drawer",
+                "birkenstar",
+                "boston mart llc",
+                "epic safari",
+                "everyday supply co.",
+                "fast and precise by staples",
+                "hugo's online",
+                "makin",
+                "my two crowns",
+                "nxtgenn",
+                "office chase corp.",
+                "officecrave",
+                "on--point",
+                "quick ship ny",
+                "sally grocers",
+                "sermersheim holdings llc",
+                "shipco-mart",
+                "triplenet pricing inc",
+                "world zone dealz"
+            ]
+        },
+        {
+            "product_name": "Nut Bar",
+            "category": "Nut_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "aaa_appliance",
+                "belowpricedeals",
+                "big desk drawer",
+                "boston mart llc",
+                "hugo's online",
+                "makin",
+                "office chase corp.",
+                "officecrave",
+                "plexsupply.",
+                "sally grocers",
+                "shoplet",
+                "weboxedit",
+                "world zone dealz"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Clusters",
+            "category": "Healthy_Grains_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "gourmet foods & grocery",
+                "iherb",
+                "mydogsocks",
+                "online grocery outlet",
+                "soa grocery",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Clusters",
+            "category": "Healthy_Grains_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Clusters",
+            "category": "Healthy_Grains_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Healthy Grains Clusters",
+            "category": "Healthy_Grains_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "essex distribution",
+                "gourmet foods & grocery",
+                "online grocery outlet",
+                "sally grocers",
+                "ustradeent",
+                "vitozon"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "fast and precise by staples",
+                "hugo's online",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "simba threads",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "akloos",
+                "makin",
+                "mydogsocks",
+                "whole foods market",
+                "zaki's collection llc"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "mydogsocks",
+                "simba threads",
+                "zaki's collection llc"
+            ]
+        },
+        {
+            "product_name": "Breakfast Bars",
+            "category": "Breakfast_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Minis",
+            "category": "Minis_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "a&b compney 1",
+                "amazonfresh",
+                "bestsource officesupplies",
+                "big desk drawer",
+                "birkenstar",
+                "hugo's online",
+                "my two crowns",
+                "sally grocers",
+                "weboxedit"
+            ]
+        },
+        {
+            "product_name": "Minis",
+            "category": "Minis_Bars",
+            "variant_count": 2,
+            "unique_sellers_in_product": [
+                "akloos",
+                "amazonfresh",
+                "bestsource officesupplies",
+                "big desk drawer",
+                "ilovetech deals",
+                "sally grocers",
+                "soa grocery"
+            ]
+        },
+        {
+            "product_name": "Minis",
+            "category": "Minis_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "ameristyle",
+                "bestsource officesupplies",
+                "hugo's online",
+                "pnwb office products",
+                "sally grocers"
+            ]
+        },
+        {
+            "product_name": "Soft Baked Granola",
+            "category": "Soft_Baked_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "ustradeent"
+            ]
+        },
+        {
+            "product_name": "Soft Baked Granola",
+            "category": "Soft_Baked_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "ustradeent"
+            ]
+        },
+        {
+            "product_name": "Zerog Added Sugar Granola",
+            "category": "ZEROg_Added_Sugar_Granola",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Kids School Friendly",
+            "category": "Kids_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Kids School Friendly",
+            "category": "Kids_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "fastme",
+                "skyline market solutions",
+                "whole foods market",
+                "zaki's collection llc"
+            ]
+        },
+        {
+            "product_name": "Protein",
+            "category": "Protein_from_Real_Food",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "3m marketing llc",
+                "birkenstar",
+                "boston mart llc",
+                "hurd\u2019s creations",
+                "my two crowns",
+                "sally grocers",
+                "sermersheim holdings llc",
+                "the factory depot"
+            ]
+        },
+        {
+            "product_name": "Protein",
+            "category": "Protein_from_Real_Food",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "big desk drawer",
+                "birkenstar",
+                "hillside view holdings",
+                "hugo's online",
+                "makin",
+                "my two crowns",
+                "on--point",
+                "sally grocers",
+                "shoplet",
+                "weboxed"
+            ]
+        },
+        {
+            "product_name": "Dipped Clusters",
+            "category": "Dipped_Clusters",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Soft Baked Squares",
+            "category": "Soft_Baked_Squares_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "amazonfresh",
+                "mydogsocks",
+                "sally grocers",
+                "simba threads",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Soft Baked Squares",
+            "category": "Soft_Baked_Squares_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "sally grocers",
+                "simba threads"
+            ]
+        },
+        {
+            "product_name": "Soft Baked Squares",
+            "category": "Soft_Baked_Squares_Bars",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "sally grocers",
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Energy Bars",
+            "category": "All_Snacks",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Chewy Bar",
+            "category": "All_Snacks",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Healthy Grains Energy Bars",
+            "category": "All_Snacks",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "whole foods market"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Energy Bars",
+            "category": "All_Snacks",
+            "variant_count": 1,
+            "unique_sellers_in_product": [
+                "go shop inc",
+                "yes cart inc"
+            ]
+        },
+        {
+            "product_name": "Healthy Grains Energy Bars",
+            "category": "All_Snacks",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        },
+        {
+            "product_name": "Healthy Grains Energy Bars",
+            "category": "All_Snacks",
+            "variant_count": 1,
+            "unique_sellers_in_product": []
+        }
+    ],
+    "total_listings": 342,
+    "total_gouged_listings": 185,
+    "fair_price_listings": 162,
+    "avg_overprice_pct": 59.15755760272914,
+    "avg_overprice_abs": 1.7943362831858403,
+    "max_overprice_pct": 194.16666666666666,
+    "max_overprice_abs": 13.17,
+    "gouging_rate": 54.09356725146199,
+    "sku_gouged_map": {
+        "B08ZK2TJ2B": [
+            "skyline market solutions"
+        ],
+        "B09R6Z23SL": [
+            "insight trade llc",
+            "soa grocery"
+        ],
+        "B0C4CW3H7K": [
+            "birkenstar",
+            "simba threads",
+            "skyline market solutions",
+            "soa grocery"
+        ],
+        "B09YSSWBXW": [
+            "birkenstar",
+            "tectrove"
+        ],
+        "B0CM77RXJN": [
+            "a & n bros",
+            "boston mart llc",
+            "everyday supply co.",
+            "fast and precise by staples",
+            "shop the king us",
+            "sim supply, inc.",
+            "the factory depot",
+            "triplenet pricing inc"
+        ],
+        "B0C86RQ9SC": [
+            "ustradeent"
+        ],
+        "B0034EDMCW": [
+            "3m marketing llc",
+            "boston mart llc",
+            "epic safari",
+            "fast and precise by staples",
+            "shoplet",
+            "thenewmall"
+        ],
+        "B00IZF0LCE": [
+            "3m marketing llc"
+        ],
+        "B019EGM8G4": [
+            "big desk drawer",
+            "boston mart llc",
+            "fast and precise by staples",
+            "hurd\u2019s creations",
+            "shoplet",
+            "weboxed",
+            "whole premium store"
+        ],
+        "B003TN8JGC": [
+            "birkenstar",
+            "bloom skins llc",
+            "corebuy",
+            "forthright traders",
+            "hugo's online",
+            "mega mercato",
+            "officeworld store",
+            "plexsupply.",
+            "pnwb office products",
+            "rocketdsd",
+            "shipco-mart",
+            "shoplet",
+            "sim supply, inc.",
+            "triplenet pricing inc",
+            "world zone dealz"
+        ],
+        "B07HYXPWJ9": [
+            "belowpricedeals",
+            "big desk drawer",
+            "birkenstar",
+            "boston mart llc",
+            "fast and precise by staples",
+            "hugo's online",
+            "nxtgenn",
+            "office chase corp.",
+            "officecrave",
+            "shop the king us",
+            "sim supply, inc.",
+            "simba threads",
+            "the factory depot",
+            "triplenet pricing inc"
+        ],
+        "B019EGM8UA": [
+            "big desk drawer",
+            "birkenstar",
+            "everyday supply co.",
+            "hugo's online",
+            "my two crowns",
+            "office chase corp.",
+            "on--point",
+            "plexsupply.",
+            "sermersheim holdings llc",
+            "shoplet",
+            "triplenet pricing inc"
+        ],
+        "B003TMZQC8": [
+            "hugo's online",
+            "shoplet"
+        ],
+        "B00IZF0P98": [
+            "birkenstar",
+            "corebuy",
+            "costumeboom",
+            "epic safari",
+            "everyday supply co.",
+            "fenvy",
+            "goodearthproducts",
+            "hugo's online",
+            "iherb",
+            "officeworld store",
+            "pnwb office products",
+            "restockit",
+            "spacebound",
+            "the factory depot",
+            "triplenet pricing inc",
+            "weboxed"
+        ],
+        "B071912K7K": [
+            "epic safari"
+        ],
+        "B001D0DMME": [
+            "3m marketing llc",
+            "a & n bros",
+            "big desk drawer",
+            "birkenstar",
+            "boston mart llc",
+            "fast and precise by staples",
+            "hugo's online",
+            "on--point"
+        ],
+        "B019EGM90O": [
+            "belowpricedeals",
+            "big desk drawer",
+            "birkenstar",
+            "boston mart llc",
+            "epic safari",
+            "everyday supply co.",
+            "fast and precise by staples",
+            "hugo's online",
+            "makin",
+            "my two crowns",
+            "nxtgenn",
+            "office chase corp.",
+            "officecrave",
+            "on--point",
+            "quick ship ny",
+            "sermersheim holdings llc",
+            "shipco-mart",
+            "triplenet pricing inc",
+            "world zone dealz"
+        ],
+        "B00EW6V06Q": [
+            "aaa_appliance",
+            "belowpricedeals",
+            "big desk drawer",
+            "boston mart llc",
+            "hugo's online",
+            "office chase corp.",
+            "officecrave",
+            "plexsupply.",
+            "shoplet",
+            "weboxedit",
+            "world zone dealz"
+        ],
+        "B006H2JY9S": [
+            "gourmet foods & grocery",
+            "iherb",
+            "mydogsocks",
+            "online grocery outlet",
+            "soa grocery"
+        ],
+        "B00QT7VPUW": [
+            "gourmet foods & grocery",
+            "ustradeent"
+        ],
+        "B0BCH3P3VY": [
+            "whole foods market"
+        ],
+        "B0BCH4QXYW": [
+            "fast and precise by staples",
+            "hugo's online"
+        ],
+        "B0BCH583WK": [
+            "simba threads"
+        ],
+        "B0BCH545ZW": [
+            "akloos",
+            "makin",
+            "mydogsocks",
+            "zaki's collection llc"
+        ],
+        "B0BCH3Y3JS": [
+            "mydogsocks",
+            "zaki's collection llc"
+        ],
+        "B085WT6D2F": [
+            "a&b compney 1",
+            "bestsource officesupplies",
+            "big desk drawer",
+            "birkenstar",
+            "hugo's online",
+            "my two crowns",
+            "weboxedit"
+        ],
+        "B085WTQM3V": [
+            "bestsource officesupplies",
+            "big desk drawer",
+            "soa grocery"
+        ],
+        "B085WTJFFG": [
+            "ameristyle",
+            "bestsource officesupplies",
+            "hugo's online",
+            "pnwb office products"
+        ],
+        "B0BMW3XK4F": [
+            "ustradeent"
+        ],
+        "B0BMW6PBR1": [
+            "ustradeent"
+        ],
+        "B0CV5Y8R9Z": [
+            "fastme",
+            "skyline market solutions",
+            "zaki's collection llc"
+        ],
+        "B07DVYH58C": [
+            "3m marketing llc",
+            "birkenstar",
+            "boston mart llc",
+            "hurd\u2019s creations",
+            "my two crowns",
+            "sally grocers",
+            "sermersheim holdings llc",
+            "the factory depot"
+        ],
+        "B0777WX969": [
+            "big desk drawer",
+            "birkenstar",
+            "hugo's online",
+            "my two crowns",
+            "on--point",
+            "shoplet",
+            "weboxed"
+        ],
+        "B0C1TJ2Y3M": [
+            "mydogsocks",
+            "simba threads"
+        ],
+        "B0C1TK724H": [
+            "simba threads"
+        ],
+        "B0F1H1XQW9": [
+            "go shop inc",
+            "yes cart inc"
+        ]
+    },
+    "skus_impacted": 36,
+    "skus_impact_rate": 61.016949152542374,
+    "category_gouging_summary": [
+        {
+            "category": "Protein_from_Real_Food",
+            "total_listings": 20,
+            "gouged_listings": 15,
+            "gouging_rate": 75.0,
+            "avg_overprice_pct": 63.584526786390846,
+            "avg_overprice_abs": 0.7394999999999999
+        },
+        {
+            "category": "Nut_Bars",
+            "total_listings": 160,
+            "gouged_listings": 111,
+            "gouging_rate": 69.375,
+            "avg_overprice_pct": 70.29140492697199,
+            "avg_overprice_abs": 2.886375000000001
+        },
+        {
+            "category": "Minis_Bars",
+            "total_listings": 27,
+            "gouged_listings": 14,
+            "gouging_rate": 51.85185185185185,
+            "avg_overprice_pct": 65.32813515269656,
+            "avg_overprice_abs": 0.7951851851851851
+        },
+        {
+            "category": "Soft_Baked_Granola",
+            "total_listings": 4,
+            "gouged_listings": 2,
+            "gouging_rate": 50.0,
+            "avg_overprice_pct": 55.09221681096681,
+            "avg_overprice_abs": 2.0725
+        },
+        {
+            "category": "Kids_Bars",
+            "total_listings": 7,
+            "gouged_listings": 3,
+            "gouging_rate": 42.857142857142854,
+            "avg_overprice_pct": 53.84615384615385,
+            "avg_overprice_abs": 0.7000000000000001
+        },
+        {
+            "category": "Protein_Max",
+            "total_listings": 20,
+            "gouged_listings": 8,
+            "gouging_rate": 40.0,
+            "avg_overprice_pct": 61.14402810304449,
+            "avg_overprice_abs": 1.175
+        },
+        {
+            "category": "Healthy_Grains_Granola",
+            "total_listings": 19,
+            "gouged_listings": 7,
+            "gouging_rate": 36.84210526315789,
+            "avg_overprice_pct": 43.57017466732341,
+            "avg_overprice_abs": 2.5152631578947364
+        },
+        {
+            "category": "Thins_Bars",
+            "total_listings": 25,
+            "gouged_listings": 9,
+            "gouging_rate": 36.0,
+            "avg_overprice_pct": 53.16728365135227,
+            "avg_overprice_abs": 0.5975
+        },
+        {
+            "category": "Breakfast_Bars",
+            "total_listings": 28,
+            "gouged_listings": 10,
+            "gouging_rate": 35.714285714285715,
+            "avg_overprice_pct": 46.33712660834135,
+            "avg_overprice_abs": 0.1792857142857143
+        },
+        {
+            "category": "Soft_Baked_Squares_Bars",
+            "total_listings": 12,
+            "gouged_listings": 3,
+            "gouging_rate": 25.0,
+            "avg_overprice_pct": 19.689115107964955,
+            "avg_overprice_abs": 0.22
+        },
+        {
+            "category": "All_Snacks",
+            "total_listings": 9,
+            "gouged_listings": 2,
+            "gouging_rate": 22.22222222222222,
+            "avg_overprice_pct": 21.88295165394402,
+            "avg_overprice_abs": 0.2866666666666667
+        },
+        {
+            "category": "ZEROg_Added_Sugar_Bars",
+            "total_listings": 8,
+            "gouged_listings": 1,
+            "gouging_rate": 12.5,
+            "avg_overprice_pct": 14.69511630062089,
+            "avg_overprice_abs": 0.14250000000000002
+        },
+        {
+            "category": "ZEROg_Added_Sugar_Granola",
+            "total_listings": 1,
+            "gouged_listings": 0,
+            "gouging_rate": 0.0,
+            "avg_overprice_pct": 0.0,
+            "avg_overprice_abs": 0.0
+        }
+    ],
+    "seller_gouging_summary": [
+        {
+            "seller_name": "hugo's online",
+            "gouged_listings": 12,
+            "avg_overprice_pct": 105.5602886204263
+        },
+        {
+            "seller_name": "birkenstar",
+            "gouged_listings": 11,
+            "avg_overprice_pct": 107.73032985121485
+        },
+        {
+            "seller_name": "big desk drawer",
+            "gouged_listings": 9,
+            "avg_overprice_pct": 95.8904177597409
+        },
+        {
+            "seller_name": "boston mart llc",
+            "gouged_listings": 8,
+            "avg_overprice_pct": 113.06277145947887
+        },
+        {
+            "seller_name": "shoplet",
+            "gouged_listings": 7,
+            "avg_overprice_pct": 85.51388678113805
+        },
+        {
+            "seller_name": "fast and precise by staples",
+            "gouged_listings": 7,
+            "avg_overprice_pct": 76.94214759137479
+        },
+        {
+            "seller_name": "triplenet pricing inc",
+            "gouged_listings": 6,
+            "avg_overprice_pct": 117.70405588649135
+        },
+        {
+            "seller_name": "my two crowns",
+            "gouged_listings": 5,
+            "avg_overprice_pct": 93.8512603408175
+        },
+        {
+            "seller_name": "simba threads",
+            "gouged_listings": 5,
+            "avg_overprice_pct": 92.19670013486929
+        },
+        {
+            "seller_name": "soa grocery",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 133.57103422892897
+        },
+        {
+            "seller_name": "the factory depot",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 123.52795732512203
+        },
+        {
+            "seller_name": "mydogsocks",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 121.46937492332228
+        },
+        {
+            "seller_name": "office chase corp.",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 120.56631100183823
+        },
+        {
+            "seller_name": "ustradeent",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 115.64950644550967
+        },
+        {
+            "seller_name": "everyday supply co.",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 101.751014399365
+        },
+        {
+            "seller_name": "on--point",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 89.61366152807807
+        },
+        {
+            "seller_name": "3m marketing llc",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 81.218217728303
+        },
+        {
+            "seller_name": "epic safari",
+            "gouged_listings": 4,
+            "avg_overprice_pct": 79.23740913738581
+        },
+        {
+            "seller_name": "zaki's collection llc",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 129.9145299145299
+        },
+        {
+            "seller_name": "sim supply, inc.",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 128.64285714285714
+        },
+        {
+            "seller_name": "skyline market solutions",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 127.73029439696107
+        },
+        {
+            "seller_name": "belowpricedeals",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 125.04281787061126
+        },
+        {
+            "seller_name": "pnwb office products",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 124.55522288755822
+        },
+        {
+            "seller_name": "officecrave",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 120.61157618963608
+        },
+        {
+            "seller_name": "bestsource officesupplies",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 115.58114035087719
+        },
+        {
+            "seller_name": "sermersheim holdings llc",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 103.17569378275766
+        },
+        {
+            "seller_name": "world zone dealz",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 89.24136705753142
+        },
+        {
+            "seller_name": "weboxed",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 88.46504855885219
+        },
+        {
+            "seller_name": "plexsupply.",
+            "gouged_listings": 3,
+            "avg_overprice_pct": 87.81060965120157
+        },
+        {
+            "seller_name": "officeworld store",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 129.87125748502996
+        },
+        {
+            "seller_name": "shop the king us",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 117.74267399267399
+        },
+        {
+            "seller_name": "weboxedit",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 115.68474264705883
+        },
+        {
+            "seller_name": "corebuy",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 108.20958083832335
+        },
+        {
+            "seller_name": "nxtgenn",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 103.00553373041016
+        },
+        {
+            "seller_name": "shipco-mart",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 100.59967051070839
+        },
+        {
+            "seller_name": "makin",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 91.71471718835804
+        },
+        {
+            "seller_name": "gourmet foods & grocery",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 87.66582130316036
+        },
+        {
+            "seller_name": "a & n bros",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 79.93913857677902
+        },
+        {
+            "seller_name": "hurd\u2019s creations",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 64.30960060715302
+        },
+        {
+            "seller_name": "iherb",
+            "gouged_listings": 2,
+            "avg_overprice_pct": 48.91863999274179
+        },
+        {
+            "seller_name": "ameristyle",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 194.16666666666666
+        },
+        {
+            "seller_name": "rocketdsd",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 159.0
+        },
+        {
+            "seller_name": "tectrove",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 145.3781512605042
+        },
+        {
+            "seller_name": "insight trade llc",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 115.38461538461539
+        },
+        {
+            "seller_name": "a&b compney 1",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 110.15625
+        },
+        {
+            "seller_name": "spacebound",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 106.58682634730539
+        },
+        {
+            "seller_name": "fastme",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 100.0
+        },
+        {
+            "seller_name": "forthright traders",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 99.0
+        },
+        {
+            "seller_name": "mega mercato",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 99.0
+        },
+        {
+            "seller_name": "bloom skins llc",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 99.0
+        },
+        {
+            "seller_name": "go shop inc",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 98.47328244274809
+        },
+        {
+            "seller_name": "yes cart inc",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 98.47328244274809
+        },
+        {
+            "seller_name": "whole premium store",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 97.63779527559055
+        },
+        {
+            "seller_name": "aaa_appliance",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 92.94117647058823
+        },
+        {
+            "seller_name": "online grocery outlet",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 84.0909090909091
+        },
+        {
+            "seller_name": "thenewmall",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 83.33333333333333
+        },
+        {
+            "seller_name": "fenvy",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 73.65269461077844
+        },
+        {
+            "seller_name": "costumeboom",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 73.65269461077844
+        },
+        {
+            "seller_name": "quick ship ny",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 64.66227347611202
+        },
+        {
+            "seller_name": "akloos",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 58.333333333333336
+        },
+        {
+            "seller_name": "whole foods market",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 53.48837209302326
+        },
+        {
+            "seller_name": "restockit",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 52.09580838323353
+        },
+        {
+            "seller_name": "goodearthproducts",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 52.09580838323353
+        },
+        {
+            "seller_name": "sally grocers",
+            "gouged_listings": 1,
+            "avg_overprice_pct": 51.80722891566265
+        }
+    ],
+    "prop_bad_sellers": 0.0,
+    "marketplace_health_score": 49.29,
+    "_internal_debug": {
+        "pct_sample_count": 339,
+        "abs_sample_count": 339
+    }
+}

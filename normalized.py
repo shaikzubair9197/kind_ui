@@ -2,19 +2,23 @@ import json
 import re
 from urllib.parse import urlparse
 
+
 INPUT_FILE = "all_products_merged.json"
-OUTPUT_FILE = "normalized_all_products.json"
+OUTPUT_FILE = "normalized_all_products1.json"
 
 
 # =========================
 # HELPERS
 # =========================
 
+
 def parse_money(m):
-    if not m:
+    if m is None:
         return None
-    m = m.replace(",", "")
-    m = re.search(r"\$([0-9]+(?:\.[0-9]+)?)", m)
+    if isinstance(m, (int, float)):
+        return float(m)
+    m = str(m).replace(",", "")
+    m = re.search(r"\$?([0-9]+(?:\.[0-9]+)?)", m)
     return float(m.group(1)) if m else None
 
 
@@ -36,12 +40,17 @@ def parse_rating_stars(t):
 def parse_rating_meta(t):
     if not t:
         return None, None
-    # count
-    c = re.search(r"\(([\d,]+)\s+ratings?\)", t)
+
+    # plain number like "1228"
+    if t.isdigit():
+        return int(t), None
+
+    c = re.search(r"([\d,]+)", t)
     count = int(c.group(1).replace(",", "")) if c else None
-    # positive %
+
     p = re.search(r"(\d+)%\s+positive", t)
     positive = float(p.group(1)) if p else None
+
     return count, positive
 
 
@@ -90,6 +99,7 @@ def classify_price_flag(pct):
 # NORMALIZER
 # =========================
 
+
 def normalize():
     with open(INPUT_FILE, "r") as f:
         items = json.load(f)
@@ -106,7 +116,8 @@ def normalize():
         if src not in groups:
             groups[src] = {
                 "category": p.get("category"),
-                "category_display": p.get("category_display"),
+                # Change C: derive display from category by removing underscores
+                "category_display": (p.get("category") or "").replace("_", " ") or None,
                 "source_product_url": src,
                 "product_name": extract_product_family(src) or extract_slug(src),
                 "variants": [],
@@ -143,11 +154,42 @@ def normalize():
         # ---------------------------------------
         # MAIN SELLER (per variant)
         # ---------------------------------------
+        raw_main = p.get("main_seller")
+
+        # Change A: Normalize to a dict, including string case
+        if isinstance(raw_main, list) and raw_main:
+            existing_main = raw_main[0]
+        elif isinstance(raw_main, dict):
+            existing_main = raw_main
+        elif isinstance(raw_main, str):
+            existing_main = {
+                "seller_name": raw_main,
+                "ships_from": p.get("ships_from"),
+            }
+        else:
+            existing_main = {}
+
+        seller_name = (
+            existing_main.get("seller_name")
+            or existing_main.get("ships_from")
+            or p.get("main_seller")   # fallback when input is a string
+            or p.get("ships_from")
+        )
+
         main_seller = {
             "asin": asin,
-            "seller_name": p.get("sold_by"),
-            "ships_from": p.get("ships_from"),
-            "is_authorized": True if p.get("sold_by") == "Amazon.com" else False,
+            "seller_name": seller_name,
+            "ships_from": existing_main.get("ships_from") or p.get("ships_from"),
+            # Change B: force explicit boolean
+            "is_authorized": bool(
+                seller_name
+                and seller_name.lower() in {
+                    "amazon",
+                    "amazon.com",
+                    "amazonfresh",
+                    "whole foods market",
+                }
+            ),
             "price": base_price,
             "unit_price": unit_price,
             "price_currency": "USD",
@@ -171,30 +213,53 @@ def normalize():
             stars = parse_rating_stars(osel.get("seller_rating"))
             rcount, pos = parse_rating_meta(osel.get("seller_rating_count"))
 
-            delta = (osp - base_price) if (osp and base_price) else None
-            pct = ((delta / base_price) * 100) if (delta and base_price) else None
+            delta = (
+                (osp - base_price)
+                if (osp is not None and base_price is not None)
+                else None
+            )
 
-            groups[src]["seller_market"].append({
-                "asin": asin,
-                "seller_name": osel.get("sold_by"),
-                "ships_from": osel.get("ships_from"),
-                "is_authorized": False,
-                "price": osp,
-                "unit_price": parse_unit_price(osel.get("price_per_unit")),
-                "price_currency": "USD",
-                "price_delta_abs": delta,
-                "price_delta_percent": pct,
-                "price_flag": classify_price_flag(pct),
-                "rating_stars": stars,
-                "rating_count": rcount,
-                "positive_rating_percent": pos,
-                "rating_flag": None if pos is None else (
-                    "excellent" if pos >= 90 else
-                    "good" if pos >= 75 else
-                    "mixed" if pos >= 50 else
-                    "poor"
-                )
-            })
+            if delta is not None and base_price:
+                pct = (delta / base_price) * 100
+            else:
+                pct = None
+
+            seller_name = osel.get("sold_by")
+
+            groups[src]["seller_market"].append(
+                {
+                    "asin": asin,
+                    "seller_name": seller_name,
+                    "ships_from": osel.get("ships_from"),
+                    "is_authorized": seller_name
+                    and seller_name.lower() in {
+                        "amazon",
+                        "amazon.com",
+                        "amazonfresh",
+                        "whole foods market",
+                    },
+                    "price": osp,
+                    "unit_price": parse_unit_price(osel.get("price_per_unit")),
+                    "price_currency": "USD",
+                    "price_delta_abs": delta,
+                    "price_delta_percent": pct,
+                    "price_flag": classify_price_flag(pct),
+                    "rating_stars": stars,
+                    "rating_count": rcount,
+                    "positive_rating_percent": pos,
+                    "rating_flag": None
+                    if pos is None
+                    else (
+                        "excellent"
+                        if pos >= 90
+                        else "good"
+                        if pos >= 75
+                        else "mixed"
+                        if pos >= 50
+                        else "poor"
+                    ),
+                }
+            )
 
     # convert dict → list
     result = list(groups.values())

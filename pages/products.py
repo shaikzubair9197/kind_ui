@@ -26,8 +26,8 @@ st.markdown(sidebar_css, unsafe_allow_html=True)
 # Load Data
 # --------------------------------------------------------
 BASE = Path(".")
-NORMALIZED_FILE = BASE / "normalized_all_products.json"
-METADATA_SUMMARY_FILE = BASE / "normalized_metadata_summary.json"
+NORMALIZED_FILE = BASE / "normalized_all_products1.json"
+METADATA_SUMMARY_FILE = BASE / "normalized_metadata_summary1.json"
 
 
 def load_json(path: Path):

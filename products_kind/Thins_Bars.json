@@ -1,0 +1,50 @@
+[
+  {
+    "product_url": "https://www.kindsnacks.com/products/thins/peanut-butter-dark-chocolate",
+    "amazon_link": {
+      "title": "Peanut Butter Dark Chocolate",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/e88e8a9ff02dbe4d66263b47051e2409f739f580.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=67e3bea3-a719-4e81-b2b3-2530bbe6b2ed&v=2.13.15&pmid=142045279&price=8.39&stockStatus=1&widgetType=lightbox&t=6491&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499019360"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/thins/dark-chocolate-nuts-sea-salt",
+    "amazon_link": {
+      "title": "Dark Chocolate Nuts & Sea Salt",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/ftvimhsppkhweogp4zgw.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=ebb265c2-c8e6-4dbf-bfb1-93fc97d194f4&v=2.13.15&pmid=142071708&price=8.79&stockStatus=1&widgetType=lightbox&t=6625&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499030024"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/thins/caramel-almond-sea-salt",
+    "amazon_link": {
+      "title": "Caramel Almond & Sea Salt",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/t8fiqjvhq8xkkvzdcyra.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=62014930-3b92-4688-8f46-487a74b00a4f&v=2.13.15&pmid=150340684&price=7.99&stockStatus=1&widgetType=lightbox&t=6696&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499040757"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/thins/dark-chocolate-cherry-cashew",
+    "amazon_link": {
+      "title": "Dark Chocolate Cherry Cashew",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/lwhb2bhrt2jv7lwvwsxn.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=6d8ba777-9411-4a8e-91aa-da70fc82416f&v=2.13.15&pmid=150122299&price=8.79&stockStatus=1&widgetType=lightbox&t=6674&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499051586"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/thins/chocolate-pumpkin-spice",
+    "amazon_link": {
+      "title": "Chocolate Pumpkin Spice",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/tmdl42rgf9qvlaeg3x7u.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=25ba31ea-710f-4283-8485-8dfcd3ae90e7&v=2.13.15&pmid=148983336&price=8.99&stockStatus=1&widgetType=lightbox&t=6692&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499062441"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/thins/apple-caramel",
+    "amazon_link": {
+      "title": "Apple Caramel",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/cxvp1yac75m3kjlaumxn.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=d293660c-00f0-4a60-b547-13c0ab0d459a&v=2.13.15&pmid=148982638&price=7.67&stockStatus=1&widgetType=lightbox&t=6791&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499073389"
+    }
+  }
+]

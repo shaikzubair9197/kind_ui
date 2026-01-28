@@ -1,0 +1,572 @@
+[
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/caramel-peanut",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0C31KRLD8",
+        "variant_name": "Caramel Peanut",
+        "title": "KIND Breakfast Protein Bars, Caramel Peanut, Healthy Snacks, Gluten Free, 8g Protein, 6 Count",
+        "price": 5.89,
+        "unit_price": 0.28,
+        "prime": null,
+        "flavor": "Caramel Peanut",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0C31KRLD8",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=f4808f94-db98-4469-afb5-e42073037b0b&v=2.13.15&pmid=148983553&price=5.39&stockStatus=1&widgetType=lightbox&t=6351&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499187536"
+      },
+      {
+        "asin": "B0C31KRLD8",
+        "variant_name": "Caramel Peanut",
+        "title": "KIND Breakfast Protein Bars, Caramel Peanut, Healthy Snacks, Gluten Free, 8g Protein, 6 Count",
+        "price": 5.89,
+        "unit_price": 0.28,
+        "prime": null,
+        "flavor": "Caramel Peanut",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0C31KRLD8",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=f4808f94-db98-4469-afb5-e42073037b0b&v=2.13.15&pmid=148983553&price=5.39&stockStatus=1&widgetType=lightbox&t=6351&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499187536"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0C31KRLD8",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 5.89,
+        "unit_price": 0.28,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/dark-chocolate-cocoa",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0BCH3P3VY",
+        "variant_name": "Dark Chocolate Cocoa",
+        "title": "KIND Breakfast Protein Bars, Dark Chocolate Cocoa, Healthy Snacks, Gluten Free, 8g Protein, 6 Count",
+        "price": 4.49,
+        "unit_price": 0.43,
+        "prime": null,
+        "flavor": "Dark Chocolate Cocoa",
+        "size": null,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH3P3VY",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=016d4b42-5a27-483f-987c-4e51858ddeb0&v=2.13.15&pmid=149473208&price=4.49&stockStatus=3&widgetType=lightbox&t=6795&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499198563"
+      },
+      {
+        "asin": "B0BCH3P3VY",
+        "variant_name": "Dark Chocolate Cocoa",
+        "title": "KIND Breakfast Protein Bars, Dark Chocolate Cocoa, Healthy Snacks, Gluten Free, 8g Protein, 6 Count",
+        "price": 4.49,
+        "unit_price": 0.43,
+        "prime": null,
+        "flavor": "Dark Chocolate Cocoa",
+        "size": null,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH3P3VY",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=016d4b42-5a27-483f-987c-4e51858ddeb0&v=2.13.15&pmid=149473208&price=4.49&stockStatus=3&widgetType=lightbox&t=6795&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499198563"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0BCH3P3VY",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 4.49,
+        "unit_price": 0.43,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/almond-butter",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0BCH4QXYW",
+        "variant_name": "Almond Butter",
+        "title": "KIND Breakfast Protein Bars, Almond Butter, Healthy Snacks, Gluten Free, 8g Protein, 6 Count",
+        "price": 4.98,
+        "unit_price": 0.47,
+        "prime": null,
+        "flavor": "Almond Butter",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH4QXYW",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=111083d3-8808-4d82-b3ab-c07d3eea7f2a&v=2.13.15&pmid=146882401&price=4.98&stockStatus=1&widgetType=lightbox&t=6563&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499209324"
+      },
+      {
+        "asin": "B0BCH4QXYW",
+        "variant_name": "Almond Butter",
+        "title": "KIND Breakfast Protein Bars, Almond Butter, Healthy Snacks, Gluten Free, 8g Protein, 6 Count",
+        "price": 4.98,
+        "unit_price": 0.47,
+        "prime": null,
+        "flavor": "Almond Butter",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH4QXYW",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=111083d3-8808-4d82-b3ab-c07d3eea7f2a&v=2.13.15&pmid=146882401&price=4.98&stockStatus=1&widgetType=lightbox&t=6563&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499209324"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0BCH4QXYW",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 4.98,
+        "unit_price": 0.47,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0BCH4QXYW",
+        "seller_name": "Fast and Precise by Staples",
+        "ships_from": "Fast and Precise by Staples",
+        "is_authorized": false,
+        "price": 9.51,
+        "unit_price": 0.9,
+        "price_currency": "USD",
+        "price_delta_abs": 4.529999999999999,
+        "price_delta_percent": 90.96385542168673,
+        "price_flag": "gouging",
+        "amazon_price_listing": 4.98,
+        "amazon_unit_price": 0.47,
+        "prime": null,
+        "rating_stars": 4.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0BCH4QXYW",
+        "seller_name": "Hugo's Online",
+        "ships_from": "Hugo's Online",
+        "is_authorized": false,
+        "price": 13.18,
+        "unit_price": 1.25,
+        "price_currency": "USD",
+        "price_delta_abs": 8.2,
+        "price_delta_percent": 164.6586345381526,
+        "price_flag": "gouging",
+        "amazon_price_listing": 4.98,
+        "amazon_unit_price": 0.47,
+        "prime": null,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/peanut-butter-banana-dark-chocolate",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0BCH583WK",
+        "variant_name": "Peanut Butter Banana Dark Chocolate",
+        "title": "KIND Breakfast, Healthy Snack Bar, Peanut Butter Banana Dark Chocolate, Gluten Free Breakfast Bars, 8g Protein, 1.76 OZ Packs (6 Count)",
+        "price": 4.98,
+        "unit_price": 0.47,
+        "prime": null,
+        "flavor": "Peanut Butter Banana Dark Chocolate",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH583WK",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=f29f28e4-d46c-46c1-809c-1501fba0f43a&v=2.13.15&pmid=148945207&price=4.98&stockStatus=1&widgetType=lightbox&t=6576&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499219543"
+      },
+      {
+        "asin": "B0BCH583WK",
+        "variant_name": "Peanut Butter Banana Dark Chocolate",
+        "title": "KIND Breakfast, Healthy Snack Bar, Peanut Butter Banana Dark Chocolate, Gluten Free Breakfast Bars, 8g Protein, 1.76 OZ Packs (6 Count)",
+        "price": 4.98,
+        "unit_price": 0.47,
+        "prime": null,
+        "flavor": "Peanut Butter Banana Dark Chocolate",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH583WK",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=f29f28e4-d46c-46c1-809c-1501fba0f43a&v=2.13.15&pmid=148945207&price=4.98&stockStatus=1&widgetType=lightbox&t=6576&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499219543"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0BCH583WK",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 4.98,
+        "unit_price": 0.47,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0BCH583WK",
+        "seller_name": "SIMBA THREADS",
+        "ships_from": "SIMBA THREADS",
+        "is_authorized": false,
+        "price": 7.99,
+        "unit_price": 0.76,
+        "price_currency": "USD",
+        "price_delta_abs": 3.01,
+        "price_delta_percent": 60.44176706827308,
+        "price_flag": "gouging",
+        "amazon_price_listing": 4.98,
+        "amazon_unit_price": 0.47,
+        "prime": null,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/apple-cinnamon-protein",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0DH9D5Q66",
+        "variant_name": "Apple Cinnamon Protein",
+        "title": "KIND Breakfast Protein, Healthy Snack Bar, Apple Cinnamon, Gluten Free Breakfast Bars, 8g Protein, 1.76OZ Packs, 12 Count",
+        "price": 4.98,
+        "unit_price": 0.42,
+        "prime": null,
+        "flavor": "Apple Cinnamon Protein",
+        "size": null,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0DH9D5Q66",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=73930e99-4d2f-48be-8030-7c338db92d7b&v=2.13.15&pmid=149632863&price=4.98&stockStatus=1&widgetType=lightbox&t=6800&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499229609"
+      },
+      {
+        "asin": "B0DH9D5Q66",
+        "variant_name": "Apple Cinnamon Protein",
+        "title": "KIND Breakfast Protein, Healthy Snack Bar, Apple Cinnamon, Gluten Free Breakfast Bars, 8g Protein, 1.76OZ Packs, 12 Count",
+        "price": 4.98,
+        "unit_price": 0.42,
+        "prime": null,
+        "flavor": "Apple Cinnamon Protein",
+        "size": null,
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0DH9D5Q66",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=73930e99-4d2f-48be-8030-7c338db92d7b&v=2.13.15&pmid=149632863&price=4.98&stockStatus=1&widgetType=lightbox&t=6800&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499229609"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0DH9D5Q66",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 4.98,
+        "unit_price": 0.42,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": []
+  },
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/honey-oat",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0BCH545ZW",
+        "variant_name": "Honey Oat",
+        "title": "KIND Breakfast Bars, Honey Oat, Healthy Snacks, Gluten Free, 100% Whole Grains, 3g Protein, 6 Count",
+        "price": 4.98,
+        "unit_price": 0.24,
+        "prime": null,
+        "flavor": "Honey Oat",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH545ZW",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=c7f73e34-308b-4b33-adb0-52d7fd240b8d&v=2.13.15&pmid=149466891&price=4.98&stockStatus=1&widgetType=lightbox&t=7233&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499240881"
+      },
+      {
+        "asin": "B0BCH545ZW",
+        "variant_name": "Honey Oat",
+        "title": "KIND Breakfast Bars, Honey Oat, Healthy Snacks, Gluten Free, 100% Whole Grains, 3g Protein, 6 Count",
+        "price": 4.98,
+        "unit_price": 0.24,
+        "prime": null,
+        "flavor": "Honey Oat",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH545ZW",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=c7f73e34-308b-4b33-adb0-52d7fd240b8d&v=2.13.15&pmid=149466891&price=4.98&stockStatus=1&widgetType=lightbox&t=7233&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499240881"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0BCH545ZW",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 4.98,
+        "unit_price": 0.24,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0BCH545ZW",
+        "seller_name": "ZAKI'S Collection LLC",
+        "ships_from": "ZAKI'S Collection LLC",
+        "is_authorized": false,
+        "price": 12.27,
+        "unit_price": 0.58,
+        "price_currency": "USD",
+        "price_delta_abs": 7.289999999999999,
+        "price_delta_percent": 146.38554216867468,
+        "price_flag": "gouging",
+        "amazon_price_listing": 4.98,
+        "amazon_unit_price": 0.24,
+        "prime": null,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0BCH545ZW",
+        "seller_name": "mydogsocks",
+        "ships_from": "mydogsocks",
+        "is_authorized": false,
+        "price": 12.3,
+        "unit_price": 0.58,
+        "price_currency": "USD",
+        "price_delta_abs": 7.32,
+        "price_delta_percent": 146.9879518072289,
+        "price_flag": "gouging",
+        "amazon_price_listing": 4.98,
+        "amazon_unit_price": 0.24,
+        "prime": null,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0BCH545ZW",
+        "seller_name": "MaKin",
+        "ships_from": "MaKin",
+        "is_authorized": false,
+        "price": 12.31,
+        "unit_price": 0.58,
+        "price_currency": "USD",
+        "price_delta_abs": 7.33,
+        "price_delta_percent": 147.18875502008032,
+        "price_flag": "gouging",
+        "amazon_price_listing": 4.98,
+        "amazon_unit_price": 0.24,
+        "prime": null,
+        "rating_stars": 2.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0BCH545ZW",
+        "seller_name": "Akloos",
+        "ships_from": "Akloos",
+        "is_authorized": false,
+        "price": 8.08,
+        "unit_price": 0.38,
+        "price_currency": "USD",
+        "price_delta_abs": 3.0999999999999996,
+        "price_delta_percent": 62.24899598393573,
+        "price_flag": "gouging",
+        "amazon_price_listing": 4.98,
+        "amazon_unit_price": 0.24,
+        "prime": null,
+        "rating_stars": 4.0,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/blueberry-almond",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0BCH3Y3JS",
+        "variant_name": "Blueberry Almond",
+        "title": "KIND Breakfast Bars, Blueberry Almond, Healthy Snacks, Gluten Free, 100% Whole Grains, 3g Protein, 6 Count",
+        "price": 5.49,
+        "unit_price": 0.52,
+        "prime": null,
+        "flavor": "Blueberry Almond",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH3Y3JS",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=c10f88c1-16eb-4582-9ef6-250bd850d4dd&v=2.13.15&pmid=148975398&price=5.49&stockStatus=1&widgetType=lightbox&t=6629&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499251682"
+      },
+      {
+        "asin": "B0BCH3Y3JS",
+        "variant_name": "Blueberry Almond",
+        "title": "KIND Breakfast Bars, Blueberry Almond, Healthy Snacks, Gluten Free, 100% Whole Grains, 3g Protein, 6 Count",
+        "price": 5.49,
+        "unit_price": 0.52,
+        "prime": null,
+        "flavor": "Blueberry Almond",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCH3Y3JS",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=c10f88c1-16eb-4582-9ef6-250bd850d4dd&v=2.13.15&pmid=148975398&price=5.49&stockStatus=1&widgetType=lightbox&t=6629&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499251682"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0BCH3Y3JS",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 5.49,
+        "unit_price": 0.52,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": [
+      {
+        "asin": "B0BCH3Y3JS",
+        "seller_name": "SIMBA THREADS",
+        "ships_from": "SIMBA THREADS",
+        "is_authorized": false,
+        "price": 7.99,
+        "unit_price": 0.76,
+        "price_currency": "USD",
+        "price_delta_abs": 2.5,
+        "price_delta_percent": 45.537340619307834,
+        "price_flag": "elevated",
+        "amazon_price_listing": 5.49,
+        "amazon_unit_price": 0.52,
+        "prime": null,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0BCH3Y3JS",
+        "seller_name": "ZAKI'S Collection LLC",
+        "ships_from": "ZAKI'S Collection LLC",
+        "is_authorized": false,
+        "price": 11.97,
+        "unit_price": 1.13,
+        "price_currency": "USD",
+        "price_delta_abs": 6.48,
+        "price_delta_percent": 118.0327868852459,
+        "price_flag": "gouging",
+        "amazon_price_listing": 5.49,
+        "amazon_unit_price": 0.52,
+        "prime": null,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      },
+      {
+        "asin": "B0BCH3Y3JS",
+        "seller_name": "mydogsocks",
+        "ships_from": "mydogsocks",
+        "is_authorized": false,
+        "price": 11.99,
+        "unit_price": 1.14,
+        "price_currency": "USD",
+        "price_delta_abs": 6.5,
+        "price_delta_percent": 118.39708561020036,
+        "price_flag": "gouging",
+        "amazon_price_listing": 5.49,
+        "amazon_unit_price": 0.52,
+        "prime": null,
+        "rating_stars": 3.5,
+        "rating_count": null,
+        "positive_rating_percent": null,
+        "rating_flag": null
+      }
+    ]
+  },
+  {
+    "category": "Breakfast_Bars",
+    "category_display": "Breakfast Bars",
+    "source_product_url": "https://www.kindsnacks.com/products/breakfast-bars/peanut-butter",
+    "product_name": "Breakfast Bars",
+    "variants": [
+      {
+        "asin": "B0BCHM9DVL",
+        "variant_name": "Peanut Butter",
+        "title": "KIND Breakfast Bars, Peanut Butter, Healthy Snacks, Gluten Free, 5g Protein, 6 Count",
+        "price": 4.98,
+        "unit_price": 0.47,
+        "prime": null,
+        "flavor": "Peanut Butter",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCHM9DVL",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=de1f6b4e-d411-4ab8-862c-830e1abca796&v=2.13.15&pmid=146546865&price=4.98&stockStatus=1&widgetType=lightbox&t=6999&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499262493"
+      },
+      {
+        "asin": "B0BCHM9DVL",
+        "variant_name": "Peanut Butter",
+        "title": "KIND Breakfast Bars, Peanut Butter, Healthy Snacks, Gluten Free, 5g Protein, 6 Count",
+        "price": 4.98,
+        "unit_price": 0.47,
+        "prime": null,
+        "flavor": "Peanut Butter",
+        "size": "6 Count (12 Bars)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0BCHM9DVL",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=de1f6b4e-d411-4ab8-862c-830e1abca796&v=2.13.15&pmid=146546865&price=4.98&stockStatus=1&widgetType=lightbox&t=6999&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499262493"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0BCHM9DVL",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 4.98,
+        "unit_price": 0.47,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": []
+  }
+]

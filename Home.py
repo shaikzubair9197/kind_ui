@@ -47,9 +47,9 @@ st.markdown(kpi_css, unsafe_allow_html=True)
 # LOAD JSONS
 # ----------------------------------------------------
 BASE = Path(".")
-NORMALIZED_FILE = BASE / "normalized_all_products.json"
-META_FILE = BASE / "normalized_metadata_summary.json"
-CAPACITY_FILE = BASE / "capacity_bins.json"
+NORMALIZED_FILE = BASE / "normalized_all_products1.json"
+META_FILE = BASE / "normalized_metadata_summary1.json"
+CAPACITY_FILE = BASE / "capacity_bins1.json"
 
 
 def load_json(path: Path):

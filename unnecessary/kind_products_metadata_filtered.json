@@ -1,0 +1,103 @@
+{
+    "categories": [
+        {
+            "name": "ZEROg_Added_Sugar_Granola",
+            "total_products": 2,
+            "available_on_amazon": 1,
+            "availability_percent": 50.0
+        },
+        {
+            "name": "Frozen_Bars",
+            "total_products": 4,
+            "available_on_amazon": 0,
+            "availability_percent": 0.0
+        },
+        {
+            "name": "Healthy_Grains_Bars",
+            "total_products": 0,
+            "available_on_amazon": 0,
+            "availability_percent": 0
+        },
+        {
+            "name": "Soft_Baked_Squares_Bars",
+            "total_products": 3,
+            "available_on_amazon": 3,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "Protein_from_Real_Food",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "Dipped_Clusters",
+            "total_products": 3,
+            "available_on_amazon": 1,
+            "availability_percent": 33.33
+        },
+        {
+            "name": "Minis_Bars",
+            "total_products": 5,
+            "available_on_amazon": 4,
+            "availability_percent": 80.0
+        },
+        {
+            "name": "ZEROg_Added_Sugar_Bars",
+            "total_products": 3,
+            "available_on_amazon": 3,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "Breakfast_Bars",
+            "total_products": 8,
+            "available_on_amazon": 8,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "Protein_Max",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "Healthy_Grains_Granola",
+            "total_products": 9,
+            "available_on_amazon": 5,
+            "availability_percent": 55.56
+        },
+        {
+            "name": "Nut_Bars",
+            "total_products": 22,
+            "available_on_amazon": 16,
+            "availability_percent": 72.73
+        },
+        {
+            "name": "Soft_Baked_Granola",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "Thins_Bars",
+            "total_products": 6,
+            "available_on_amazon": 6,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "Kids_Bars",
+            "total_products": 2,
+            "available_on_amazon": 2,
+            "availability_percent": 100.0
+        },
+        {
+            "name": "All_Snacks",
+            "total_products": 28,
+            "available_on_amazon": 6,
+            "availability_percent": 21.43
+        }
+    ],
+    "total_categories": 16,
+    "total_products": 101,
+    "products_available_on_amazon": 61
+}

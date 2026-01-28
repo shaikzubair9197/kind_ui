@@ -10,8 +10,8 @@ from typing import Any, Dict, List, Optional, Tuple
 # ---------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------
-INPUT_FILE = "normalized_all_products.json"
-OUTPUT_FILE = "normalized_metadata_summary.json"
+INPUT_FILE = "normalized_all_products1.json"
+OUTPUT_FILE = "normalized_metadata_summary1.json"
 
 PCT_THRESHOLD = 20.0
 ABS_THRESHOLD = 2.0

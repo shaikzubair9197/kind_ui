@@ -1,0 +1,26 @@
+[
+  {
+    "product_url": "https://www.kindsnacks.com/products/soft-baked-squares/chocolate-almond-flour-brownie",
+    "amazon_link": {
+      "title": "Chocolate Almond Flour Brownie",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/164dac985ebe36b8967785d312a68189e0725583.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=ba1c0526-c8d8-4c38-a272-c51bc230f9cc&v=2.13.15&pmid=148982277&price=9.68&stockStatus=1&widgetType=lightbox&t=6278&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499121080"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/soft-baked-squares/salted-caramel-almond-flour-blondie",
+    "amazon_link": {
+      "title": "Salted Caramel Almond Flour Blondie",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/60b360bc4667fe0fdc39066506303e35aa46f50b.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=821d73b5-55e7-4610-a874-6d50cdde62d2&v=2.13.15&pmid=148970223&price=8.99&stockStatus=1&widgetType=lightbox&t=6610&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499131742"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/soft-baked-squares/peanut-butter-almond-flour-blondie",
+    "amazon_link": {
+      "title": "Peanut Butter Almond Flour Blondie",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/fcdfa60d0087d7b732de5f0742292bce4629389d.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=35d0d6f2-38fd-4016-8e32-cafa6b9bc7a8&v=2.13.15&pmid=148986772&price=9.68&stockStatus=1&widgetType=lightbox&t=6764&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499142869"
+    }
+  }
+]

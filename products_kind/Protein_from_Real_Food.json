@@ -1,0 +1,18 @@
+[
+  {
+    "product_url": "https://www.kindsnacks.com/products/protein/dark-chocolate-nut",
+    "amazon_link": {
+      "title": "Dark Chocolate Nut",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/c6078d127f520a775463ada3f8cd71acf9ecb6e2.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=ec74f6ed-9815-4843-a215-e9f89f36442b&v=2.13.15&pmid=149203866&price=17.47&stockStatus=1&widgetType=lightbox&t=6538&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499361194"
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/protein/crunchy-peanut-butter",
+    "amazon_link": {
+      "title": "Crunchy Peanut Butter",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/dafbee47b04dc4e9753065f33a9d57774d8f2a4e.jpg",
+      "amazon": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=ec16d4a6-4dbe-426d-a34c-26b3048ad420&v=2.13.15&pmid=148846661&price=19.08&stockStatus=1&widgetType=lightbox&t=6908&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499371976"
+    }
+  }
+]

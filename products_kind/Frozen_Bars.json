@@ -1,0 +1,34 @@
+[
+  {
+    "product_url": "https://www.kindsnacks.com/products/frozen-bars/dark-chocolate-almond-sea-salt-nut",
+    "amazon_link": {
+      "title": "Dark Chocolate Almond Sea Salt & Nut",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/lx2qqhzhdeodus4dnppm.png",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/frozen-bars/peanut-butter-dark-chocolate-nut",
+    "amazon_link": {
+      "title": "Peanut Butter Dark Chocolate Nut",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/jb07vnxgaiglrxshfjsz.png",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/frozen-bars/cherry-almond",
+    "amazon_link": {
+      "title": "Cherry Almond",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/sembej9wrmeimv1xnfmx.jpg",
+      "amazon": null
+    }
+  },
+  {
+    "product_url": "https://www.kindsnacks.com/products/frozen-bars/mint-chocolate-almond-nut",
+    "amazon_link": {
+      "title": "Mint Chocolate Almond & Nut",
+      "image": "/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf5536/files/migrate-product-files/wygkj97ozyexulcqfnzd.png",
+      "amazon": null
+    }
+  }
+]

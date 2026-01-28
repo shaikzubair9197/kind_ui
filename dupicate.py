@@ -1,8 +1,9 @@
 import os
 import json
 
-BASE_DIR = "all_products_3"
+BASE_DIR = "kind_results"
 OUTPUT_FILE = "all_products_merged.json"
+
 
 def normalize_json():
     merged = {}
@@ -10,11 +11,12 @@ def normalize_json():
 
     # Collect categories and ensure All_Snacks comes LAST
     for c in os.listdir(BASE_DIR):
+        if not os.path.isdir(os.path.join(BASE_DIR, c)):
+            continue
         if c == "All_Snacks":
             continue
         category_order.append(c)
 
-    # Append All_Snacks at the end
     if "All_Snacks" in os.listdir(BASE_DIR):
         category_order.append("All_Snacks")
 
@@ -22,27 +24,48 @@ def normalize_json():
     print(category_order)
 
     for category in category_order:
-        path = os.path.join(BASE_DIR, category, "results.json")
-        if not os.path.exists(path):
+        category_dir = os.path.join(BASE_DIR, category)
+        if not os.path.isdir(category_dir):
             continue
 
-        print(f"Processing: {path}")
+        print(f"\nProcessing category: {category}")
 
-        with open(path, "r", encoding="utf-8") as f:
-            items = json.load(f)
-
-        for item in items:
-            asin = item.get("asin")
-            if not asin:
+        # 🔹 Read ALL json files inside category folder
+        for fname in os.listdir(category_dir):
+            if not fname.lower().endswith(".json"):
                 continue
 
-            # Add category
-            item["category"] = category
+            fpath = os.path.join(category_dir, fname)
+            print(f"  → Loading {fname}")
 
-            # RULE:
-            # ✔ If ASIN already exists, do NOT override (keep real category first)
-            if asin not in merged:
-                merged[asin] = item
+            try:
+                with open(fpath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                # Handle list or single object
+                if isinstance(data, list):
+                    items = data
+                elif isinstance(data, dict):
+                    items = [data]
+                else:
+                    continue
+
+            except Exception as e:
+                print(f"  ⚠ Skipping {fname}: {e}")
+                continue
+
+            for item in items:
+                asin = item.get("asin")
+                if not asin:
+                    continue
+
+                # Tag category
+                item["category"] = category
+
+                # RULE:
+                # ✔ Keep first occurrence (real category wins)
+                if asin not in merged:
+                    merged[asin] = item
 
     # Save merged unique items
     with open(OUTPUT_FILE, "w", encoding="utf-8") as out:

@@ -1,0 +1,49 @@
+[
+  {
+    "category": "ZEROg_Added_Sugar_Granola",
+    "category_display": "Zerog Added Sugar Granola",
+    "source_product_url": "https://www.kindsnacks.com/products/zerog-added-sugar-granola/apple-cinnamon-nut-granola",
+    "product_name": "Zerog Added Sugar Granola",
+    "variants": [
+      {
+        "asin": "B0CH1RTWRN",
+        "variant_name": "Apple Cinnamon Nut Granola",
+        "title": "KIND Zero Added Sugar Keto Granola, Apple Cinnamon Nut, Good Source of Fiber, Gluten Free, Low Sugar, 5g Protein, 1 Count",
+        "price": 7.49,
+        "unit_price": 7.49,
+        "prime": null,
+        "flavor": "Apple Cinnamon Nut Granola",
+        "size": "8 Ounce (Pack of 1)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0CH1RTWRN",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=e4cb0e30-7428-4e95-ad38-036c02598377&v=2.13.15&pmid=146606736&price=7.49&stockStatus=1&widgetType=lightbox&t=9179&postalCode=48201&n=0&tidp=_ga&tid=GA1.1.760377007.1769501308&_=1769501740223"
+      },
+      {
+        "asin": "B0CH1RTWRN",
+        "variant_name": "Apple Cinnamon Nut Granola",
+        "title": "KIND Zero Added Sugar Keto Granola, Apple Cinnamon Nut, Good Source of Fiber, Gluten Free, Low Sugar, 5g Protein, 1 Count",
+        "price": 7.49,
+        "unit_price": 7.49,
+        "prime": null,
+        "flavor": "Apple Cinnamon Nut Granola",
+        "size": "8 Ounce (Pack of 1)",
+        "variant_dimensions": {},
+        "final_url": "https://www.amazon.com/dp/B0CH1RTWRN",
+        "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=e4cb0e30-7428-4e95-ad38-036c02598377&v=2.13.15&pmid=146606736&price=7.49&stockStatus=1&widgetType=lightbox&t=9179&postalCode=48201&n=0&tidp=_ga&tid=GA1.1.760377007.1769501308&_=1769501740223"
+      }
+    ],
+    "main_seller": [
+      {
+        "asin": "B0CH1RTWRN",
+        "seller_name": "Amazon.com",
+        "ships_from": "Amazon.com",
+        "is_authorized": true,
+        "price": 7.49,
+        "unit_price": 7.49,
+        "price_currency": "USD",
+        "prime": null
+      }
+    ],
+    "seller_market": []
+  }
+]
