@@ -281,23 +281,23 @@ with left_col:
 
 
 # ---- RIGHT: Seller SKU Impact (Ranked, Amazon Removed) ----
-with right_col:
-    st.markdown("### Seller SKU Impact")
+# with right_col:
+#     st.markdown("### Seller SKU Impact")
 
-    meta_sku_impact = meta.get("seller_sku_impact", {})
+#     meta_sku_impact = meta.get("seller_sku_impact", {})
 
-    df_imp = pd.DataFrame(
-        [(seller, count) for seller, count in meta_sku_impact.items()],
-        columns=["seller_name", "sku_count"],
-    )
+#     df_imp = pd.DataFrame(
+#         [(seller, count) for seller, count in meta_sku_impact.items()],
+#         columns=["seller_name", "sku_count"],
+#     )
 
-    # Remove Amazon.com (case-insensitive)
-    df_imp = df_imp[df_imp["seller_name"].str.lower() != "amazon.com"]
+#     # Remove Amazon.com (case-insensitive)
+#     df_imp = df_imp[df_imp["seller_name"].str.lower() != "amazon.com"]
 
-    # Sort high → low
-    df_imp = df_imp.sort_values("sku_count", ascending=False).reset_index(drop=True)
+#     # Sort high → low
+#     df_imp = df_imp.sort_values("sku_count", ascending=False).reset_index(drop=True)
 
-    st.dataframe(df_imp, use_container_width=True)
+#     st.dataframe(df_imp, use_container_width=True)
 
 # st.markdown("---")
 # st.caption(

@@ -48,15 +48,13 @@
         "Soft_Baked_Squares_Bars": 3,
         "All_Snacks": 2
     },
-    "total_unique_sellers": 79,
+    "total_unique_sellers": 77,
     "unique_sellers": [
         "3m marketing llc",
         "a & n bros",
         "a&b compney 1",
         "aaa_appliance",
         "akloos",
-        "amazon.com",
-        "amazonfresh",
         "ameristyle",
         "ari finds",
         "belowpricedeals",
@@ -136,7 +134,6 @@
         "a&b compney 1",
         "aaa_appliance",
         "akloos",
-        "amazonfresh",
         "ameristyle",
         "ari finds",
         "belowpricedeals",
@@ -210,12 +207,10 @@
         "yes cart inc",
         "zaki's collection llc"
     ],
-    "total_unique_sellers_excluding_amazon_and_kind": 78,
+    "total_unique_sellers_excluding_amazon_and_kind": 77,
     "seller_sku_impact": {
-        "amazon.com": 57,
         "skyline market solutions": 3,
-        "sally grocers": 31,
-        "amazonfresh": 16,
+        "sally grocers": 30,
         "insight trade llc": 1,
         "soa grocery": 4,
         "whole foods market": 12,
@@ -295,7 +290,7 @@
     "price_flag_summary": {
         "price gouging": 183,
         "high price": 33,
-        "fair price": 39,
+        "fair price": 23,
         "slightly high": 27
     },
     "rating_tiers_summary": {},
@@ -1201,14 +1196,14 @@
             "unique_sellers_in_product": []
         }
     ],
-    "total_listings": 342,
+    "total_listings": 266,
     "total_gouged_listings": 185,
-    "fair_price_listings": 162,
-    "avg_overprice_pct": 59.15755760272914,
-    "avg_overprice_abs": 1.7943362831858403,
+    "fair_price_listings": 81,
+    "avg_overprice_pct": 75.39252641851571,
+    "avg_overprice_abs": 2.2867669172932326,
     "max_overprice_pct": 194.16666666666666,
     "max_overprice_abs": 13.17,
-    "gouging_rate": 54.09356725146199,
+    "gouging_rate": 69.54887218045113,
     "sku_gouged_map": {
         "B08ZK2TJ2B": [
             "skyline market solutions"
@@ -1469,111 +1464,103 @@
         ]
     },
     "skus_impacted": 36,
-    "skus_impact_rate": 61.016949152542374,
+    "skus_impact_rate": 69.54887218045113,
     "category_gouging_summary": [
         {
+            "category": "Soft_Baked_Granola",
+            "total_listings": 2,
+            "gouged_listings": 2,
+            "gouging_rate": 100.0,
+            "avg_overprice_pct": 110.18443362193362,
+            "avg_overprice_abs": 4.145
+        },
+        {
             "category": "Protein_from_Real_Food",
-            "total_listings": 20,
+            "total_listings": 18,
             "gouged_listings": 15,
-            "gouging_rate": 75.0,
-            "avg_overprice_pct": 63.584526786390846,
-            "avg_overprice_abs": 0.7394999999999999
+            "gouging_rate": 83.33333333333334,
+            "avg_overprice_pct": 70.64947420710094,
+            "avg_overprice_abs": 0.8216666666666667
         },
         {
             "category": "Nut_Bars",
-            "total_listings": 160,
+            "total_listings": 145,
             "gouged_listings": 111,
-            "gouging_rate": 69.375,
-            "avg_overprice_pct": 70.29140492697199,
-            "avg_overprice_abs": 2.886375000000001
+            "gouging_rate": 76.55172413793103,
+            "avg_overprice_pct": 77.56292957458979,
+            "avg_overprice_abs": 3.1849655172413804
         },
         {
             "category": "Minis_Bars",
-            "total_listings": 27,
-            "gouged_listings": 14,
-            "gouging_rate": 51.85185185185185,
-            "avg_overprice_pct": 65.32813515269656,
-            "avg_overprice_abs": 0.7951851851851851
-        },
-        {
-            "category": "Soft_Baked_Granola",
-            "total_listings": 4,
-            "gouged_listings": 2,
-            "gouging_rate": 50.0,
-            "avg_overprice_pct": 55.09221681096681,
-            "avg_overprice_abs": 2.0725
-        },
-        {
-            "category": "Kids_Bars",
-            "total_listings": 7,
-            "gouged_listings": 3,
-            "gouging_rate": 42.857142857142854,
-            "avg_overprice_pct": 53.84615384615385,
-            "avg_overprice_abs": 0.7000000000000001
-        },
-        {
-            "category": "Protein_Max",
-            "total_listings": 20,
-            "gouged_listings": 8,
-            "gouging_rate": 40.0,
-            "avg_overprice_pct": 61.14402810304449,
-            "avg_overprice_abs": 1.175
-        },
-        {
-            "category": "Healthy_Grains_Granola",
             "total_listings": 19,
-            "gouged_listings": 7,
-            "gouging_rate": 36.84210526315789,
-            "avg_overprice_pct": 43.57017466732341,
-            "avg_overprice_abs": 2.5152631578947364
-        },
-        {
-            "category": "Thins_Bars",
-            "total_listings": 25,
-            "gouged_listings": 9,
-            "gouging_rate": 36.0,
-            "avg_overprice_pct": 53.16728365135227,
-            "avg_overprice_abs": 0.5975
+            "gouged_listings": 14,
+            "gouging_rate": 73.68421052631578,
+            "avg_overprice_pct": 92.83471837488457,
+            "avg_overprice_abs": 1.13
         },
         {
             "category": "Breakfast_Bars",
-            "total_listings": 28,
+            "total_listings": 15,
             "gouged_listings": 10,
-            "gouging_rate": 35.714285714285715,
-            "avg_overprice_pct": 46.33712660834135,
-            "avg_overprice_abs": 0.1792857142857143
-        },
-        {
-            "category": "Soft_Baked_Squares_Bars",
-            "total_listings": 12,
-            "gouged_listings": 3,
-            "gouging_rate": 25.0,
-            "avg_overprice_pct": 19.689115107964955,
-            "avg_overprice_abs": 0.22
+            "gouging_rate": 66.66666666666666,
+            "avg_overprice_pct": 86.49596966890385,
+            "avg_overprice_abs": 0.3346666666666667
         },
         {
             "category": "All_Snacks",
-            "total_listings": 9,
+            "total_listings": 3,
             "gouged_listings": 2,
-            "gouging_rate": 22.22222222222222,
-            "avg_overprice_pct": 21.88295165394402,
-            "avg_overprice_abs": 0.2866666666666667
+            "gouging_rate": 66.66666666666666,
+            "avg_overprice_pct": 65.64885496183206,
+            "avg_overprice_abs": 0.86
+        },
+        {
+            "category": "Kids_Bars",
+            "total_listings": 5,
+            "gouged_listings": 3,
+            "gouging_rate": 60.0,
+            "avg_overprice_pct": 75.38461538461539,
+            "avg_overprice_abs": 0.9800000000000001
+        },
+        {
+            "category": "Thins_Bars",
+            "total_listings": 16,
+            "gouged_listings": 9,
+            "gouging_rate": 56.25,
+            "avg_overprice_pct": 79.7509254770284,
+            "avg_overprice_abs": 0.89625
+        },
+        {
+            "category": "Healthy_Grains_Granola",
+            "total_listings": 13,
+            "gouged_listings": 7,
+            "gouging_rate": 53.84615384615385,
+            "avg_overprice_pct": 63.6794860522419,
+            "avg_overprice_abs": 3.6761538461538454
+        },
+        {
+            "category": "Protein_Max",
+            "total_listings": 18,
+            "gouged_listings": 8,
+            "gouging_rate": 44.44444444444444,
+            "avg_overprice_pct": 67.93780900338277,
+            "avg_overprice_abs": 1.3055555555555556
+        },
+        {
+            "category": "Soft_Baked_Squares_Bars",
+            "total_listings": 8,
+            "gouged_listings": 3,
+            "gouging_rate": 37.5,
+            "avg_overprice_pct": 29.53367266194743,
+            "avg_overprice_abs": 0.33
         },
         {
             "category": "ZEROg_Added_Sugar_Bars",
-            "total_listings": 8,
+            "total_listings": 4,
             "gouged_listings": 1,
-            "gouging_rate": 12.5,
-            "avg_overprice_pct": 14.69511630062089,
-            "avg_overprice_abs": 0.14250000000000002
-        },
-        {
-            "category": "ZEROg_Added_Sugar_Granola",
-            "total_listings": 1,
-            "gouged_listings": 0,
-            "gouging_rate": 0.0,
-            "avg_overprice_pct": 0.0,
-            "avg_overprice_abs": 0.0
+            "gouging_rate": 25.0,
+            "avg_overprice_pct": 29.39023260124178,
+            "avg_overprice_abs": 0.28500000000000003
         }
     ],
     "seller_gouging_summary": [
@@ -1899,9 +1886,9 @@
         }
     ],
     "prop_bad_sellers": 0.0,
-    "marketplace_health_score": 49.29,
+    "marketplace_health_score": 35.07,
     "_internal_debug": {
-        "pct_sample_count": 339,
-        "abs_sample_count": 339
+        "pct_sample_count": 266,
+        "abs_sample_count": 266
     }
 }

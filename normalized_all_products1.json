@@ -248,22 +248,6 @@
       },
       {
         "asin": "B0C4CW3H7K",
-        "seller_name": "Akloos",
-        "ships_from": "Akloos",
-        "is_authorized": false,
-        "price": 11.98,
-        "unit_price": 1.62,
-        "price_currency": "USD",
-        "price_delta_abs": 3.99,
-        "price_delta_percent": 49.93742177722153,
-        "price_flag": "High Price",
-        "rating_stars": 4.0,
-        "rating_count": 173259,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B0C4CW3H7K",
         "seller_name": "SIMBA THREADS",
         "ships_from": "SIMBA THREADS",
         "is_authorized": false,
@@ -463,18 +447,7 @@
         "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=25ba31ea-710f-4283-8485-8dfcd3ae90e7&v=2.13.15&pmid=148983336&price=8.99&stockStatus=1&widgetType=lightbox&t=6692&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.118121423.1769498491&_=1769499062441"
       }
     ],
-    "main_seller": [
-      {
-        "asin": "B0C7JCSV6X",
-        "seller_name": null,
-        "ships_from": null,
-        "is_authorized": false,
-        "price": null,
-        "unit_price": null,
-        "price_currency": "USD",
-        "prime": null
-      }
-    ],
+    "main_seller": [],
     "seller_market": [
       {
         "asin": "B0C7JCSV6X",
@@ -2176,22 +2149,6 @@
       },
       {
         "asin": "B07HYXPWJ9",
-        "seller_name": "OfficeCrave",
-        "ships_from": "OfficeCrave",
-        "is_authorized": false,
-        "price": 31.98,
-        "unit_price": 1.9,
-        "price_currency": "USD",
-        "price_delta_abs": 18.8,
-        "price_delta_percent": 142.64036418816391,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.5,
-        "rating_count": 3406,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B07HYXPWJ9",
         "seller_name": "Hugo's Online",
         "ships_from": "Hugo's Online",
         "is_authorized": false,
@@ -2219,22 +2176,6 @@
         "price_flag": "Price Gouging",
         "rating_stars": 4.0,
         "rating_count": 6480,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B07HYXPWJ9",
-        "seller_name": "BelowPriceDeals",
-        "ships_from": "BelowPriceDeals",
-        "is_authorized": false,
-        "price": 32.57,
-        "unit_price": 1.94,
-        "price_currency": "USD",
-        "price_delta_abs": 19.39,
-        "price_delta_percent": 147.11684370257967,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.0,
-        "rating_count": 796,
         "positive_rating_percent": null,
         "rating_flag": null
       },
@@ -2443,22 +2384,6 @@
         "price_flag": "Price Gouging",
         "rating_stars": 5.0,
         "rating_count": 7380,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B019EGM8UA",
-        "seller_name": "Shoplet",
-        "ships_from": "Shoplet",
-        "is_authorized": false,
-        "price": 27.82,
-        "unit_price": 19.87,
-        "price_currency": "USD",
-        "price_delta_abs": 12.18,
-        "price_delta_percent": 77.8772378516624,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.0,
-        "rating_count": 172745,
         "positive_rating_percent": null,
         "rating_flag": null
       },
@@ -3756,38 +3681,6 @@
       },
       {
         "asin": "B019EGM90O",
-        "seller_name": "OfficeCrave",
-        "ships_from": "OfficeCrave",
-        "is_authorized": false,
-        "price": 32.49,
-        "unit_price": 23.21,
-        "price_currency": "USD",
-        "price_delta_abs": 15.490000000000002,
-        "price_delta_percent": 91.11764705882354,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.5,
-        "rating_count": 3406,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B019EGM90O",
-        "seller_name": "BelowPriceDeals",
-        "ships_from": "BelowPriceDeals",
-        "is_authorized": false,
-        "price": 33.08,
-        "unit_price": 23.63,
-        "price_currency": "USD",
-        "price_delta_abs": 16.08,
-        "price_delta_percent": 94.58823529411764,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.0,
-        "rating_count": 796,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B019EGM90O",
         "seller_name": "My Two Crowns",
         "ships_from": "My Two Crowns",
         "is_authorized": false,
@@ -4015,22 +3908,6 @@
       },
       {
         "asin": "B00EW6V06Q",
-        "seller_name": "OfficeCrave",
-        "ships_from": "OfficeCrave",
-        "is_authorized": false,
-        "price": 32.49,
-        "unit_price": 1.93,
-        "price_currency": "USD",
-        "price_delta_abs": 18.270000000000003,
-        "price_delta_percent": 128.48101265822785,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.5,
-        "rating_count": 3406,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B00EW6V06Q",
         "seller_name": "WeBoxedIt",
         "ships_from": "WeBoxedIt",
         "is_authorized": false,
@@ -4058,22 +3935,6 @@
         "price_flag": "Price Gouging",
         "rating_stars": 5.0,
         "rating_count": 7380,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B00EW6V06Q",
-        "seller_name": "BelowPriceDeals",
-        "ships_from": "BelowPriceDeals",
-        "is_authorized": false,
-        "price": 33.08,
-        "unit_price": 1.97,
-        "price_currency": "USD",
-        "price_delta_abs": 18.86,
-        "price_delta_percent": 132.63009845288326,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.0,
-        "rating_count": 796,
         "positive_rating_percent": null,
         "rating_flag": null
       },
@@ -5691,22 +5552,6 @@
         "seller_name": "USTradeEnt",
         "ships_from": "USTradeEnt",
         "is_authorized": false,
-        "price": 14.62,
-        "unit_price": 14.62,
-        "price_currency": "USD",
-        "price_delta_abs": 7.579999999999999,
-        "price_delta_percent": 107.67045454545455,
-        "price_flag": "Price Gouging",
-        "rating_stars": 3.0,
-        "rating_count": 10052,
-        "positive_rating_percent": null,
-        "rating_flag": null
-      },
-      {
-        "asin": "B0BMW3XK4F",
-        "seller_name": "USTradeEnt",
-        "ships_from": "USTradeEnt",
-        "is_authorized": false,
         "price": 14.74,
         "unit_price": 14.74,
         "price_currency": "USD",
@@ -6349,18 +6194,7 @@
         "original_amazon_link": "https://redir.pricespider.com/redirect/?cid=62d6c4986d2448000d8beb1c&iid=2c8d0f16-13af-4cf7-9e89-fc5533d72c39&v=2.13.15&pmid=149473093&price=6.75&stockStatus=1&widgetType=lightbox&t=7924&postalCode=60601&n=0&tidp=_ga&tid=GA1.1.760377007.1769501308&_=1769501982649"
       }
     ],
-    "main_seller": [
-      {
-        "asin": "B09GSZL4VR",
-        "seller_name": null,
-        "ships_from": null,
-        "is_authorized": false,
-        "price": null,
-        "unit_price": null,
-        "price_currency": "USD",
-        "prime": null
-      }
-    ],
+    "main_seller": [],
     "seller_market": []
   },
   {
