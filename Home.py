@@ -105,29 +105,37 @@ skus_impacted = meta.get("skus_impacted")
 # ----------------------------------------------------
 # HEADER (UI)
 # ----------------------------------------------------
-# ----------------------------------------------------
-# HEADER (UI)
-# ----------------------------------------------------
-# ----------------------------------------------------
-# HEADER (UI)
-# ----------------------------------------------------
+header_left, header_center, header_right = st.columns([1, 8, 1])
 
-img = Image.open("kind.png")
+# LEFT — Logo
+with header_left:
+    logo = Image.open("kind.png")
+    logo = logo.resize((90, 45))
+    st.image(logo)
 
-# Resize to slim banner (adjust height here)
-banner = img.resize((img.width, 130))
+# CENTER — Title (true center)
+with header_center:
+    st.markdown(
+        f"""
+        <div style="display:flex; justify-content:center; align-items:center; height:45px;">
+            <h2 style="
+                margin:0;
+                color:{PRIMARY};
+                font-weight:700;
+            ">
+                KIND Marketplace Dashboard
+            </h2>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
-st.image(banner, use_container_width=True)
+# RIGHT — empty spacer (keeps center aligned)
+with header_right:
+    st.write("")
 
-
-
-st.markdown(
-    f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">
-    KIND Marketplace Dashboard
-    </h1>""",
-    unsafe_allow_html=True,
-)
 st.markdown("---")
+
 
 # KPI ROW
 c1, c2, c3 = st.columns(3)

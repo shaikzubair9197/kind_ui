@@ -287,23 +287,41 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-img = Image.open("kind.png")
+# ----------------------------------------------------
+# HEADER (UI)
+# ----------------------------------------------------
+header_left, header_center, header_right = st.columns([1, 8, 1])
 
-# Resize to slim banner (adjust height here)
-banner = img.resize((img.width, 130))
+# LEFT — Logo
+with header_left:
+    logo = Image.open("kind.png")
+    logo = logo.resize((90, 45))
+    st.image(logo)
 
-st.image(banner, use_container_width=True)
+# CENTER — Title (true center)
+with header_center:
+    st.markdown(
+        f"""
+        <div style="display:flex; justify-content:center; align-items:center; height:45px;">
+            <h2 style="
+                margin:0;
+                color:{PRIMARY};
+                font-weight:700;
+            ">
+                Product Resellers Analysis
+            </h2>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+# RIGHT — empty spacer (keeps center aligned)
+with header_right:
+    st.write("")
+
+st.markdown("---")
 
 
-
-st.markdown(
-    f"""<h1 style="text-align:center;color:{PRIMARY};margin-bottom:5px;">
-    Product Resellers Analysis
-    </h1>""",
-    unsafe_allow_html=True,
-)
-# st.markdown("Use filters, search, and sorting to refine results.")
-st.markdown("")
 
 
 # --------------------------------------------------------
